@@ -21,6 +21,8 @@
 		CC604B751868A6D50011A48D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC604B571868A6D50011A48D /* UIKit.framework */; };
 		CC604B7D1868A6D50011A48D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CC604B7B1868A6D50011A48D /* InfoPlist.strings */; };
 		CC604B7F1868A6D50011A48D /* BeaconDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC604B7E1868A6D50011A48D /* BeaconDemoTests.m */; };
+		CC604B891868B2490011A48D /* bell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CC604B881868B2490011A48D /* bell.mp3 */; };
+		CC604B8B1868D0C20011A48D /* Timberland-Pro-Work-Boots.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CC604B8A1868D0C20011A48D /* Timberland-Pro-Work-Boots.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		CC604B7A1868A6D50011A48D /* BeaconDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BeaconDemoTests-Info.plist"; sourceTree = "<group>"; };
 		CC604B7C1868A6D50011A48D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CC604B7E1868A6D50011A48D /* BeaconDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeaconDemoTests.m; sourceTree = "<group>"; };
+		CC604B881868B2490011A48D /* bell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bell.mp3; sourceTree = "<group>"; };
+		CC604B8A1868D0C20011A48D /* Timberland-Pro-Work-Boots.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Timberland-Pro-Work-Boots.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +130,8 @@
 		CC604B5A1868A6D50011A48D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CC604B8A1868D0C20011A48D /* Timberland-Pro-Work-Boots.jpg */,
+				CC604B881868B2490011A48D /* bell.mp3 */,
 				CC604B5B1868A6D50011A48D /* BeaconDemo-Info.plist */,
 				CC604B5C1868A6D50011A48D /* InfoPlist.strings */,
 				CC604B5F1868A6D50011A48D /* main.m */,
@@ -229,7 +235,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC604B6C1868A6D50011A48D /* Images.xcassets in Resources */,
+				CC604B8B1868D0C20011A48D /* Timberland-Pro-Work-Boots.jpg in Resources */,
 				CC604B5E1868A6D50011A48D /* InfoPlist.strings in Resources */,
+				CC604B891868B2490011A48D /* bell.mp3 in Resources */,
 				CC604B671868A6D50011A48D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -381,7 +389,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BeaconDemo/BeaconDemo-Prefix.pch";
 				INFOPLIST_FILE = "BeaconDemo/BeaconDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -394,7 +404,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BeaconDemo/BeaconDemo-Prefix.pch";
 				INFOPLIST_FILE = "BeaconDemo/BeaconDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -460,6 +472,7 @@
 				CC604B841868A6D50011A48D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CC604B851868A6D50011A48D /* Build configuration list for PBXNativeTarget "BeaconDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +481,7 @@
 				CC604B871868A6D50011A48D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
