@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		CC0EC5B4186A049900DC77CB /* WishListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0EC5B3186A049900DC77CB /* WishListViewController.m */; };
+		CC0EC5B6186A0CE900DC77CB /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = CC0EC5B5186A0CE900DC77CB /* user.png */; };
+		CC0EC5B8186A0D5100DC77CB /* map.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CC0EC5B7186A0D5100DC77CB /* map.jpeg */; };
 		CC604B541868A6D50011A48D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC604B531868A6D50011A48D /* Foundation.framework */; };
 		CC604B561868A6D50011A48D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC604B551868A6D50011A48D /* CoreGraphics.framework */; };
 		CC604B581868A6D50011A48D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC604B571868A6D50011A48D /* UIKit.framework */; };
@@ -39,6 +41,8 @@
 /* Begin PBXFileReference section */
 		CC0EC5B2186A049900DC77CB /* WishListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WishListViewController.h; sourceTree = "<group>"; };
 		CC0EC5B3186A049900DC77CB /* WishListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WishListViewController.m; sourceTree = "<group>"; };
+		CC0EC5B5186A0CE900DC77CB /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
+		CC0EC5B7186A0D5100DC77CB /* map.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = map.jpeg; sourceTree = "<group>"; };
 		CC604B501868A6D50011A48D /* BeaconDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeaconDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC604B531868A6D50011A48D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CC604B551868A6D50011A48D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -135,6 +139,8 @@
 		CC604B5A1868A6D50011A48D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CC0EC5B7186A0D5100DC77CB /* map.jpeg */,
+				CC0EC5B5186A0CE900DC77CB /* user.png */,
 				CC604B8A1868D0C20011A48D /* Timberland-Pro-Work-Boots.jpg */,
 				CC604B881868B2490011A48D /* bell.mp3 */,
 				CC604B5B1868A6D50011A48D /* BeaconDemo-Info.plist */,
@@ -241,7 +247,9 @@
 			files = (
 				CC604B6C1868A6D50011A48D /* Images.xcassets in Resources */,
 				CC604B8B1868D0C20011A48D /* Timberland-Pro-Work-Boots.jpg in Resources */,
+				CC0EC5B6186A0CE900DC77CB /* user.png in Resources */,
 				CC604B5E1868A6D50011A48D /* InfoPlist.strings in Resources */,
+				CC0EC5B8186A0D5100DC77CB /* map.jpeg in Resources */,
 				CC604B891868B2490011A48D /* bell.mp3 in Resources */,
 				CC604B671868A6D50011A48D /* Main.storyboard in Resources */,
 			);
