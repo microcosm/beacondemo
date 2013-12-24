@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC0EC5B4186A049900DC77CB /* WishListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0EC5B3186A049900DC77CB /* WishListViewController.m */; };
 		CC604B541868A6D50011A48D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC604B531868A6D50011A48D /* Foundation.framework */; };
 		CC604B561868A6D50011A48D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC604B551868A6D50011A48D /* CoreGraphics.framework */; };
 		CC604B581868A6D50011A48D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC604B571868A6D50011A48D /* UIKit.framework */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CC0EC5B2186A049900DC77CB /* WishListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WishListViewController.h; sourceTree = "<group>"; };
+		CC0EC5B3186A049900DC77CB /* WishListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WishListViewController.m; sourceTree = "<group>"; };
 		CC604B501868A6D50011A48D /* BeaconDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeaconDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC604B531868A6D50011A48D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CC604B551868A6D50011A48D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -119,6 +122,8 @@
 				CC604B621868A6D50011A48D /* AppDelegate.h */,
 				CC604B631868A6D50011A48D /* AppDelegate.m */,
 				CC604B651868A6D50011A48D /* Main.storyboard */,
+				CC0EC5B2186A049900DC77CB /* WishListViewController.h */,
+				CC0EC5B3186A049900DC77CB /* WishListViewController.m */,
 				CC604B681868A6D50011A48D /* ViewController.h */,
 				CC604B691868A6D50011A48D /* ViewController.m */,
 				CC604B6B1868A6D50011A48D /* Images.xcassets */,
@@ -258,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC604B6A1868A6D50011A48D /* ViewController.m in Sources */,
+				CC0EC5B4186A049900DC77CB /* WishListViewController.m in Sources */,
 				CC604B641868A6D50011A48D /* AppDelegate.m in Sources */,
 				CC604B601868A6D50011A48D /* main.m in Sources */,
 			);

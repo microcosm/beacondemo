@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Wish List View Controller-->
         <scene sceneID="vFz-dJ-3sG">
             <objects>
-                <viewController id="LHE-o6-RDq" sceneMemberID="viewController">
+                <viewController id="LHE-o6-RDq" customClass="WishListViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="pxf-fu-eic"/>
                         <viewControllerLayoutGuide type="bottom" id="r69-8I-vzI"/>
@@ -41,7 +41,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y0c-Ai-vbP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1139" y="-339"/>
+            <point key="canvasLocation" x="-1281" y="-349"/>
         </scene>
         <!--View Controller - iBeacon Demo-->
         <scene sceneID="ufC-wZ-h7g">
@@ -139,7 +139,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BDL-aN-JkC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-675" y="-339"/>
+            <point key="canvasLocation" x="-737" y="-339"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="thX-Kc-Unj">
@@ -157,7 +157,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yZx-1i-fMt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1626" y="-339"/>
+            <point key="canvasLocation" x="-1862" y="-339"/>
         </scene>
     </scenes>
     <resources>
