@@ -18,7 +18,7 @@
 {
     [super viewDidLoad];
     
-    NSDate *futureDate = [NSDate dateWithTimeIntervalSinceNow:5];
+    NSDate *futureDate = [NSDate dateWithTimeIntervalSinceNow:10];
     
     // Schedule the notification
     UILocalNotification* localNotification = [[UILocalNotification alloc] init];
@@ -40,6 +40,5 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 
 @end
