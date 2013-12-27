@@ -17,7 +17,7 @@
 		CC604B601868A6D50011A48D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CC604B5F1868A6D50011A48D /* main.m */; };
 		CC604B641868A6D50011A48D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CC604B631868A6D50011A48D /* AppDelegate.m */; };
 		CC604B671868A6D50011A48D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC604B651868A6D50011A48D /* Main.storyboard */; };
-		CC604B6A1868A6D50011A48D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC604B691868A6D50011A48D /* ViewController.m */; };
+		CC604B6A1868A6D50011A48D /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC604B691868A6D50011A48D /* MapViewController.m */; };
 		CC604B6C1868A6D50011A48D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC604B6B1868A6D50011A48D /* Images.xcassets */; };
 		CC604B731868A6D50011A48D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC604B721868A6D50011A48D /* XCTest.framework */; };
 		CC604B741868A6D50011A48D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC604B531868A6D50011A48D /* Foundation.framework */; };
@@ -54,8 +54,8 @@
 		CC604B621868A6D50011A48D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CC604B631868A6D50011A48D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		CC604B661868A6D50011A48D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CC604B681868A6D50011A48D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CC604B691868A6D50011A48D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CC604B681868A6D50011A48D /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		CC604B691868A6D50011A48D /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		CC604B6B1868A6D50011A48D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CC604B711868A6D50011A48D /* BeaconDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeaconDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC604B721868A6D50011A48D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -128,8 +128,8 @@
 				CC604B651868A6D50011A48D /* Main.storyboard */,
 				CC0EC5B2186A049900DC77CB /* WishListViewController.h */,
 				CC0EC5B3186A049900DC77CB /* WishListViewController.m */,
-				CC604B681868A6D50011A48D /* ViewController.h */,
-				CC604B691868A6D50011A48D /* ViewController.m */,
+				CC604B681868A6D50011A48D /* MapViewController.h */,
+				CC604B691868A6D50011A48D /* MapViewController.m */,
 				CC604B6B1868A6D50011A48D /* Images.xcassets */,
 				CC604B5A1868A6D50011A48D /* Supporting Files */,
 			);
@@ -270,7 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC604B6A1868A6D50011A48D /* ViewController.m in Sources */,
+				CC604B6A1868A6D50011A48D /* MapViewController.m in Sources */,
 				CC0EC5B4186A049900DC77CB /* WishListViewController.m in Sources */,
 				CC604B641868A6D50011A48D /* AppDelegate.m in Sources */,
 				CC604B601868A6D50011A48D /* main.m in Sources */,

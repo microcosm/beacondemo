@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MapViewController.h
 //  BeaconDemo
 //
 //  Created by dteng on 12/23/13.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface MapViewController : UIViewController
 
 
 @end

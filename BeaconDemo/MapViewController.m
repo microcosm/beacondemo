@@ -1,18 +1,18 @@
 //
-//  ViewController.m
+//  MapViewController.m
 //  BeaconDemo
 //
 //  Created by dteng on 12/23/13.
 //  Copyright (c) 2013 dteng. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "MapViewController.h"
 
-@interface ViewController ()
+@interface MapViewController ()
 
 @end
 
-@implementation ViewController
+@implementation MapViewController
 
 - (void)viewDidLoad
 {
