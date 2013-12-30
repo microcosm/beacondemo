@@ -52,7 +52,7 @@
         <!--View Controller - iBeacon Demo-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController title="iBeacon Demo" id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gRR-aZ-Ucn"/>
                         <viewControllerLayoutGuide type="bottom" id="jUC-wY-TPp"/>
@@ -141,10 +141,10 @@
             </objects>
             <point key="canvasLocation" x="-243" y="-339"/>
         </scene>
-        <!--View Controller-->
+        <!--Map View Controller-->
         <scene sceneID="7jx-FU-Fjc">
             <objects>
-                <viewController id="VoP-1P-ZCn" sceneMemberID="viewController">
+                <viewController id="VoP-1P-ZCn" customClass="MapViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="uzm-aS-v7B"/>
                         <viewControllerLayoutGuide type="bottom" id="xD2-jJ-QJU"/>
@@ -181,6 +181,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="iFu-MK-DaH"/>
+                    <connections>
+                        <outlet property="user" destination="88d-U8-Zmf" id="8Z5-sS-l7a"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BDL-aN-JkC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
