@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8446F7271871F8ED0058BB85 /* BeaconLayoutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8446F7261871F8ED0058BB85 /* BeaconLayoutManager.m */; };
 		CC0EC5B4186A049900DC77CB /* WishListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0EC5B3186A049900DC77CB /* WishListViewController.m */; };
 		CC0EC5B6186A0CE900DC77CB /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = CC0EC5B5186A0CE900DC77CB /* user.png */; };
 		CC0EC5B8186A0D5100DC77CB /* map.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CC0EC5B7186A0D5100DC77CB /* map.jpeg */; };
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8446F7251871F8ED0058BB85 /* BeaconLayoutManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeaconLayoutManager.h; sourceTree = "<group>"; };
+		8446F7261871F8ED0058BB85 /* BeaconLayoutManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeaconLayoutManager.m; sourceTree = "<group>"; };
 		CC0EC5B2186A049900DC77CB /* WishListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WishListViewController.h; sourceTree = "<group>"; };
 		CC0EC5B3186A049900DC77CB /* WishListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WishListViewController.m; sourceTree = "<group>"; };
 		CC0EC5B5186A0CE900DC77CB /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
@@ -90,6 +93,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8446F7231871F3860058BB85 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8446F7251871F8ED0058BB85 /* BeaconLayoutManager.h */,
+				8446F7261871F8ED0058BB85 /* BeaconLayoutManager.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		CC604B471868A6D50011A48D = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +135,7 @@
 		CC604B591868A6D50011A48D /* BeaconDemo */ = {
 			isa = PBXGroup;
 			children = (
+				8446F7231871F3860058BB85 /* Model */,
 				CC604B621868A6D50011A48D /* AppDelegate.h */,
 				CC604B631868A6D50011A48D /* AppDelegate.m */,
 				CC604B651868A6D50011A48D /* Main.storyboard */,
@@ -270,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8446F7271871F8ED0058BB85 /* BeaconLayoutManager.m in Sources */,
 				CC604B6A1868A6D50011A48D /* MapViewController.m in Sources */,
 				CC0EC5B4186A049900DC77CB /* WishListViewController.m in Sources */,
 				CC604B641868A6D50011A48D /* AppDelegate.m in Sources */,
