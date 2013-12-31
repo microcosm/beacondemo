@@ -77,8 +77,6 @@
 {
     NSString *identifier = self.identifierOfNearestBeacon;
     NSValue *pointValue = [self.identifiersToBeaconPoints objectForKey:identifier];
-    CGPoint point = [pointValue CGPointValue];
-    NSLog([NSString stringWithFormat:@"%@ - %f, %f", identifier, point.x, point.y]);
     return [pointValue CGPointValue];
 }
 

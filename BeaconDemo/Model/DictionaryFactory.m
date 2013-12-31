@@ -13,13 +13,9 @@
 + (NSDictionary *)dictionaryFromBeacons:(NSUInteger)beaconResolution
                               toTargets:(NSUInteger)targetResolution
 {
-    NSLog([NSString stringWithFormat: @"beaconResolution %d, targetResolution %d", (unsigned long) beaconResolution, (unsigned long) targetResolution]);
     CGFloat zoneFraction = 1.0 / beaconResolution;
     CGFloat zoneSize = zoneFraction * targetResolution;
     CGFloat halfZoneSize = zoneSize * 0.5;
-    
-    NSLog([NSString stringWithFormat: @"zoneFraction %f, zoneSize %f, halfZoneSize %f", zoneFraction, zoneSize, halfZoneSize]);
-
     
     NSMutableDictionary *dict = [[NSMutableDictionary alloc] initWithCapacity:beaconResolution];
     
@@ -27,7 +23,6 @@
     {
         NSInteger target = lroundf((zoneSize * i) - halfZoneSize);
         [dict setObject:[NSNumber numberWithInteger:target] forKey:[NSNumber numberWithInteger:i]];
-        NSLog([NSString stringWithFormat: @"[%d, %d]", i, target]);
     }
     
     return dict;

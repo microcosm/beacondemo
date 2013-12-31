@@ -49,7 +49,7 @@ static const int BEACON_RES_Y = 4;
     [self.map addSubview:self.user];
     
     //Temporary for testing without beacons
-    self.timer = [NSTimer scheduledTimerWithTimeInterval:1
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:0.3
                                                   target:self
                                                 selector:@selector(userDidEnterZone)
                                                 userInfo:nil
@@ -80,9 +80,8 @@ static const int BEACON_RES_Y = 4;
 - (void)userDidEnterZone
 {
     CGPoint newPoint = self.beaconManager.targetPoint;
-    NSLog([NSString stringWithFormat: @"User moved to [%f, %f]", newPoint.x, newPoint.y]);
-    [self.user setAlpha:1.0];
     [self.user setCenter:newPoint];
+    [self.user setAlpha:1.0];
 }
 
 @end
