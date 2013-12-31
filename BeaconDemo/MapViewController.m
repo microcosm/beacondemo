@@ -48,7 +48,11 @@ static const int BEACON_RES_Y = 4;
     [self setupBeaconTracking];
     
     //Temporary for testing without beacons
-    self.timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(userDidMove) userInfo:nil repeats:YES];
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:0.1
+                                                  target:self
+                                                selector:@selector(userDidMove)
+                                                userInfo:nil
+                                                 repeats:YES];
 }
 
 - (void)setupBeaconTracking
@@ -62,7 +66,9 @@ static const int BEACON_RES_Y = 4;
     [self.locationManager startRangingBeaconsInRegion: self.beaconRegion];
 }
 
-- (void)locationManager:(CLLocationManager *)manager didRangeBeacons:(NSArray *)beacons inRegion:(CLBeaconRegion *)region
+- (void)locationManager:(CLLocationManager *)manager
+        didRangeBeacons:(NSArray *)beacons
+               inRegion:(CLBeaconRegion *)region
 {
     self.beaconManager.nearestBeacon = [beacons objectAtIndex:0];
     if(self.beaconManager.hasNearestBeaconChanged){
@@ -74,7 +80,7 @@ static const int BEACON_RES_Y = 4;
 {
     CGPoint newPoint = self.beaconManager.targetPoint;
     NSLog([NSString stringWithFormat: @"User moved to [%f, %f]", newPoint.x, newPoint.y]);
-    [self.user setCenter: newPoint];
+    [self.user setCenter:newPoint];
 }
 
 @end

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8446F7271871F8ED0058BB85 /* BeaconLayoutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8446F7261871F8ED0058BB85 /* BeaconLayoutManager.m */; };
+		8446F72A18721CBB0058BB85 /* DictionaryFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8446F72918721CBB0058BB85 /* DictionaryFactory.m */; };
 		CC0EC5B4186A049900DC77CB /* WishListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0EC5B3186A049900DC77CB /* WishListViewController.m */; };
 		CC0EC5B6186A0CE900DC77CB /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = CC0EC5B5186A0CE900DC77CB /* user.png */; };
 		CC0EC5B8186A0D5100DC77CB /* map.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CC0EC5B7186A0D5100DC77CB /* map.jpeg */; };
@@ -42,6 +43,8 @@
 /* Begin PBXFileReference section */
 		8446F7251871F8ED0058BB85 /* BeaconLayoutManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeaconLayoutManager.h; sourceTree = "<group>"; };
 		8446F7261871F8ED0058BB85 /* BeaconLayoutManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeaconLayoutManager.m; sourceTree = "<group>"; };
+		8446F72818721CBB0058BB85 /* DictionaryFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DictionaryFactory.h; sourceTree = "<group>"; };
+		8446F72918721CBB0058BB85 /* DictionaryFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DictionaryFactory.m; sourceTree = "<group>"; };
 		CC0EC5B2186A049900DC77CB /* WishListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WishListViewController.h; sourceTree = "<group>"; };
 		CC0EC5B3186A049900DC77CB /* WishListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WishListViewController.m; sourceTree = "<group>"; };
 		CC0EC5B5186A0CE900DC77CB /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
@@ -98,6 +101,8 @@
 			children = (
 				8446F7251871F8ED0058BB85 /* BeaconLayoutManager.h */,
 				8446F7261871F8ED0058BB85 /* BeaconLayoutManager.m */,
+				8446F72818721CBB0058BB85 /* DictionaryFactory.h */,
+				8446F72918721CBB0058BB85 /* DictionaryFactory.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -287,6 +292,7 @@
 				CC604B6A1868A6D50011A48D /* MapViewController.m in Sources */,
 				CC0EC5B4186A049900DC77CB /* WishListViewController.m in Sources */,
 				CC604B641868A6D50011A48D /* AppDelegate.m in Sources */,
+				8446F72A18721CBB0058BB85 /* DictionaryFactory.m in Sources */,
 				CC604B601868A6D50011A48D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

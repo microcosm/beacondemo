@@ -7,6 +7,7 @@
 //
 
 #import "BeaconLayoutManager.h"
+#import "DictionaryFactory.h"
 #import <CoreLocation/CoreLocation.h>
 
 @interface BeaconLayoutManager ()
@@ -15,7 +16,9 @@
 @property (nonatomic) NSUInteger beaconResolutionY;
 @property (nonatomic) NSUInteger targetResolutionX;
 @property (nonatomic) NSUInteger targetResolutionY;
-@property (strong, nonatomic) NSDictionary *beaconPointsByIdentifier;
+@property (strong, nonatomic) NSDictionary *beaconPointsToTargetPointsX;
+@property (strong, nonatomic) NSDictionary *beaconPointsToTargetPointsY;
+@property (strong, nonatomic) NSDictionary *identifiersToBeaconPoints;
 
 //Temporary for testing without beacons
 @property (nonatomic) NSInteger dictionaryIndex;
@@ -30,26 +33,31 @@
     _nearestBeacon = nearestBeacon;
 }
 
-- (NSDictionary *)beaconPointsByIdentifier
+- (NSDictionary *)identifiersToBeaconPoints
 {
-    if (!_beaconPointsByIdentifier) {
-        _beaconPointsByIdentifier = [[NSDictionary alloc] init];
-        _beaconPointsByIdentifier = @{
-                                      @"ID01" : [ NSValue valueWithCGPoint: CGPointMake(10,150) ],
-                                      @"ID02" : [ NSValue valueWithCGPoint: CGPointMake(20,150) ],
-                                      @"ID03" : [ NSValue valueWithCGPoint: CGPointMake(30,150) ],
-                                      @"ID04" : [ NSValue valueWithCGPoint: CGPointMake(40,150) ],
-                                      @"ID05" : [ NSValue valueWithCGPoint: CGPointMake(50,150) ],
-                                      @"ID06" : [ NSValue valueWithCGPoint: CGPointMake(60,150) ],
-                                      @"ID07" : [ NSValue valueWithCGPoint: CGPointMake(70,150) ],
-                                      @"ID08" : [ NSValue valueWithCGPoint: CGPointMake(80,150) ],
-                                      @"ID09" : [ NSValue valueWithCGPoint: CGPointMake(90,150) ],
-                                      @"ID10" : [ NSValue valueWithCGPoint: CGPointMake(100,150) ],
-                                      @"ID11" : [ NSValue valueWithCGPoint: CGPointMake(110,150) ],
-                                      @"ID12" : [ NSValue valueWithCGPoint: CGPointMake(120,150) ]
-                                      };
+    if (!_identifiersToBeaconPoints) {
+        _identifiersToBeaconPoints = [DictionaryFactory dictionaryFromIdentifiersToTargetPointsX:self.beaconPointsToTargetPointsX
+                                                                                               Y:self.beaconPointsToTargetPointsY];
     }
-    return _beaconPointsByIdentifier;
+    return _identifiersToBeaconPoints;
+}
+
+- (NSDictionary *)beaconPointsToTargetPointsX
+{
+    if (!_beaconPointsToTargetPointsX) {
+        _beaconPointsToTargetPointsX = [DictionaryFactory dictionaryFromBeacons:self.beaconResolutionX
+                                                                      toTargets:self.targetResolutionX];
+    }
+    return _beaconPointsToTargetPointsX;
+}
+
+- (NSDictionary *)beaconPointsToTargetPointsY
+{
+    if (!_beaconPointsToTargetPointsY) {
+        _beaconPointsToTargetPointsY = [DictionaryFactory dictionaryFromBeacons:self.beaconResolutionY
+                                                                     toTargets:self.targetResolutionY];
+    }
+    return _beaconPointsToTargetPointsY;
 }
 
 - (instancetype)initWithBeaconResolutionX:(NSUInteger)beaconX
@@ -68,19 +76,21 @@
 - (CGPoint)targetPoint
 {
     NSString *identifier = self.identifierOfNearestBeacon;
-    NSValue *pointValue = [self.beaconPointsByIdentifier objectForKey: identifier];
-    return[pointValue CGPointValue];
+    NSValue *pointValue = [self.identifiersToBeaconPoints objectForKey:identifier];
+    CGPoint point = [pointValue CGPointValue];
+    NSLog([NSString stringWithFormat:@"%@ - %f, %f", identifier, point.x, point.y]);
+    return [pointValue CGPointValue];
 }
 
 - (NSString *)identifierOfNearestBeacon
 {
     //Temporary for testing without beacons
     self.dictionaryIndex++;
-    if(self.dictionaryIndex >= self.beaconPointsByIdentifier.count)
+    if(self.dictionaryIndex >= self.identifiersToBeaconPoints.count)
     {
         self.dictionaryIndex = 0;
     }
-    return [[self.beaconPointsByIdentifier allKeys] objectAtIndex: self.dictionaryIndex];
+    return [[self.identifiersToBeaconPoints allKeys] objectAtIndex: self.dictionaryIndex];
     
     //Real implementation
     /*return [NSString stringWithFormat: @"%@%@%@",
