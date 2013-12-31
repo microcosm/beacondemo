@@ -46,11 +46,12 @@ static const int BEACON_RES_Y = 4;
 {
     [super viewDidLoad];
     [self setupBeaconTracking];
+    [self.map addSubview:self.user];
     
     //Temporary for testing without beacons
-    self.timer = [NSTimer scheduledTimerWithTimeInterval:0.1
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:1
                                                   target:self
-                                                selector:@selector(userDidMove)
+                                                selector:@selector(userDidEnterZone)
                                                 userInfo:nil
                                                  repeats:YES];
 }
@@ -72,14 +73,15 @@ static const int BEACON_RES_Y = 4;
 {
     self.beaconManager.nearestBeacon = [beacons objectAtIndex:0];
     if(self.beaconManager.hasNearestBeaconChanged){
-        [self userDidMove];
+        [self userDidEnterZone];
     }
 }
 
-- (void)userDidMove
+- (void)userDidEnterZone
 {
     CGPoint newPoint = self.beaconManager.targetPoint;
     NSLog([NSString stringWithFormat: @"User moved to [%f, %f]", newPoint.x, newPoint.y]);
+    [self.user setAlpha:1.0];
     [self.user setCenter:newPoint];
 }
 
