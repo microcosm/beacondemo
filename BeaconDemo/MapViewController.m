@@ -13,6 +13,7 @@
 
 static const int BEACON_RES_X = 3;
 static const int BEACON_RES_Y = 4;
+static const CGFloat FADE_TIME = 1.0;
 
 @interface MapViewController () <CLLocationManagerDelegate>
 
@@ -22,6 +23,7 @@ static const int BEACON_RES_Y = 4;
     @property (nonatomic) CLLocationManager *locationManager;
     @property (weak, nonatomic) IBOutlet UIImageView *user;
     @property (weak, nonatomic) IBOutlet UIImageView *map;
+    @property (nonatomic) BOOL userDetected;
 
     //Temporary for testing without beacons
     @property (strong, nonatomic) NSTimer *timer;
@@ -41,7 +43,6 @@ static const int BEACON_RES_Y = 4;
     return _beaconManager;
 }
 
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -49,7 +50,7 @@ static const int BEACON_RES_Y = 4;
     [self.map addSubview:self.user];
     
     //Temporary for testing without beacons
-    self.timer = [NSTimer scheduledTimerWithTimeInterval:0.3
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:2.0
                                                   target:self
                                                 selector:@selector(userDidEnterZone)
                                                 userInfo:nil
@@ -81,7 +82,22 @@ static const int BEACON_RES_Y = 4;
 {
     CGPoint newPoint = self.beaconManager.targetPoint;
     [self.user setCenter:newPoint];
-    [self.user setAlpha:1.0];
+    if(!self.userDetected)
+    {
+        self.userDetected = YES;
+        [self fadeUserToAlpha:1.0];
+    }
+}
+
+- (void)fadeUserToAlpha:(CGFloat)alpha
+{
+    [UIView animateWithDuration:FADE_TIME
+                          delay:0
+                        options:UIViewAnimationOptionCurveEaseInOut
+                     animations:^{
+                         [self.user setAlpha:alpha];
+                     }
+                     completion:^(BOOL finished){}];
 }
 
 @end
