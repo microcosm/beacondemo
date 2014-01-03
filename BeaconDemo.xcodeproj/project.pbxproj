@@ -28,6 +28,8 @@
 		CC604B7F1868A6D50011A48D /* BeaconDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC604B7E1868A6D50011A48D /* BeaconDemoTests.m */; };
 		CC604B891868B2490011A48D /* bell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CC604B881868B2490011A48D /* bell.mp3 */; };
 		CC604B8B1868D0C20011A48D /* Timberland-Pro-Work-Boots.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CC604B8A1868D0C20011A48D /* Timberland-Pro-Work-Boots.jpg */; };
+		CCFB3BE71876387100E07824 /* CustomerHelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCFB3BE61876387100E07824 /* CustomerHelpViewController.m */; };
+		CCFB3BEB1876437200E07824 /* SalesAssociateHelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCFB3BEA1876437200E07824 /* SalesAssociateHelpViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,11 @@
 		CC604B7E1868A6D50011A48D /* BeaconDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeaconDemoTests.m; sourceTree = "<group>"; };
 		CC604B881868B2490011A48D /* bell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bell.mp3; sourceTree = "<group>"; };
 		CC604B8A1868D0C20011A48D /* Timberland-Pro-Work-Boots.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Timberland-Pro-Work-Boots.jpg"; sourceTree = "<group>"; };
+		CCFB3BE51876387100E07824 /* CustomerHelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerHelpViewController.h; sourceTree = "<group>"; };
+		CCFB3BE61876387100E07824 /* CustomerHelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerHelpViewController.m; sourceTree = "<group>"; };
+		CCFB3BE8187638EE00E07824 /* TransferService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransferService.h; sourceTree = "<group>"; };
+		CCFB3BE91876437200E07824 /* SalesAssociateHelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SalesAssociateHelpViewController.h; sourceTree = "<group>"; };
+		CCFB3BEA1876437200E07824 /* SalesAssociateHelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SalesAssociateHelpViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +151,11 @@
 				CC604B621868A6D50011A48D /* AppDelegate.h */,
 				CC604B631868A6D50011A48D /* AppDelegate.m */,
 				CC604B651868A6D50011A48D /* Main.storyboard */,
+				CCFB3BE91876437200E07824 /* SalesAssociateHelpViewController.h */,
+				CCFB3BEA1876437200E07824 /* SalesAssociateHelpViewController.m */,
+				CCFB3BE51876387100E07824 /* CustomerHelpViewController.h */,
+				CCFB3BE61876387100E07824 /* CustomerHelpViewController.m */,
+				CCFB3BE8187638EE00E07824 /* TransferService.h */,
 				CC0EC5B2186A049900DC77CB /* WishListViewController.h */,
 				CC0EC5B3186A049900DC77CB /* WishListViewController.m */,
 				CC604B681868A6D50011A48D /* MapViewController.h */,
@@ -288,10 +300,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCFB3BE71876387100E07824 /* CustomerHelpViewController.m in Sources */,
 				8446F7271871F8ED0058BB85 /* BeaconLayoutManager.m in Sources */,
 				CC604B6A1868A6D50011A48D /* MapViewController.m in Sources */,
 				CC0EC5B4186A049900DC77CB /* WishListViewController.m in Sources */,
 				CC604B641868A6D50011A48D /* AppDelegate.m in Sources */,
+				CCFB3BEB1876437200E07824 /* SalesAssociateHelpViewController.m in Sources */,
 				8446F72A18721CBB0058BB85 /* DictionaryFactory.m in Sources */,
 				CC604B601868A6D50011A48D /* main.m in Sources */,
 			);
