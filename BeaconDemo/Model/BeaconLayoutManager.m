@@ -12,13 +12,12 @@
 
 @interface BeaconLayoutManager ()
 
-@property (nonatomic) NSUInteger beaconResolutionX;
-@property (nonatomic) NSUInteger beaconResolutionY;
-@property (nonatomic) NSUInteger targetResolutionX;
-@property (nonatomic) NSUInteger targetResolutionY;
-@property (strong, nonatomic) NSDictionary *beaconPointsToTargetPointsX;
-@property (strong, nonatomic) NSDictionary *beaconPointsToTargetPointsY;
-@property (strong, nonatomic) NSDictionary *identifiersToBeaconPoints;
+@property (nonatomic) CGSize beaconResolution;
+@property (nonatomic) CGSize screenSize;
+@property (nonatomic) CGSize pointerSize;
+@property (strong, nonatomic) NSDictionary *beaconPositionXToScreenPositionX;
+@property (strong, nonatomic) NSDictionary *beaconPositionYToScreenPositionY;
+@property (strong, nonatomic) NSDictionary *identifiersToScreenPoints;
 
 //Temporary for testing without beacons
 @property (nonatomic) NSInteger dictionaryIndex;
@@ -33,50 +32,48 @@
     _nearestBeacon = nearestBeacon;
 }
 
-- (NSDictionary *)identifiersToBeaconPoints
+- (NSDictionary *)beaconPositionXToScreenPositionX
 {
-    if (!_identifiersToBeaconPoints) {
-        _identifiersToBeaconPoints = [DictionaryFactory dictionaryFromIdentifiersToTargetPointsX:self.beaconPointsToTargetPointsX
-                                                                                               Y:self.beaconPointsToTargetPointsY];
+    if (!_beaconPositionXToScreenPositionX) {
+        _beaconPositionXToScreenPositionX = [DictionaryFactory dictionaryFrom1DBeaconPositions:self.beaconResolution.width
+                                                                             toScreenPositions:self.screenSize.width];
     }
-    return _identifiersToBeaconPoints;
+    return _beaconPositionXToScreenPositionX;
 }
 
-- (NSDictionary *)beaconPointsToTargetPointsX
+- (NSDictionary *)beaconPositionYToScreenPositionY
 {
-    if (!_beaconPointsToTargetPointsX) {
-        _beaconPointsToTargetPointsX = [DictionaryFactory dictionaryFromBeacons:self.beaconResolutionX
-                                                                      toTargets:self.targetResolutionX];
+    if (!_beaconPositionYToScreenPositionY) {
+        _beaconPositionYToScreenPositionY = [DictionaryFactory dictionaryFrom1DBeaconPositions:self.beaconResolution.height
+                                                                             toScreenPositions:self.screenSize.height];
     }
-    return _beaconPointsToTargetPointsX;
+    return _beaconPositionYToScreenPositionY;
 }
 
-- (NSDictionary *)beaconPointsToTargetPointsY
+- (NSDictionary *)identifiersToScreenPoints
 {
-    if (!_beaconPointsToTargetPointsY) {
-        _beaconPointsToTargetPointsY = [DictionaryFactory dictionaryFromBeacons:self.beaconResolutionY
-                                                                     toTargets:self.targetResolutionY];
+    if (!_identifiersToScreenPoints) {
+        _identifiersToScreenPoints = [DictionaryFactory dictionaryFromIdentifiersToScreenPointsX:self.beaconPositionXToScreenPositionX
+                                                                                               Y:self.beaconPositionYToScreenPositionY];
     }
-    return _beaconPointsToTargetPointsY;
+    return _identifiersToScreenPoints;
 }
 
-- (instancetype)initWithBeaconResolutionX:(NSUInteger)beaconX
-                        beaconResolutionY:(NSUInteger)beaconY
-                        targetResolutionX:(NSUInteger)targetX
-                        targetResolutionY:(NSUInteger)targetY
+- (instancetype)initWithBeaconResolution:(CGSize)beaconResolution
+                              screenSize:(CGSize)screenSize
+                             pointerSize:(CGSize)pointerSize
 {
     self = [super init];
-    self.beaconResolutionX = beaconX;
-    self.beaconResolutionY = beaconY;
-    self.targetResolutionX = targetX;
-    self.targetResolutionY = targetY;
+    self.beaconResolution = beaconResolution;
+    self.screenSize = screenSize;
+    self.pointerSize = pointerSize;
     return self;
 }
 
-- (CGPoint)targetPoint
+- (CGPoint)pointerPosition
 {
     NSString *identifier = self.identifierOfNearestBeacon;
-    NSValue *pointValue = [self.identifiersToBeaconPoints objectForKey:identifier];
+    NSValue *pointValue = [self.identifiersToScreenPoints objectForKey:identifier];
     return [pointValue CGPointValue];
 }
 
@@ -84,11 +81,11 @@
 {
     //Temporary for testing without beacons
     self.dictionaryIndex++;
-    if(self.dictionaryIndex >= self.identifiersToBeaconPoints.count)
+    if(self.dictionaryIndex >= self.identifiersToScreenPoints.count)
     {
         self.dictionaryIndex = 0;
     }
-    return [[self.identifiersToBeaconPoints allKeys] objectAtIndex: self.dictionaryIndex];
+    return [[self.identifiersToScreenPoints allKeys] objectAtIndex: self.dictionaryIndex];
     
     //Real implementation
     /*return [NSString stringWithFormat: @"%@%@%@",

@@ -10,11 +10,11 @@
 
 @implementation DictionaryFactory
 
-+ (NSDictionary *)dictionaryFromBeacons:(NSUInteger)beaconResolution
-                              toTargets:(NSUInteger)targetResolution
++ (NSDictionary *)dictionaryFrom1DBeaconPositions:(NSUInteger)beaconResolution
+                                toScreenPositions:(NSUInteger)screenSize
 {
     CGFloat zoneFraction = 1.0 / beaconResolution;
-    CGFloat zoneSize = zoneFraction * targetResolution;
+    CGFloat zoneSize = zoneFraction * screenSize;
     CGFloat halfZoneSize = zoneSize * 0.5;
     
     NSMutableDictionary *dict = [[NSMutableDictionary alloc] initWithCapacity:beaconResolution];
@@ -28,58 +28,70 @@
     return dict;
 }
 
-+ (NSDictionary *)dictionaryFromIdentifiersToTargetPointsX:(NSDictionary *)beaconsToTargetsX
-                                                         Y:(NSDictionary *)beaconsToTargetsY
++ (NSDictionary *)dictionaryFromIdentifiersToScreenPointsX:(NSDictionary *)beaconPositionsToScreenPositionsX
+                                                         Y:(NSDictionary *)beaconPositionsToScreenPositionsY
 {        
     NSDictionary *dict = [[NSDictionary alloc] init];
     dict = @{
-             @"ID01" : [ NSValue valueWithCGPoint: CGPointMake(
-                    [[beaconsToTargetsX objectForKey:@1] intValue],
-                    [[beaconsToTargetsY objectForKey:@1] intValue])],
+             @"ID01":
+                    [ NSValue valueWithCGPoint: CGPointMake(
+                    [[beaconPositionsToScreenPositionsX objectForKey:@1] intValue],
+                    [[beaconPositionsToScreenPositionsY objectForKey:@1] intValue])],
              
-             @"ID02" : [ NSValue valueWithCGPoint: CGPointMake(
-                    [[beaconsToTargetsX objectForKey:@1] intValue],
-                    [[beaconsToTargetsY objectForKey:@2] intValue])],
+             @"ID02":
+                    [ NSValue valueWithCGPoint: CGPointMake(
+                    [[beaconPositionsToScreenPositionsX objectForKey:@1] intValue],
+                    [[beaconPositionsToScreenPositionsY objectForKey:@2] intValue])],
              
-             @"ID03" : [ NSValue valueWithCGPoint: CGPointMake(
-                    [[beaconsToTargetsX objectForKey:@1] intValue],
-                    [[beaconsToTargetsY objectForKey:@3] intValue])],
+             @"ID03":
+                    [ NSValue valueWithCGPoint: CGPointMake(
+                    [[beaconPositionsToScreenPositionsX objectForKey:@1] intValue],
+                    [[beaconPositionsToScreenPositionsY objectForKey:@3] intValue])],
              
-             @"ID04" : [ NSValue valueWithCGPoint: CGPointMake(
-                    [[beaconsToTargetsX objectForKey:@1] intValue],
-                    [[beaconsToTargetsY objectForKey:@4] intValue])],
+             @"ID04":
+                    [ NSValue valueWithCGPoint: CGPointMake(
+                    [[beaconPositionsToScreenPositionsX objectForKey:@1] intValue],
+                    [[beaconPositionsToScreenPositionsY objectForKey:@4] intValue])],
              
-             @"ID05" : [ NSValue valueWithCGPoint: CGPointMake(
-                    [[beaconsToTargetsX objectForKey:@2] intValue],
-                    [[beaconsToTargetsY objectForKey:@1] intValue])],
+             @"ID05":
+                    [ NSValue valueWithCGPoint: CGPointMake(
+                    [[beaconPositionsToScreenPositionsX objectForKey:@2] intValue],
+                    [[beaconPositionsToScreenPositionsY objectForKey:@1] intValue])],
              
-             @"ID06" : [ NSValue valueWithCGPoint: CGPointMake(
-                    [[beaconsToTargetsX objectForKey:@2] intValue],
-                    [[beaconsToTargetsY objectForKey:@2] intValue])],
+             @"ID06":
+                    [ NSValue valueWithCGPoint: CGPointMake(
+                    [[beaconPositionsToScreenPositionsX objectForKey:@2] intValue],
+                    [[beaconPositionsToScreenPositionsY objectForKey:@2] intValue])],
              
-             @"ID07" : [ NSValue valueWithCGPoint: CGPointMake(
-                    [[beaconsToTargetsX objectForKey:@2] intValue],
-                    [[beaconsToTargetsY objectForKey:@3] intValue])],
+             @"ID07":
+                    [ NSValue valueWithCGPoint: CGPointMake(
+                    [[beaconPositionsToScreenPositionsX objectForKey:@2] intValue],
+                    [[beaconPositionsToScreenPositionsY objectForKey:@3] intValue])],
              
-             @"ID08" : [ NSValue valueWithCGPoint: CGPointMake(
-                    [[beaconsToTargetsX objectForKey:@2] intValue],
-                    [[beaconsToTargetsY objectForKey:@4] intValue])],
+             @"ID08":
+                    [ NSValue valueWithCGPoint: CGPointMake(
+                    [[beaconPositionsToScreenPositionsX objectForKey:@2] intValue],
+                    [[beaconPositionsToScreenPositionsY objectForKey:@4] intValue])],
              
-             @"ID09" : [ NSValue valueWithCGPoint: CGPointMake(
-                    [[beaconsToTargetsX objectForKey:@3] intValue],
-                    [[beaconsToTargetsY objectForKey:@1] intValue])],
+             @"ID09":
+                    [ NSValue valueWithCGPoint: CGPointMake(
+                    [[beaconPositionsToScreenPositionsX objectForKey:@3] intValue],
+                    [[beaconPositionsToScreenPositionsY objectForKey:@1] intValue])],
              
-             @"ID10" : [ NSValue valueWithCGPoint: CGPointMake(
-                    [[beaconsToTargetsX objectForKey:@3] intValue],
-                    [[beaconsToTargetsY objectForKey:@2] intValue])],
+             @"ID10":
+                    [ NSValue valueWithCGPoint: CGPointMake(
+                    [[beaconPositionsToScreenPositionsX objectForKey:@3] intValue],
+                    [[beaconPositionsToScreenPositionsY objectForKey:@2] intValue])],
              
-             @"ID11" : [ NSValue valueWithCGPoint: CGPointMake(
-                    [[beaconsToTargetsX objectForKey:@3] intValue],
-                    [[beaconsToTargetsY objectForKey:@3] intValue])],
+             @"ID11":
+                    [ NSValue valueWithCGPoint: CGPointMake(
+                    [[beaconPositionsToScreenPositionsX objectForKey:@3] intValue],
+                    [[beaconPositionsToScreenPositionsY objectForKey:@3] intValue])],
              
-             @"ID12" : [ NSValue valueWithCGPoint: CGPointMake(
-                    [[beaconsToTargetsX objectForKey:@3] intValue],
-                    [[beaconsToTargetsY objectForKey:@4] intValue])]
+             @"ID12":
+                    [ NSValue valueWithCGPoint: CGPointMake(
+                    [[beaconPositionsToScreenPositionsX objectForKey:@3] intValue],
+                    [[beaconPositionsToScreenPositionsY objectForKey:@4] intValue])]
          };
     return dict;
 }

@@ -9,8 +9,8 @@
 #import <Foundation/Foundation.h>
 
 @interface DictionaryFactory : NSObject
-+ (NSDictionary *)dictionaryFromBeacons:(NSUInteger)beaconResolution
-                                     toTargets:(NSUInteger)targetResolution;
-+ (NSDictionary *)dictionaryFromIdentifiersToTargetPointsX:(NSDictionary *)beaconsToTargetsX
-                                                         Y:(NSDictionary *)beaconsToTargetsY;
++ (NSDictionary *)dictionaryFrom1DBeaconPositions:(NSUInteger)beaconResolution
+                                toScreenPositions:(NSUInteger)screenSize;
++ (NSDictionary *)dictionaryFromIdentifiersToScreenPointsX:(NSDictionary *)beaconPositionsToScreenPositionsX
+                                                         Y:(NSDictionary *)beaconPositionsToScreenPositionsY;
 @end

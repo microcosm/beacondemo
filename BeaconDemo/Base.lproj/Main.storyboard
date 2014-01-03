@@ -273,10 +273,6 @@
                                 <rect key="frame" x="242" y="65" width="78" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="user.png" translatesAutoresizingMaskIntoConstraints="NO" id="88d-U8-Zmf">
-                                <rect key="frame" x="15" y="453" width="47" height="58"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="When they get close, they are offered &quot;Choose a different color?&quot;" translatesAutoresizingMaskIntoConstraints="NO" id="mTv-Ga-bbA">
                                 <rect key="frame" x="80" y="130" width="240" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -289,8 +285,8 @@
                     </view>
                     <navigationItem key="navigationItem" title="Find your Boots" id="iFu-MK-DaH"/>
                     <connections>
+                        <outlet property="boots" destination="7Ja-Nh-69M" id="0E1-aQ-daT"/>
                         <outlet property="map" destination="FOF-Rn-sog" id="uu4-Zk-oiT"/>
-                        <outlet property="user" destination="88d-U8-Zmf" id="8Z5-sS-l7a"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BDL-aN-JkC" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -319,7 +315,6 @@
     <resources>
         <image name="Timberland-Pro-Work-Boots.jpg" width="640" height="480"/>
         <image name="map.jpeg" width="243" height="208"/>
-        <image name="user.png" width="512" height="512"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

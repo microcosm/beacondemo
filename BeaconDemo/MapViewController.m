@@ -19,12 +19,13 @@ static const CGFloat FADE_TIME = 1.0;
 @interface MapViewController () <CLLocationManagerDelegate>
 
     @property (strong, nonatomic) BeaconLayoutManager *beaconManager;
-
     @property (nonatomic) CLBeaconRegion *beaconRegion;
     @property (nonatomic) CLLocationManager *locationManager;
-    @property (weak, nonatomic) IBOutlet UIImageView *user;
     @property (weak, nonatomic) IBOutlet UIImageView *map;
-    @property (nonatomic) BOOL userDetected;
+    @property (weak, nonatomic) IBOutlet UIImageView *boots;
+    @property (strong, nonatomic) UIImageView *user;
+    @property (nonatomic) CGPoint userPosition;
+    @property (nonatomic) BOOL userIsDetected;
 
     //Temporary for testing without beacons
     @property (strong, nonatomic) NSTimer *timer;
@@ -36,10 +37,9 @@ static const CGFloat FADE_TIME = 1.0;
 - (BeaconLayoutManager *)beaconManager
 {
     if (!_beaconManager) {
-        _beaconManager = [[BeaconLayoutManager alloc] initWithBeaconResolutionX: BEACON_RES_X
-                                                              beaconResolutionY: BEACON_RES_Y
-                                                              targetResolutionX: self.map.bounds.size.width
-                                                              targetResolutionY: self.map.bounds.size.height];
+        _beaconManager = [[BeaconLayoutManager alloc] initWithBeaconResolution: CGSizeMake(BEACON_RES_X, BEACON_RES_Y)
+                                                                    screenSize: self.map.bounds.size
+                                                                   pointerSize: self.user.bounds.size];
     }
     return _beaconManager;
 }
@@ -47,15 +47,25 @@ static const CGFloat FADE_TIME = 1.0;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self setupViews];
     [self setupBeaconTracking];
-    [self.map addSubview:self.user];
     
     //Temporary for testing without beacons
-    self.timer = [NSTimer scheduledTimerWithTimeInterval:0.7
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:2.0
                                                   target:self
                                                 selector:@selector(userDidEnterZone)
                                                 userInfo:nil
                                                  repeats:YES];
+}
+
+- (void)setupViews
+{
+    self.user = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"user.png"]];
+    [self.user setFrame:CGRectMake(0, 0, 20, 20)];
+    [self.user setAlpha:0];
+    
+    [self.map addSubview:self.user];
+    [self.map addSubview:self.boots];
 }
 
 - (void)setupBeaconTracking
@@ -81,29 +91,37 @@ static const CGFloat FADE_TIME = 1.0;
 
 - (void)userDidEnterZone
 {
-    [self moveUserToPoint:self.beaconManager.targetPoint];
-    if(!self.userDetected)
+    self.userPosition = [self.beaconManager pointerPosition];
+    
+    if(self.userIsDetected)
     {
-        self.userDetected = YES;
-        [self fadeUserToAlpha:1.0];
+        [self transformUserToMatchPositionInMoveTime:MOVE_TIME];
+    }
+    else
+    {
+        self.userIsDetected = YES;
+        [self transformUserToMatchPositionInMoveTime:0];
+        [self fadeUserToAlpha:1.0 inFadeTime:FADE_TIME];
     }
 }
 
-- (void)moveUserToPoint:(CGPoint)point
+- (void)transformUserToMatchPositionInMoveTime:(CGFloat)moveTime
 {
-    [UIView animateWithDuration:MOVE_TIME
+    [UIView animateWithDuration:moveTime
                           delay:0
                         options:(UIViewAnimationOptionCurveEaseOut |
                                  UIViewAnimationOptionBeginFromCurrentState)
                      animations:^{
-                         [self.user setCenter:point];
+                         CGAffineTransform transform = CGAffineTransformTranslate(CGAffineTransformIdentity, self.userPosition.x, self.userPosition.y);
+                         transform = CGAffineTransformRotate(transform, [self radiansToFaceUserTowardsBoots]);
+                         [self.user setTransform:transform];
                      }
                      completion:^(BOOL finished){}];
 }
 
-- (void)fadeUserToAlpha:(CGFloat)alpha
+- (void)fadeUserToAlpha:(CGFloat)alpha inFadeTime:(CGFloat)fadeTime
 {
-    [UIView animateWithDuration:FADE_TIME
+    [UIView animateWithDuration:fadeTime
                           delay:0
                         options:(UIViewAnimationOptionCurveEaseOut |
                                  UIViewAnimationOptionBeginFromCurrentState)
@@ -111,6 +129,13 @@ static const CGFloat FADE_TIME = 1.0;
                          [self.user setAlpha:alpha];
                      }
                      completion:^(BOOL finished){}];
+}
+
+- (CGFloat)radiansToFaceUserTowardsBoots
+{
+    CGFloat distanceX = self.boots.center.x - self.userPosition.x;
+    CGFloat distanceY = self.boots.center.y - self.userPosition.y;
+    return atan2(distanceY, distanceX); //tan = opp / adj
 }
 
 @end

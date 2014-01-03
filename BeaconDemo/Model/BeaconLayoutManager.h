@@ -14,10 +14,9 @@
 @property (strong, nonatomic) CLBeacon *nearestBeacon;
 @property (nonatomic) BOOL hasNearestBeaconChanged;
 
-- (instancetype)initWithBeaconResolutionX:(NSUInteger)beaconX
-                        beaconResolutionY:(NSUInteger)beaconY
-                        targetResolutionX:(NSUInteger)targetX
-                        targetResolutionY:(NSUInteger)targetY;
-- (CGPoint)targetPoint;
+- (instancetype)initWithBeaconResolution:(CGSize)beaconResolution
+                              screenSize:(CGSize)screenSize
+                             pointerSize:(CGSize)pointerSize;
+- (CGPoint)pointerPosition;
 
 @end
