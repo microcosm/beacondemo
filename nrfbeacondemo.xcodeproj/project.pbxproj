@@ -51,23 +51,23 @@
 		CC0EC5B3186A049900DC77CB /* WishListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WishListViewController.m; sourceTree = "<group>"; };
 		CC0EC5B5186A0CE900DC77CB /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
 		CC0EC5B7186A0D5100DC77CB /* map.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = map.jpeg; sourceTree = "<group>"; };
-		CC604B501868A6D50011A48D /* BeaconDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeaconDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC604B501868A6D50011A48D /* nrfbeacondemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nrfbeacondemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC604B531868A6D50011A48D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CC604B551868A6D50011A48D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		CC604B571868A6D50011A48D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		CC604B5B1868A6D50011A48D /* BeaconDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BeaconDemo-Info.plist"; sourceTree = "<group>"; };
+		CC604B5B1868A6D50011A48D /* nrfbeacondemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "nrfbeacondemo-Info.plist"; sourceTree = "<group>"; };
 		CC604B5D1868A6D50011A48D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CC604B5F1868A6D50011A48D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CC604B611868A6D50011A48D /* BeaconDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BeaconDemo-Prefix.pch"; sourceTree = "<group>"; };
+		CC604B611868A6D50011A48D /* nrfbeacondemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "nrfbeacondemo-Prefix.pch"; sourceTree = "<group>"; };
 		CC604B621868A6D50011A48D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CC604B631868A6D50011A48D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		CC604B661868A6D50011A48D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CC604B681868A6D50011A48D /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		CC604B691868A6D50011A48D /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		CC604B6B1868A6D50011A48D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		CC604B711868A6D50011A48D /* BeaconDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeaconDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC604B711868A6D50011A48D /* nrfbeacondemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nrfbeacondemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC604B721868A6D50011A48D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		CC604B7A1868A6D50011A48D /* BeaconDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BeaconDemoTests-Info.plist"; sourceTree = "<group>"; };
+		CC604B7A1868A6D50011A48D /* nrfbeacondemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "nrfbeacondemoTests-Info.plist"; sourceTree = "<group>"; };
 		CC604B7C1868A6D50011A48D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CC604B7E1868A6D50011A48D /* BeaconDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeaconDemoTests.m; sourceTree = "<group>"; };
 		CC604B881868B2490011A48D /* bell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bell.mp3; sourceTree = "<group>"; };
@@ -127,8 +127,8 @@
 		CC604B511868A6D50011A48D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CC604B501868A6D50011A48D /* BeaconDemo.app */,
-				CC604B711868A6D50011A48D /* BeaconDemoTests.xctest */,
+				CC604B501868A6D50011A48D /* nrfbeacondemo.app */,
+				CC604B711868A6D50011A48D /* nrfbeacondemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -173,10 +173,10 @@
 				CC0EC5B5186A0CE900DC77CB /* user.png */,
 				CC604B8A1868D0C20011A48D /* Timberland-Pro-Work-Boots.jpg */,
 				CC604B881868B2490011A48D /* bell.mp3 */,
-				CC604B5B1868A6D50011A48D /* BeaconDemo-Info.plist */,
+				CC604B5B1868A6D50011A48D /* nrfbeacondemo-Info.plist */,
 				CC604B5C1868A6D50011A48D /* InfoPlist.strings */,
 				CC604B5F1868A6D50011A48D /* main.m */,
-				CC604B611868A6D50011A48D /* BeaconDemo-Prefix.pch */,
+				CC604B611868A6D50011A48D /* nrfbeacondemo-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -193,7 +193,7 @@
 		CC604B791868A6D50011A48D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				CC604B7A1868A6D50011A48D /* BeaconDemoTests-Info.plist */,
+				CC604B7A1868A6D50011A48D /* nrfbeacondemoTests-Info.plist */,
 				CC604B7B1868A6D50011A48D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -202,9 +202,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CC604B4F1868A6D50011A48D /* BeaconDemo */ = {
+		CC604B4F1868A6D50011A48D /* nrfbeacondemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CC604B821868A6D50011A48D /* Build configuration list for PBXNativeTarget "BeaconDemo" */;
+			buildConfigurationList = CC604B821868A6D50011A48D /* Build configuration list for PBXNativeTarget "nrfbeacondemo" */;
 			buildPhases = (
 				CC604B4C1868A6D50011A48D /* Sources */,
 				CC604B4D1868A6D50011A48D /* Frameworks */,
@@ -214,14 +214,14 @@
 			);
 			dependencies = (
 			);
-			name = BeaconDemo;
+			name = nrfbeacondemo;
 			productName = BeaconDemo;
-			productReference = CC604B501868A6D50011A48D /* BeaconDemo.app */;
+			productReference = CC604B501868A6D50011A48D /* nrfbeacondemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CC604B701868A6D50011A48D /* BeaconDemoTests */ = {
+		CC604B701868A6D50011A48D /* nrfbeacondemoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CC604B851868A6D50011A48D /* Build configuration list for PBXNativeTarget "BeaconDemoTests" */;
+			buildConfigurationList = CC604B851868A6D50011A48D /* Build configuration list for PBXNativeTarget "nrfbeacondemoTests" */;
 			buildPhases = (
 				CC604B6D1868A6D50011A48D /* Sources */,
 				CC604B6E1868A6D50011A48D /* Frameworks */,
@@ -232,9 +232,9 @@
 			dependencies = (
 				CC604B771868A6D50011A48D /* PBXTargetDependency */,
 			);
-			name = BeaconDemoTests;
+			name = nrfbeacondemoTests;
 			productName = BeaconDemoTests;
-			productReference = CC604B711868A6D50011A48D /* BeaconDemoTests.xctest */;
+			productReference = CC604B711868A6D50011A48D /* nrfbeacondemoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -246,12 +246,15 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = dteng;
 				TargetAttributes = {
+					CC604B4F1868A6D50011A48D = {
+						DevelopmentTeam = YFWXADMX4E;
+					};
 					CC604B701868A6D50011A48D = {
 						TestTargetID = CC604B4F1868A6D50011A48D;
 					};
 				};
 			};
-			buildConfigurationList = CC604B4B1868A6D50011A48D /* Build configuration list for PBXProject "BeaconDemo" */;
+			buildConfigurationList = CC604B4B1868A6D50011A48D /* Build configuration list for PBXProject "nrfbeacondemo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -264,8 +267,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CC604B4F1868A6D50011A48D /* BeaconDemo */,
-				CC604B701868A6D50011A48D /* BeaconDemoTests */,
+				CC604B4F1868A6D50011A48D /* nrfbeacondemo */,
+				CC604B701868A6D50011A48D /* nrfbeacondemoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -324,7 +327,7 @@
 /* Begin PBXTargetDependency section */
 		CC604B771868A6D50011A48D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CC604B4F1868A6D50011A48D /* BeaconDemo */;
+			target = CC604B4F1868A6D50011A48D /* nrfbeacondemo */;
 			targetProxy = CC604B761868A6D50011A48D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -434,11 +437,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BeaconDemo/BeaconDemo-Prefix.pch";
-				INFOPLIST_FILE = "BeaconDemo/BeaconDemo-Info.plist";
+				GCC_PREFIX_HEADER = "BeaconDemo/nrfbeacondemo-Prefix.pch";
+				INFOPLIST_FILE = "BeaconDemo/nrfbeacondemo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = nrfbeacondemo;
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -449,11 +455,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BeaconDemo/BeaconDemo-Prefix.pch";
-				INFOPLIST_FILE = "BeaconDemo/BeaconDemo-Info.plist";
+				GCC_PREFIX_HEADER = "BeaconDemo/nrfbeacondemo-Prefix.pch";
+				INFOPLIST_FILE = "BeaconDemo/nrfbeacondemo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = nrfbeacondemo;
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -475,8 +484,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "BeaconDemoTests/BeaconDemoTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "BeaconDemoTests/nrfbeacondemoTests-Info.plist";
+				PRODUCT_NAME = nrfbeacondemoTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -494,8 +503,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BeaconDemo/BeaconDemo-Prefix.pch";
-				INFOPLIST_FILE = "BeaconDemoTests/BeaconDemoTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "BeaconDemoTests/nrfbeacondemoTests-Info.plist";
+				PRODUCT_NAME = nrfbeacondemoTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -504,7 +513,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CC604B4B1868A6D50011A48D /* Build configuration list for PBXProject "BeaconDemo" */ = {
+		CC604B4B1868A6D50011A48D /* Build configuration list for PBXProject "nrfbeacondemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CC604B801868A6D50011A48D /* Debug */,
@@ -513,7 +522,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CC604B821868A6D50011A48D /* Build configuration list for PBXNativeTarget "BeaconDemo" */ = {
+		CC604B821868A6D50011A48D /* Build configuration list for PBXNativeTarget "nrfbeacondemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CC604B831868A6D50011A48D /* Debug */,
@@ -522,7 +531,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CC604B851868A6D50011A48D /* Build configuration list for PBXNativeTarget "BeaconDemoTests" */ = {
+		CC604B851868A6D50011A48D /* Build configuration list for PBXNativeTarget "nrfbeacondemoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CC604B861868A6D50011A48D /* Debug */,

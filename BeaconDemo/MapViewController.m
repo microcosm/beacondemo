@@ -76,7 +76,7 @@ static const CGFloat FADE_TIME = 1.0;
 	NSUUID *uuid = [[NSUUID alloc] initWithUUIDString: @"B9407F30-F5F8-466E-AFF9-25556B57FE6D"];
 	self.beaconRegion = [[CLBeaconRegion alloc] initWithProximityUUID: uuid identifier: @"thoughtWorksNRF"];
     [self.locationManager startMonitoringForRegion: self.beaconRegion];
-    [self.locationManager startRangingBeaconsInRegion: self.beaconRegion];
+    /*[self.locationManager startRangingBeaconsInRegion: self.beaconRegion];*/
 }
 
 - (void)locationManager:(CLLocationManager *)manager
