@@ -36,7 +36,8 @@
 {
     if (!_beaconPositionXToScreenPositionX) {
         _beaconPositionXToScreenPositionX = [DictionaryFactory dictionaryFrom1DBeaconPositions:self.beaconResolution.width
-                                                                             toScreenPositions:self.screenSize.width];
+                                                                             toScreenPositions:self.screenSize.width
+                                                                           offsetByPointerSize:self.pointerSize.width];
     }
     return _beaconPositionXToScreenPositionX;
 }
@@ -45,7 +46,8 @@
 {
     if (!_beaconPositionYToScreenPositionY) {
         _beaconPositionYToScreenPositionY = [DictionaryFactory dictionaryFrom1DBeaconPositions:self.beaconResolution.height
-                                                                             toScreenPositions:self.screenSize.height];
+                                                                             toScreenPositions:self.screenSize.height
+                                                                           offsetByPointerSize:self.pointerSize.height];
     }
     return _beaconPositionYToScreenPositionY;
 }

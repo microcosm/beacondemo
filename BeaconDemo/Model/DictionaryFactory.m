@@ -12,6 +12,7 @@
 
 + (NSDictionary *)dictionaryFrom1DBeaconPositions:(NSUInteger)beaconResolution
                                 toScreenPositions:(NSUInteger)screenSize
+                              offsetByPointerSize:(NSUInteger)pointerSize
 {
     CGFloat zoneFraction = 1.0 / beaconResolution;
     CGFloat zoneSize = zoneFraction * screenSize;
@@ -21,8 +22,8 @@
     
     for(NSUInteger i = 1; i <= beaconResolution; i++)
     {
-        NSInteger target = lroundf((zoneSize * i) - halfZoneSize);
-        [dict setObject:[NSNumber numberWithInteger:target] forKey:[NSNumber numberWithInteger:i]];
+        NSInteger screenPosition = lroundf((zoneSize * i) - halfZoneSize) - (pointerSize * 0.5);
+        [dict setObject:[NSNumber numberWithInteger:screenPosition] forKey:[NSNumber numberWithInteger:i]];
     }
     
     return dict;

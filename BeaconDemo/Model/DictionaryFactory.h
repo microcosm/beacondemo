@@ -10,7 +10,8 @@
 
 @interface DictionaryFactory : NSObject
 + (NSDictionary *)dictionaryFrom1DBeaconPositions:(NSUInteger)beaconResolution
-                                toScreenPositions:(NSUInteger)screenSize;
+                                toScreenPositions:(NSUInteger)screenSize
+                              offsetByPointerSize:(NSUInteger)pointerSize;
 + (NSDictionary *)dictionaryFromIdentifiersToScreenPointsX:(NSDictionary *)beaconPositionsToScreenPositionsX
                                                          Y:(NSDictionary *)beaconPositionsToScreenPositionsY;
 @end
