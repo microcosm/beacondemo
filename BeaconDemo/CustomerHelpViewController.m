@@ -266,6 +266,5 @@
         [self.peripheralManager stopAdvertising];
     }
 }
-\
 
 @end
