@@ -90,7 +90,7 @@
     return [[self.identifiersToScreenPoints allKeys] objectAtIndex: self.dictionaryIndex];
     
     //Real implementation
-    /*return [NSString stringWithFormat: @"%@%@%@",
+    /*return [NSString stringWithFormat: @"%@:%@:%@",
      self.nearestBeacon.proximityUUID.UUIDString,
      self.nearestBeacon.major,
      self.nearestBeacon.minor];*/
