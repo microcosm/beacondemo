@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CC604B4F1868A6D50011A48D"
-            BuildableName = "BeaconDemo.app"
-            BlueprintName = "BeaconDemo"
-            ReferencedContainer = "container:BeaconDemo.xcodeproj">
+            BuildableName = "nrfbeacondemo.app"
+            BlueprintName = "nrfbeacondemo"
+            ReferencedContainer = "container:nrfbeacondemo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CC604B4F1868A6D50011A48D"
-            BuildableName = "BeaconDemo.app"
-            BlueprintName = "BeaconDemo"
-            ReferencedContainer = "container:BeaconDemo.xcodeproj">
+            BuildableName = "nrfbeacondemo.app"
+            BlueprintName = "nrfbeacondemo"
+            ReferencedContainer = "container:nrfbeacondemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>

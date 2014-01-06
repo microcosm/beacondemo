@@ -28,6 +28,9 @@
 		CC604B7F1868A6D50011A48D /* BeaconDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC604B7E1868A6D50011A48D /* BeaconDemoTests.m */; };
 		CC604B891868B2490011A48D /* bell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CC604B881868B2490011A48D /* bell.mp3 */; };
 		CC604B8B1868D0C20011A48D /* Timberland-Pro-Work-Boots.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CC604B8A1868D0C20011A48D /* Timberland-Pro-Work-Boots.jpg */; };
+		CCEAC7F5187B310800FCBEFB /* black_boots.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCEAC7F3187B310800FCBEFB /* black_boots.jpg */; };
+		CCEAC7F6187B310800FCBEFB /* green_boots.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCEAC7F4187B310800FCBEFB /* green_boots.jpg */; };
+		CCEAC7FA187B334700FCBEFB /* red_boots_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCEAC7F9187B334700FCBEFB /* red_boots_2.jpg */; };
 		CCFB3BE71876387100E07824 /* CustomerHelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCFB3BE61876387100E07824 /* CustomerHelpViewController.m */; };
 		CCFB3BEB1876437200E07824 /* SalesAssociateHelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCFB3BEA1876437200E07824 /* SalesAssociateHelpViewController.m */; };
 /* End PBXBuildFile section */
@@ -72,6 +75,9 @@
 		CC604B7E1868A6D50011A48D /* BeaconDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeaconDemoTests.m; sourceTree = "<group>"; };
 		CC604B881868B2490011A48D /* bell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bell.mp3; sourceTree = "<group>"; };
 		CC604B8A1868D0C20011A48D /* Timberland-Pro-Work-Boots.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Timberland-Pro-Work-Boots.jpg"; sourceTree = "<group>"; };
+		CCEAC7F3187B310800FCBEFB /* black_boots.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = black_boots.jpg; sourceTree = "<group>"; };
+		CCEAC7F4187B310800FCBEFB /* green_boots.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = green_boots.jpg; sourceTree = "<group>"; };
+		CCEAC7F9187B334700FCBEFB /* red_boots_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = red_boots_2.jpg; sourceTree = "<group>"; };
 		CCFB3BE51876387100E07824 /* CustomerHelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerHelpViewController.h; sourceTree = "<group>"; };
 		CCFB3BE61876387100E07824 /* CustomerHelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerHelpViewController.m; sourceTree = "<group>"; };
 		CCFB3BE8187638EE00E07824 /* TransferService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransferService.h; sourceTree = "<group>"; };
@@ -169,6 +175,9 @@
 		CC604B5A1868A6D50011A48D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CCEAC7F9187B334700FCBEFB /* red_boots_2.jpg */,
+				CCEAC7F3187B310800FCBEFB /* black_boots.jpg */,
+				CCEAC7F4187B310800FCBEFB /* green_boots.jpg */,
 				CC0EC5B7186A0D5100DC77CB /* map.jpeg */,
 				CC0EC5B5186A0CE900DC77CB /* user.png */,
 				CC604B8A1868D0C20011A48D /* Timberland-Pro-Work-Boots.jpg */,
@@ -247,7 +256,7 @@
 				ORGANIZATIONNAME = dteng;
 				TargetAttributes = {
 					CC604B4F1868A6D50011A48D = {
-						DevelopmentTeam = YFWXADMX4E;
+						DevelopmentTeam = 34S9JFQCYD;
 					};
 					CC604B701868A6D50011A48D = {
 						TestTargetID = CC604B4F1868A6D50011A48D;
@@ -279,6 +288,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC604B6C1868A6D50011A48D /* Images.xcassets in Resources */,
+				CCEAC7F6187B310800FCBEFB /* green_boots.jpg in Resources */,
+				CCEAC7FA187B334700FCBEFB /* red_boots_2.jpg in Resources */,
+				CCEAC7F5187B310800FCBEFB /* black_boots.jpg in Resources */,
 				CC604B8B1868D0C20011A48D /* Timberland-Pro-Work-Boots.jpg in Resources */,
 				CC0EC5B6186A0CE900DC77CB /* user.png in Resources */,
 				CC604B5E1868A6D50011A48D /* InfoPlist.strings in Resources */,

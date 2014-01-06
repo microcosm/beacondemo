@@ -5,11 +5,17 @@
 @interface CustomerHelpViewController () <CBPeripheralManagerDelegate, UITextViewDelegate>
 
 @property (strong, nonatomic) IBOutlet UITextView       *textView;
-@property (strong, nonatomic) IBOutlet UISwitch         *advertisingSwitch;
 @property (strong, nonatomic) CBPeripheralManager       *peripheralManager;
 @property (strong, nonatomic) CBMutableCharacteristic   *transferCharacteristic;
 @property (strong, nonatomic) NSData                    *dataToSend;
 @property (nonatomic, readwrite) NSInteger              sendDataIndex;
+
+@property (nonatomic) BOOL buttonPressed;
+
+@property (strong, nonatomic) IBOutlet UIButton *redBoot;
+@property (strong, nonatomic) IBOutlet UIButton *blackBoot;
+@property (strong, nonatomic) IBOutlet UIButton *greenBoot;
+
 @end
 
 #define NOTIFY_MTU      20
@@ -18,9 +24,12 @@
 
 #pragma mark - View Lifecycle
 
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    _buttonPressed = NO;
     
     // Start up the CBPeripheralManager
     
@@ -30,7 +39,6 @@
     }
     
 }
-
 
 - (void)viewWillDisappear:(BOOL)animated
 {
@@ -83,6 +91,8 @@
 - (void)peripheralManager:(CBPeripheralManager *)peripheral central:(CBCentral *)central didSubscribeToCharacteristic:(CBCharacteristic *)characteristic
 {
     NSLog(@"Central subscribed to characteristic");
+    
+    NSLog(self.textView.text);
     
     // Get the data
     self.dataToSend = [self.textView.text dataUsingEncoding:NSUTF8StringEncoding];
@@ -203,52 +213,17 @@
 }
 
 
-
-#pragma mark - TextView Methods
-
-
-
-/** This is called when a change happens, so we know to stop advertising
- */
-- (void)textViewDidChange:(UITextView *)textView
-{
-    // If we're already advertising, stop
-    if (self.advertisingSwitch.on) {
-        [self.advertisingSwitch setOn:NO];
-        [self.peripheralManager stopAdvertising];
-    }
-}
-
-
-/** Adds the 'Done' button to the title bar
- */
-- (void)textViewDidBeginEditing:(UITextView *)textView
-{
-    // We need to add this manually so we have a way to dismiss the keyboard
-    UIBarButtonItem *rightButton = [[UIBarButtonItem alloc] initWithTitle:@"Done" style:UIBarButtonSystemItemDone target:self action:@selector(dismissKeyboard)];
-    self.navigationItem.rightBarButtonItem = rightButton;
-}
-
-
-/** Finishes the editing */
-- (void)dismissKeyboard
-{
-    [self.textView resignFirstResponder];
-    self.navigationItem.rightBarButtonItem = nil;
-}
-
-
-
 #pragma mark - Switch Methods
 
 
 
 /** Start advertising
  */
-- (IBAction)switchChanged:(id)sender
-{
-    if (self.advertisingSwitch.on) {
+- (IBAction)redButtonDidChange:(id)sender {
+    
+    if (self.buttonPressed == NO) {
         // All we advertise is our service's UUID
+        self.textView.text = @"The customer needs help or is requesting the Red Boots";
         [self.peripheralManager startAdvertising:@{ CBAdvertisementDataServiceUUIDsKey : @[[CBUUID UUIDWithString:TRANSFER_SERVICE_UUID]] }];
     }
     
@@ -257,5 +232,30 @@
     }
 }
 
+
+- (IBAction)blackButtonDidChange:(id)sender {
+    
+    if (self.buttonPressed == NO) {
+        // All we advertise is our service's UUID
+        self.textView.text = @"The customer needs help or is requesting the Black Boots";
+        [self.peripheralManager startAdvertising:@{ CBAdvertisementDataServiceUUIDsKey : @[[CBUUID UUIDWithString:TRANSFER_SERVICE_UUID]] }];
+    }
+    
+    else {
+        [self.peripheralManager stopAdvertising];
+    }
+}
+- (IBAction)greenButtonDidChange:(id)sender {
+    
+    if (self.buttonPressed == NO) {
+        // All we advertise is our service's UUID
+        self.textView.text = @"The customer needs help or is requesting the Green Boots";
+        [self.peripheralManager startAdvertising:@{ CBAdvertisementDataServiceUUIDsKey : @[[CBUUID UUIDWithString:TRANSFER_SERVICE_UUID]] }];
+    }
+    
+    else {
+        [self.peripheralManager stopAdvertising];
+    }
+}
 
 @end
