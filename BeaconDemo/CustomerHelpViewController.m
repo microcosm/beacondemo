@@ -29,15 +29,35 @@
 {
     [super viewDidLoad];
     
-    _buttonPressed = NO;
+    [self configureButtons];
     
     // Start up the CBPeripheralManager
-    
+
     UIDevice *currentDevice = [UIDevice currentDevice];
     if ([currentDevice.model rangeOfString:@"Simulator"].location == NSNotFound) {
         _peripheralManager = [[CBPeripheralManager alloc] initWithDelegate:self queue:nil];
     }
     
+}
+
+- (void) configureButtons{
+    self.redBoot.tag = 1;
+    self.blackBoot.tag = 2;
+    self.greenBoot.tag = 3;
+    
+    [self.redBoot addTarget:self
+                     action:@selector(buttonDidChange:)
+           forControlEvents:UIControlEventTouchUpInside];
+    
+    [self.blackBoot addTarget:self
+                       action:@selector(buttonDidChange:)
+             forControlEvents:UIControlEventTouchUpInside];
+    
+    [self.greenBoot addTarget:self
+                       action:@selector(buttonDidChange:)
+             forControlEvents:UIControlEventTouchUpInside];
+    
+    _buttonPressed = NO;
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -219,11 +239,26 @@
 
 /** Start advertising
  */
-- (IBAction)redButtonDidChange:(id)sender {
+- (IBAction)buttonDidChange:(id)sender {
+    
     
     if (self.buttonPressed == NO) {
-        // All we advertise is our service's UUID
-        self.textView.text = @"The customer needs help or is requesting the Red Boots";
+        NSString *color;
+        
+        if ([sender tag] == 1){
+            color = @"Red";
+        }
+        
+        if ([sender tag] == 2){
+            color = @"Black";
+        }
+        
+        if ([sender tag] == 3){
+            color = @"Green";
+        }
+        
+        self.textView.text = [NSString stringWithFormat:@"The customer needs help or is requesting the %@ Boots", color];
+        
         [self.peripheralManager startAdvertising:@{ CBAdvertisementDataServiceUUIDsKey : @[[CBUUID UUIDWithString:TRANSFER_SERVICE_UUID]] }];
     }
     
@@ -231,31 +266,6 @@
         [self.peripheralManager stopAdvertising];
     }
 }
-
-
-- (IBAction)blackButtonDidChange:(id)sender {
-    
-    if (self.buttonPressed == NO) {
-        // All we advertise is our service's UUID
-        self.textView.text = @"The customer needs help or is requesting the Black Boots";
-        [self.peripheralManager startAdvertising:@{ CBAdvertisementDataServiceUUIDsKey : @[[CBUUID UUIDWithString:TRANSFER_SERVICE_UUID]] }];
-    }
-    
-    else {
-        [self.peripheralManager stopAdvertising];
-    }
-}
-- (IBAction)greenButtonDidChange:(id)sender {
-    
-    if (self.buttonPressed == NO) {
-        // All we advertise is our service's UUID
-        self.textView.text = @"The customer needs help or is requesting the Green Boots";
-        [self.peripheralManager startAdvertising:@{ CBAdvertisementDataServiceUUIDsKey : @[[CBUUID UUIDWithString:TRANSFER_SERVICE_UUID]] }];
-    }
-    
-    else {
-        [self.peripheralManager stopAdvertising];
-    }
-}
+\
 
 @end

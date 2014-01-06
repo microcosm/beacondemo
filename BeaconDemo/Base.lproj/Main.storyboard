@@ -126,9 +126,6 @@
                                 <state key="normal" title="Button" image="red_boots_2.jpg">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="redButtonDidChange:" destination="OA0-mD-etp" eventType="touchUpInside" id="y0X-Mn-6F2"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cnl-7p-75C">
                                 <rect key="frame" x="109" y="254" width="103" height="98"/>
@@ -136,9 +133,6 @@
                                 <state key="normal" title="Button" image="black_boots.jpg">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="blackButtonDidChange:" destination="OA0-mD-etp" eventType="touchUpInside" id="6b8-LD-8lh"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x8P-P0-wkS">
                                 <rect key="frame" x="220" y="266" width="91" height="73"/>
@@ -146,9 +140,6 @@
                                 <state key="normal" title="Button" image="green_boots.jpg">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="greenButtonDidChange:" destination="OA0-mD-etp" eventType="touchUpInside" id="sMn-sM-bhB"/>
-                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="and a sales associate will be there shortly" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kyX-Ta-CjH">
                                 <rect key="frame" x="1" y="70" width="319" height="21"/>
