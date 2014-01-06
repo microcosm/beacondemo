@@ -23,18 +23,20 @@
     [super viewDidLoad];
     
     // Start up the CBPeripheralManager
-    _peripheralManager = [[CBPeripheralManager alloc] initWithDelegate:self queue:nil];
+    
+    UIDevice *currentDevice = [UIDevice currentDevice];
+    if ([currentDevice.model rangeOfString:@"Simulator"].location == NSNotFound) {
+        _peripheralManager = [[CBPeripheralManager alloc] initWithDelegate:self queue:nil];
+    }
+    
 }
 
 
 - (void)viewWillDisappear:(BOOL)animated
 {
     // Don't keep it going while we're not showing.
-    
-    if (_peripheralManager.state == CBPeripheralManagerStatePoweredOn)
-    {
-        [self.peripheralManager stopAdvertising];
-    }
+
+    [self.peripheralManager stopAdvertising];
     
     [super viewWillDisappear:animated];
 }
@@ -42,8 +44,6 @@
 
 
 #pragma mark - Peripheral Methods
-
-
 
 /** Required protocol method.  A full app should take care of all the possible states,
  *  but we're just waiting for  to know when the CBPeripheralManager is ready

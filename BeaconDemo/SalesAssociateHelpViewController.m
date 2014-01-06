@@ -12,29 +12,24 @@
 
 @end
 
-
-
 @implementation SalesAssociateHelpViewController
 
-
-
 #pragma mark - View Lifecycle
-
-
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
+    UIDevice *currentDevice = [UIDevice currentDevice];
+    if ([currentDevice.model rangeOfString:@"Simulator"].location == NSNotFound) {
+        _centralManager = [[CBCentralManager alloc] initWithDelegate:self queue:nil];
+    }
+    
     // Start up the CBCentralManager
-    _centralManager = [[CBCentralManager alloc] initWithDelegate:self queue:nil];
     
     // And somewhere to store the incoming data
     _data = [[NSMutableData alloc] init];
 }
-
-
-
 
 - (void)viewWillDisappear:(BOOL)animated
 {
@@ -45,17 +40,8 @@
     [super viewWillDisappear:animated];
 }
 
-
-
 #pragma mark - Central Methods
 
-
-
-/** centralManagerDidUpdateState is a required protocol method.
- *  Usually, you'd check for other states to make sure the current device supports LE, is powered on, etc.
- *  In this instance, we're just using it to wait for CBCentralManagerStatePoweredOn, which indicates
- *  the Central is ready to be used.
- */
 - (void)centralManagerDidUpdateState:(CBCentralManager *)central
 {
     if (central.state != CBCentralManagerStatePoweredOn) {
@@ -67,7 +53,6 @@
     
     // ... so start scanning
     [self scan];
-    
 }
 
 
@@ -267,7 +252,7 @@
 - (void)cleanup
 {
     // Don't do anything if we're not connected
-    if (!self.discoveredPeripheral.isConnected) {
+    if (self.discoveredPeripheral.state != CBPeripheralStateConnected) {
         return;
     }
     
