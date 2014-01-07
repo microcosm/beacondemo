@@ -35,10 +35,10 @@
     NSDictionary *dict = [[NSDictionary alloc] init];
     dict = @{
              //Blues
-             @"B9407F30-F5F8-466E-AFF9-25556B57FE6D:53626:34111":
+             /*@"B9407F30-F5F8-466E-AFF9-25556B57FE6D:53626:34111":
                     [ NSValue valueWithCGPoint: CGPointMake(
                     [[beaconPositionsToScreenPositionsX objectForKey:@1] intValue],
-                    [[beaconPositionsToScreenPositionsY objectForKey:@1] intValue])],
+                    [[beaconPositionsToScreenPositionsY objectForKey:@1] intValue])],*/
              
              @"B9407F30-F5F8-466E-AFF9-25556B57FE6D:36507:50355":
                     [ NSValue valueWithCGPoint: CGPointMake(
@@ -50,10 +50,10 @@
                     [[beaconPositionsToScreenPositionsX objectForKey:@1] intValue],
                     [[beaconPositionsToScreenPositionsY objectForKey:@3] intValue])],
              
-             @"B9407F30-F5F8-466E-AFF9-25556B57FE6D:59820:47378":
+             /*@"B9407F30-F5F8-466E-AFF9-25556B57FE6D:59820:47378":
                     [ NSValue valueWithCGPoint: CGPointMake(
                     [[beaconPositionsToScreenPositionsX objectForKey:@1] intValue],
-                    [[beaconPositionsToScreenPositionsY objectForKey:@4] intValue])],
+                    [[beaconPositionsToScreenPositionsY objectForKey:@4] intValue])],*/
              //Greens
              @"B9407F30-F5F8-466E-AFF9-25556B57FE6D:32002:57685":
                     [ NSValue valueWithCGPoint: CGPointMake(

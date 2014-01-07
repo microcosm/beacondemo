@@ -36,9 +36,10 @@ static const CGFloat FADE_TIME = 1.0;
 
 - (BeaconLayoutManager *)beaconManager
 {
+    CGSize mapSizeScaled = CGSizeMake(self.map.bounds.size.width - 40, self.map.bounds.size.height);
     if (!_beaconManager) {
         _beaconManager = [[BeaconLayoutManager alloc] initWithBeaconResolution: CGSizeMake(BEACON_RES_X, BEACON_RES_Y)
-                                                                    screenSize: self.map.bounds.size
+                                                                    screenSize: mapSizeScaled
                                                                    pointerSize: self.user.bounds.size];
     }
     return _beaconManager;
