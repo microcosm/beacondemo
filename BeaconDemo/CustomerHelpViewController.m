@@ -111,9 +111,7 @@
 - (void)peripheralManager:(CBPeripheralManager *)peripheral central:(CBCentral *)central didSubscribeToCharacteristic:(CBCharacteristic *)characteristic
 {
     NSLog(@"Central subscribed to characteristic");
-    
-    NSLog(self.textView.text);
-    
+        
     // Get the data
     self.dataToSend = [self.textView.text dataUsingEncoding:NSUTF8StringEncoding];
     
