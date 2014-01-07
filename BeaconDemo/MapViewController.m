@@ -60,8 +60,7 @@ static const CGFloat FADE_TIME = 1.0;
 
 - (void)setupViews
 {
-    self.user = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"user.png"]];
-    [self.user setFrame:CGRectMake(0, 0, 20, 20)];
+    self.user = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"user"]];
     [self.user setAlpha:0];
     
     [self.map addSubview:self.user];
@@ -133,8 +132,8 @@ static const CGFloat FADE_TIME = 1.0;
 
 - (CGFloat)radiansToFaceUserTowardsBoots
 {
-    CGFloat distanceX = self.boots.center.x - self.userPosition.x;
-    CGFloat distanceY = self.boots.center.y - self.userPosition.y;
+    CGFloat distanceX = self.boots.center.x - self.userPosition.x - (self.user.image.size.width * 0.5);
+    CGFloat distanceY = self.boots.center.y - self.userPosition.y - (self.user.image.size.height * 0.5);
     return atan2(distanceY, distanceX); //tan = opp / adj
 }
 
