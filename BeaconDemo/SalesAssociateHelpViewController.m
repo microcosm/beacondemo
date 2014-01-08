@@ -153,9 +153,7 @@
     
     // Loop through the newly filled peripheral.services array, just in case there's more than one.
     for (CBService *service in peripheral.services) {
-        [peripheral discoverCharacteristics:@[[CBUUID UUIDWithString:TRANSFER_CHARACTERISTIC_UUID]] forService:service];
-        [peripheral discoverCharacteristics:@[[CBUUID UUIDWithString:NOTIFY_CHARACTERISTIC_UUID]] forService:service];
-
+        [peripheral discoverCharacteristics:@[[CBUUID UUIDWithString:TRANSFER_CHARACTERISTIC_UUID], [CBUUID UUIDWithString:NOTIFY_CHARACTERISTIC_UUID]] forService:service];
     }
 }
 
