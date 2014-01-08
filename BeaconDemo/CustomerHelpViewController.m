@@ -13,6 +13,8 @@
 @property (strong, nonatomic) IBOutlet UILabel *testLabel;
 
 @property (nonatomic) BOOL buttonPressed;
+@property (strong, nonatomic) IBOutlet UIButton *purchaseButton;
+@property (strong, nonatomic) IBOutlet UILabel *helpLabel;
 
 @property (strong, nonatomic) IBOutlet UIButton *redBoot;
 @property (strong, nonatomic) IBOutlet UIButton *blackBoot;
@@ -29,6 +31,11 @@
 
 - (void)viewDidLoad
 {
+    self.purchaseButton.enabled = NO;
+    self.purchaseButton.hidden = YES;
+    
+    self.helpLabel.hidden = YES;
+    
     [super viewDidLoad];
     
     [self configureButtons];
@@ -37,8 +44,12 @@
 
     UIDevice *currentDevice = [UIDevice currentDevice];
     if ([currentDevice.model rangeOfString:@"Simulator"].location == NSNotFound) {
-        _peripheralManager = [[CBPeripheralManager alloc] initWithDelegate:self queue:nil];
+        _peripheralManager = [[CBPeripheralManager alloc] initWithDelegate:self queue:nil options:@{CBPeripheralManagerOptionRestoreIdentifierKey: @"myPeripheralManager"}];
     }
+    
+}
+
+-(void)peripheralManager:(CBPeripheralManager *)peripheral willRestoreState:(NSDictionary *)dict {
     
 }
 
@@ -128,6 +139,7 @@
     // Start sending
     [self sendData];
 }
+
 
 
 /** Recognise when the central unsubscribes
@@ -228,8 +240,10 @@
 }
 
 - (void)peripheralManager:(CBPeripheralManager *)peripheral didReceiveWriteRequests:(NSArray *)requests {
-    NSLog(@"HELLO");
-    self.testLabel.text = @"S U C C E S S";
+
+    
+    self.purchaseButton.enabled = YES;
+    self.purchaseButton.hidden = NO;
 }
 
 
@@ -251,6 +265,7 @@
  */
 - (IBAction)buttonDidChange:(id)sender {
     
+    self.helpLabel.hidden = NO;
     
     if (self.buttonPressed == NO) {
         NSString *color;
@@ -267,7 +282,7 @@
             color = @"Green";
         }
         
-        self.textView.text = [NSString stringWithFormat:@"The customer needs help or is requesting the %@ Boots", color];
+        self.textView.text = [NSString stringWithFormat:@"COLORED BOOTS: %@ ", color];
         
         [self.peripheralManager startAdvertising:@{ CBAdvertisementDataServiceUUIDsKey : @[[CBUUID UUIDWithString:TRANSFER_SERVICE_UUID]]}];
     } else {

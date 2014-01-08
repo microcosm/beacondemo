@@ -33,13 +33,13 @@
     _data = [[NSMutableData alloc] init];
 }
 
-//- (void) viewDidAppear:(BOOL)animated {
-//    [self.navigationItem setHidesBackButton:YES animated:YES];
-//}
-//
-//- (void) viewWillAppear:(BOOL)animated {
-//    [self.navigationItem setHidesBackButton:YES animated:YES];
-//}
+- (void) viewDidAppear:(BOOL)animated {
+    [self.navigationItem setHidesBackButton:YES animated:YES];
+}
+
+- (void) viewWillAppear:(BOOL)animated {
+    [self.navigationItem setHidesBackButton:YES animated:YES];
+}
 
 - (void)viewWillDisappear:(BOOL)animated
 {
@@ -104,7 +104,7 @@
         
         // And connect
         NSLog(@"Connecting to peripheral %@", peripheral);
-        [self.centralManager connectPeripheral:peripheral options:nil];
+        [self.centralManager connectPeripheral:peripheral options:@{CBConnectPeripheralOptionNotifyOnNotificationKey : @YES}];
     }
 }
 
@@ -114,6 +114,7 @@
 - (void)centralManager:(CBCentralManager *)central didFailToConnectPeripheral:(CBPeripheral *)peripheral error:(NSError *)error
 {
     NSLog(@"Failed to connect to %@. (%@)", peripheral, [error localizedDescription]);
+    self.textview.text = @"";
     [self cleanup];
 }
 
@@ -302,7 +303,7 @@
                         [self.savedPeripheral writeValue:data forCharacteristic:characteristic
                                                             type:CBCharacteristicWriteWithResponse];
                         
-                        NSLog(@"%@", [NSString stringWithUTF8String:[characteristic.value bytes]]);
+                        [self.textview setText:@"You have helped the customer"];
                     }
                 }
             }
