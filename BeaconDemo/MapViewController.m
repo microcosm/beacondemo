@@ -52,11 +52,11 @@ static const CGFloat FADE_TIME = 1.0;
     [self setupBeaconTracking];
     
     //Temporary for testing without beacons
-    self.timer = [NSTimer scheduledTimerWithTimeInterval:2.0
-                                                  target:self
-                                                selector:@selector(userDidEnterZone)
-                                                userInfo:nil
-                                                 repeats:YES];
+//    self.timer = [NSTimer scheduledTimerWithTimeInterval:2.0
+//                                                  target:self
+//                                                selector:@selector(userDidEnterZone)
+//                                                userInfo:nil
+//                                                 repeats:YES];
 }
 
 - (void)setupViews
@@ -76,7 +76,7 @@ static const CGFloat FADE_TIME = 1.0;
 	NSUUID *uuid = [[NSUUID alloc] initWithUUIDString: @"B9407F30-F5F8-466E-AFF9-25556B57FE6D"];
 	self.beaconRegion = [[CLBeaconRegion alloc] initWithProximityUUID: uuid identifier: @"thoughtWorksNRF"];
     [self.locationManager startMonitoringForRegion: self.beaconRegion];
-    /*[self.locationManager startRangingBeaconsInRegion: self.beaconRegion];*/
+    [self.locationManager startRangingBeaconsInRegion: self.beaconRegion];
 }
 
 - (void)locationManager:(CLLocationManager *)manager
@@ -84,6 +84,8 @@ static const CGFloat FADE_TIME = 1.0;
                inRegion:(CLBeaconRegion *)region
 {
     self.beaconManager.nearestBeacon = [beacons objectAtIndex:0];
+    self.beaconManager.beacons = beacons;
+    
     if(self.beaconManager.hasNearestBeaconChanged){
         [self userDidEnterZone];
     }

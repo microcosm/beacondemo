@@ -12,11 +12,14 @@
 @interface BeaconLayoutManager : NSObject
 
 @property (strong, nonatomic) CLBeacon *nearestBeacon;
+@property (strong, nonatomic) NSArray *beacons;
 @property (nonatomic) BOOL hasNearestBeaconChanged;
 
 - (instancetype)initWithBeaconResolution:(CGSize)beaconResolution
                               screenSize:(CGSize)screenSize
                              pointerSize:(CGSize)pointerSize;
 - (CGPoint)pointerPosition;
+
+- (NSString *)beaconIdentifier:(CLBeacon *)beacon;
 
 @end

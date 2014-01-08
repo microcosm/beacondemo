@@ -14,4 +14,5 @@
                               offsetByPointerSize:(NSUInteger)pointerSize;
 + (NSDictionary *)dictionaryFromIdentifiersToScreenPointsX:(NSDictionary *)beaconPositionsToScreenPositionsX
                                                          Y:(NSDictionary *)beaconPositionsToScreenPositionsY;
++ (NSDictionary *)dictionaryAdjacency;
 @end
