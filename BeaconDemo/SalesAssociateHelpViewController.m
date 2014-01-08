@@ -290,19 +290,13 @@
 
 - (IBAction)sendCustomerBLENotification:(id)sender {
     
-    for (CBService *service in self.discoveredPeripheral.services) {
-        for (CBCharacteristic *characteristic in service.characteristics) {
-        }
-    }
-
+    CBCharacteristic *characteristic = [[[self.discoveredPeripheral.services objectAtIndex:0] characteristics] objectAtIndex:0];
     
-        // And check if it's the right one
-//        if ([characteristic.UUID isEqual:[CBUUID UUIDWithString:TRANSFER_CHARACTERISTIC_UUID]]) {
-//            
-//            // If it is, subscribe to it
-//            [peripheral setNotifyValue:YES forCharacteristic:characteristic];
-
+    NSData *data = [@"notifyStartup" dataUsingEncoding:NSUTF8StringEncoding];
     
+    [self.discoveredPeripheral writeValue:data forCharacteristic:characteristic
+                      type:CBCharacteristicWriteWithResponse];
 }
+
 
 @end
