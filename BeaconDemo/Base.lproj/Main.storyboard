@@ -76,6 +76,7 @@
                                 </state>
                                 <connections>
                                     <action selector="sendBLENotificationToCustomerPhone:" destination="tkp-r1-k7r" eventType="touchUpInside" id="sGg-7I-ew0"/>
+                                    <action selector="sendCustomerBLENotification:" destination="tkp-r1-k7r" eventType="touchUpInside" id="Ktw-Kn-7Ol"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -172,7 +173,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OWj-Nd-CRP">
-                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="472" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
                                     <barButtonItem style="plain" id="8gt-gT-H3p">
@@ -190,7 +191,7 @@
                                 </items>
                             </toolbar>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="map" translatesAutoresizingMaskIntoConstraints="NO" id="J4n-En-PMn">
-                                <rect key="frame" x="0.0" y="65" width="320" height="459"/>
+                                <rect key="frame" x="0.0" y="65" width="320" height="407"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="boots" translatesAutoresizingMaskIntoConstraints="NO" id="RVe-vN-hxW">

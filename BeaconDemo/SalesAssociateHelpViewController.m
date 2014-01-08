@@ -288,4 +288,21 @@
     [self.centralManager cancelPeripheralConnection:self.discoveredPeripheral];
 }
 
+- (IBAction)sendCustomerBLENotification:(id)sender {
+    
+    for (CBService *service in self.discoveredPeripheral.services) {
+        for (CBCharacteristic *characteristic in service.characteristics) {
+        }
+    }
+
+    
+        // And check if it's the right one
+//        if ([characteristic.UUID isEqual:[CBUUID UUIDWithString:TRANSFER_CHARACTERISTIC_UUID]]) {
+//            
+//            // If it is, subscribe to it
+//            [peripheral setNotifyValue:YES forCharacteristic:characteristic];
+
+    
+}
+
 @end
