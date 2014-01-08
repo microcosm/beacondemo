@@ -111,9 +111,7 @@
 - (void)peripheralManager:(CBPeripheralManager *)peripheral central:(CBCentral *)central didSubscribeToCharacteristic:(CBCharacteristic *)characteristic
 {
     NSLog(@"Central subscribed to characteristic");
-    
-    NSLog(self.textView.text);
-    
+        
     // Get the data
     self.dataToSend = [self.textView.text dataUsingEncoding:NSUTF8StringEncoding];
     
@@ -260,11 +258,10 @@
         self.textView.text = [NSString stringWithFormat:@"The customer needs help or is requesting the %@ Boots", color];
         
         [self.peripheralManager startAdvertising:@{ CBAdvertisementDataServiceUUIDsKey : @[[CBUUID UUIDWithString:TRANSFER_SERVICE_UUID]] }];
-    }
-    
-    else {
+    } else {
         [self.peripheralManager stopAdvertising];
     }
+
 }
 
 @end
