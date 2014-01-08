@@ -269,8 +269,7 @@
         
         self.textView.text = [NSString stringWithFormat:@"The customer needs help or is requesting the %@ Boots", color];
         
-        [self.peripheralManager startAdvertising:@{ CBAdvertisementDataServiceUUIDsKey : @[[CBUUID UUIDWithString:TRANSFER_SERVICE_UUID]] }];
-        [self.peripheralManager startAdvertising:@{ CBAdvertisementDataServiceUUIDsKey : @[[CBUUID UUIDWithString:NOTIFY_CHARACTERISTIC_UUID]] }];
+        [self.peripheralManager startAdvertising:@{ CBAdvertisementDataServiceUUIDsKey : @[[CBUUID UUIDWithString:TRANSFER_SERVICE_UUID], [CBUUID UUIDWithString:NOTIFY_CHARACTERISTIC_UUID]]];
     } else {
         //[self.peripheralManager stopAdvertising];
     }
