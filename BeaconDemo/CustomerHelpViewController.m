@@ -9,6 +9,7 @@
 @property (strong, nonatomic) CBMutableCharacteristic   *transferCharacteristic;
 @property (strong, nonatomic) NSData                    *dataToSend;
 @property (nonatomic, readwrite) NSInteger              sendDataIndex;
+@property (strong, nonatomic) IBOutlet UILabel *testLabel;
 
 @property (nonatomic) BOOL buttonPressed;
 
@@ -64,7 +65,7 @@
 {
     // Don't keep it going while we're not showing.
 
-    [self.peripheralManager stopAdvertising];
+    //[self.peripheralManager stopAdvertising];
     
     [super viewWillDisappear:animated];
 }
@@ -222,6 +223,7 @@
 
 - (void)peripheralManager:(CBPeripheralManager *)peripheral didReceiveWriteRequests:(NSArray *)requests {
     NSLog(@"HELLO");
+    self.testLabel.text = @"S U C C E S S";
 }
 
 - (void)peripheral:(CBPeripheral *)peripheral didWriteValueForCharacteristic:(CBCharacteristic *)characteristic
@@ -270,7 +272,7 @@
         
         [self.peripheralManager startAdvertising:@{ CBAdvertisementDataServiceUUIDsKey : @[[CBUUID UUIDWithString:TRANSFER_SERVICE_UUID]] }];
     } else {
-        [self.peripheralManager stopAdvertising];
+        //[self.peripheralManager stopAdvertising];
     }
 
 }

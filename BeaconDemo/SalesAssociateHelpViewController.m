@@ -32,13 +32,13 @@
     _data = [[NSMutableData alloc] init];
 }
 
-- (void) viewDidAppear:(BOOL)animated {
-    [self.navigationItem setHidesBackButton:YES animated:YES];
-}
-
-- (void) viewWillAppear:(BOOL)animated {
-    [self.navigationItem setHidesBackButton:YES animated:YES];
-}
+//- (void) viewDidAppear:(BOOL)animated {
+//    [self.navigationItem setHidesBackButton:YES animated:YES];
+//}
+//
+//- (void) viewWillAppear:(BOOL)animated {
+//    [self.navigationItem setHidesBackButton:YES animated:YES];
+//}
 
 - (void)viewWillDisappear:(BOOL)animated
 {
@@ -295,6 +295,10 @@
     
     [self.discoveredPeripheral writeValue:data forCharacteristic:characteristic
                                      type:CBCharacteristicWriteWithResponse];
+}
+
+- (void)peripheral:(CBPeripheral *)peripheral didWriteValueForCharacteristic:(CBCharacteristic *)characteristic error:(NSError *)error {
+    
 }
 
 @end

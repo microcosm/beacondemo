@@ -144,6 +144,16 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="TEST" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kqJ-32-ndr">
+                                <rect key="frame" x="20" y="364" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="shU-OU-FBL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -152,6 +162,7 @@
                         <outlet property="blackBoot" destination="Cnl-7p-75C" id="ctv-ra-rYN"/>
                         <outlet property="greenBoot" destination="x8P-P0-wkS" id="Me3-sY-aDg"/>
                         <outlet property="redBoot" destination="7G4-QP-gp1" id="eyJ-jD-cBq"/>
+                        <outlet property="testLabel" destination="kqJ-32-ndr" id="qE4-uj-CBP"/>
                         <outlet property="textView" destination="5dR-rU-Wgs" id="wcT-ry-eXk"/>
                     </connections>
                 </viewController>

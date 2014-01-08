@@ -28,9 +28,9 @@
         int isAdmin = [defaults integerForKey:@"isAdmin"];
         
         if (isAdmin == 1){
-            [self performSegueWithIdentifier:@"isSalesAssociateSegue" sender:self];
+        //    [self performSegueWithIdentifier:@"isSalesAssociateSegue" sender:self];
         } else if (isAdmin == 2) {
-            [self performSegueWithIdentifier:@"isCustomerSegue" sender:self];
+        //    [self performSegueWithIdentifier:@"isCustomerSegue" sender:self];
         }
     }
 }
