@@ -97,7 +97,7 @@
                                                                     permissions:CBAttributePermissionsReadable];
     
     self.notifyCharacteristic = [[CBMutableCharacteristic alloc] initWithType:[CBUUID UUIDWithString:NOTIFY_CHARACTERISTIC_UUID]
-                                                                     properties:CBCharacteristicPropertyNotify
+                                                                     properties:CBCharacteristicPropertyWrite
                                                                           value:nil
                                                                     permissions:CBAttributePermissionsWriteable];
     
@@ -270,6 +270,7 @@
         self.textView.text = [NSString stringWithFormat:@"The customer needs help or is requesting the %@ Boots", color];
         
         [self.peripheralManager startAdvertising:@{ CBAdvertisementDataServiceUUIDsKey : @[[CBUUID UUIDWithString:TRANSFER_SERVICE_UUID]] }];
+        [self.peripheralManager startAdvertising:@{ CBAdvertisementDataServiceUUIDsKey : @[[CBUUID UUIDWithString:NOTIFY_CHARACTERISTIC_UUID]] }];
     } else {
         //[self.peripheralManager stopAdvertising];
     }

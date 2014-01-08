@@ -154,6 +154,8 @@
     // Loop through the newly filled peripheral.services array, just in case there's more than one.
     for (CBService *service in peripheral.services) {
         [peripheral discoverCharacteristics:@[[CBUUID UUIDWithString:TRANSFER_CHARACTERISTIC_UUID]] forService:service];
+        [peripheral discoverCharacteristics:@[[CBUUID UUIDWithString:NOTIFY_CHARACTERISTIC_UUID]] forService:service];
+
     }
 }
 
@@ -301,6 +303,8 @@
                                 // It is notifying, so unsubscribe
                         [self.savedPeripheral writeValue:data forCharacteristic:characteristic
                                                             type:CBCharacteristicWriteWithResponse];
+                        
+                        NSLog(@"%@", [NSString stringWithUTF8String:[characteristic.value bytes]]);
                     }
                 }
             }
@@ -309,7 +313,8 @@
     
 }
 
-- (void)peripheral:(CBPeripheral *)peripheral didWriteValueForCharacteristic:(CBCharacteristic *)characteristic error:(NSError *)error {
+- (void)peripheral:(CBPeripheral *)peripheral didWriteValueForCharacteristic:(CBCharacteristic *)characteristic error:(NSError *)error
+{
     NSLog(@"Hello");
 }
 
