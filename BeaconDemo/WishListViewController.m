@@ -14,18 +14,10 @@
 
 @implementation WishListViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
     
     NSDate *futureDate = [NSDate dateWithTimeIntervalSinceNow:10];
     
@@ -38,6 +30,16 @@
     [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
     
     [[NSNotificationCenter defaultCenter] postNotificationName:@"reloadData" object:self];
+    
+
+}
+
+- (void) viewDidAppear:(BOOL)animated {
+    [self.navigationItem setHidesBackButton:YES animated:NO];
+}
+
+- (void) viewWillAppear:(BOOL)animated {
+    [self.navigationItem setHidesBackButton:YES animated:NO];
 }
 
 - (void)didReceiveMemoryWarning

@@ -20,6 +20,7 @@
 {
     [super viewDidLoad];
     
+    
     UIDevice *currentDevice = [UIDevice currentDevice];
     if ([currentDevice.model rangeOfString:@"Simulator"].location == NSNotFound) {
         _centralManager = [[CBCentralManager alloc] initWithDelegate:self queue:nil];
@@ -29,6 +30,14 @@
     
     // And somewhere to store the incoming data
     _data = [[NSMutableData alloc] init];
+}
+
+- (void) viewDidAppear:(BOOL)animated {
+    [self.navigationItem setHidesBackButton:YES animated:YES];
+}
+
+- (void) viewWillAppear:(BOOL)animated {
+    [self.navigationItem setHidesBackButton:YES animated:YES];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -278,6 +287,5 @@
     // If we've got this far, we're connected, but we're not subscribed, so we just disconnect
     [self.centralManager cancelPeripheralConnection:self.discoveredPeripheral];
 }
-
 
 @end

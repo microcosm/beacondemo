@@ -12,6 +12,7 @@
 		84E47DF7187B917B0043042F /* user-retina.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E47DF5187B917B0043042F /* user-retina.png */; };
 		84E47DF8187B917B0043042F /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E47DF6187B917B0043042F /* user.png */; };
 		CC0EC5B4186A049900DC77CB /* WishListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0EC5B3186A049900DC77CB /* WishListViewController.m */; };
+		CC489558187C8FD2005E2B72 /* FirstTimeRunViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC489557187C8FD2005E2B72 /* FirstTimeRunViewController.m */; };
 		CC604B541868A6D50011A48D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC604B531868A6D50011A48D /* Foundation.framework */; };
 		CC604B561868A6D50011A48D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC604B551868A6D50011A48D /* CoreGraphics.framework */; };
 		CC604B581868A6D50011A48D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC604B571868A6D50011A48D /* UIKit.framework */; };
@@ -53,6 +54,8 @@
 		84E47DF6187B917B0043042F /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = user.png; path = Images.xcassets/user.imageset/user.png; sourceTree = "<group>"; };
 		CC0EC5B2186A049900DC77CB /* WishListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WishListViewController.h; sourceTree = "<group>"; };
 		CC0EC5B3186A049900DC77CB /* WishListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WishListViewController.m; sourceTree = "<group>"; };
+		CC489556187C8FD2005E2B72 /* FirstTimeRunViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstTimeRunViewController.h; sourceTree = "<group>"; };
+		CC489557187C8FD2005E2B72 /* FirstTimeRunViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstTimeRunViewController.m; sourceTree = "<group>"; };
 		CC604B501868A6D50011A48D /* nrfbeacondemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nrfbeacondemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC604B531868A6D50011A48D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CC604B551868A6D50011A48D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -155,6 +158,8 @@
 				CC604B621868A6D50011A48D /* AppDelegate.h */,
 				CC604B631868A6D50011A48D /* AppDelegate.m */,
 				CC604B651868A6D50011A48D /* Main.storyboard */,
+				CC489556187C8FD2005E2B72 /* FirstTimeRunViewController.h */,
+				CC489557187C8FD2005E2B72 /* FirstTimeRunViewController.m */,
 				CCFB3BE91876437200E07824 /* SalesAssociateHelpViewController.h */,
 				CCFB3BEA1876437200E07824 /* SalesAssociateHelpViewController.m */,
 				CCFB3BE51876387100E07824 /* CustomerHelpViewController.h */,
@@ -316,6 +321,7 @@
 				CC604B6A1868A6D50011A48D /* MapViewController.m in Sources */,
 				CC0EC5B4186A049900DC77CB /* WishListViewController.m in Sources */,
 				CC604B641868A6D50011A48D /* AppDelegate.m in Sources */,
+				CC489558187C8FD2005E2B72 /* FirstTimeRunViewController.m in Sources */,
 				CCFB3BEB1876437200E07824 /* SalesAssociateHelpViewController.m in Sources */,
 				8446F72A18721CBB0058BB85 /* DictionaryFactory.m in Sources */,
 				CC604B601868A6D50011A48D /* main.m in Sources */,
