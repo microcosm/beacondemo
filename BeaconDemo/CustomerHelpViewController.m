@@ -7,6 +7,7 @@
 @property (strong, nonatomic) IBOutlet UITextView       *textView;
 @property (strong, nonatomic) CBPeripheralManager       *peripheralManager;
 @property (strong, nonatomic) CBMutableCharacteristic   *transferCharacteristic;
+@property (strong, nonatomic) CBMutableCharacteristic   *notifyCharacteristic;
 @property (strong, nonatomic) NSData                    *dataToSend;
 @property (nonatomic, readwrite) NSInteger              sendDataIndex;
 @property (strong, nonatomic) IBOutlet UILabel *testLabel;
@@ -95,12 +96,17 @@
                                                                           value:nil
                                                                     permissions:CBAttributePermissionsReadable];
     
+    self.notifyCharacteristic = [[CBMutableCharacteristic alloc] initWithType:[CBUUID UUIDWithString:NOTIFY_CHARACTERISTIC_UUID]
+                                                                     properties:CBCharacteristicPropertyNotify
+                                                                          value:nil
+                                                                    permissions:CBAttributePermissionsWriteable];
+    
     // Then the service
     CBMutableService *transferService = [[CBMutableService alloc] initWithType:[CBUUID UUIDWithString:TRANSFER_SERVICE_UUID]
                                                                        primary:YES];
     
     // Add the characteristic to the service
-    transferService.characteristics = @[self.transferCharacteristic];
+    transferService.characteristics = @[self.transferCharacteristic, self.notifyCharacteristic];
     
     // And add it to the peripheral manager
     [self.peripheralManager addService:transferService];
@@ -224,13 +230,6 @@
 - (void)peripheralManager:(CBPeripheralManager *)peripheral didReceiveWriteRequests:(NSArray *)requests {
     NSLog(@"HELLO");
     self.testLabel.text = @"S U C C E S S";
-}
-
-- (void)peripheral:(CBPeripheral *)peripheral didWriteValueForCharacteristic:(CBCharacteristic *)characteristic
-             error:(NSError*) error
-{
-
-
 }
 
 

@@ -8,6 +8,7 @@
 @property (strong, nonatomic) IBOutlet UITextView   *textview;
 @property (strong, nonatomic) CBCentralManager      *centralManager;
 @property (strong, nonatomic) CBPeripheral          *discoveredPeripheral;
+@property (strong, nonatomic) CBPeripheral          *savedPeripheral;
 @property (strong, nonatomic) NSMutableData         *data;
 
 @end
@@ -99,6 +100,7 @@
         
         // Save a local copy of the peripheral, so CoreBluetooth doesn't get rid of it
         self.discoveredPeripheral = peripheral;
+        self.savedPeripheral = peripheral;
         
         // And connect
         NSLog(@"Connecting to peripheral %@", peripheral);
@@ -289,16 +291,26 @@
 }
 
 - (IBAction)sendCustomerNotificationToStartApp:(id)sender {
-    CBCharacteristic *characteristic = [[[self.discoveredPeripheral.services objectAtIndex:0] characteristics] objectAtIndex:0];
+    if (self.savedPeripheral != nil) {
+        for (CBService *service in self.savedPeripheral.services) {
+            if (service.characteristics != nil) {
+                for (CBCharacteristic *characteristic in service.characteristics) {
+                    if ([characteristic.UUID isEqual:[CBUUID UUIDWithString:NOTIFY_CHARACTERISTIC_UUID]]) {
+                        NSData *data = [@"notifyStartup" dataUsingEncoding:NSUTF8StringEncoding];
+
+                                // It is notifying, so unsubscribe
+                        [self.savedPeripheral writeValue:data forCharacteristic:characteristic
+                                                            type:CBCharacteristicWriteWithResponse];
+                    }
+                }
+            }
+        }
+    }
     
-    NSData *data = [@"notifyStartup" dataUsingEncoding:NSUTF8StringEncoding];
-    
-    [self.discoveredPeripheral writeValue:data forCharacteristic:characteristic
-                                     type:CBCharacteristicWriteWithResponse];
 }
 
 - (void)peripheral:(CBPeripheral *)peripheral didWriteValueForCharacteristic:(CBCharacteristic *)characteristic error:(NSError *)error {
-    
+    NSLog(@"Hello");
 }
 
 @end
