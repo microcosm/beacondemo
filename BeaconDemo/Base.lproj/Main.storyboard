@@ -68,15 +68,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pky-ue-bhc">
-                                <rect key="frame" x="112" y="429" width="118" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2rC-Mm-ApA">
+                                <rect key="frame" x="101" y="417" width="118" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Send Notification">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="sendBLENotificationToCustomerPhone:" destination="tkp-r1-k7r" eventType="touchUpInside" id="sGg-7I-ew0"/>
-                                    <action selector="sendCustomerBLENotification:" destination="tkp-r1-k7r" eventType="touchUpInside" id="Ktw-Kn-7Ol"/>
+                                    <action selector="sendCustomerNotificationToStartApp:" destination="tkp-r1-k7r" eventType="touchUpInside" id="4ao-cy-ogi"/>
                                 </connections>
                             </button>
                         </subviews>

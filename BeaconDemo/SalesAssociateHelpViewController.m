@@ -288,15 +288,13 @@
     [self.centralManager cancelPeripheralConnection:self.discoveredPeripheral];
 }
 
-- (IBAction)sendCustomerBLENotification:(id)sender {
-    
+- (IBAction)sendCustomerNotificationToStartApp:(id)sender {
     CBCharacteristic *characteristic = [[[self.discoveredPeripheral.services objectAtIndex:0] characteristics] objectAtIndex:0];
     
     NSData *data = [@"notifyStartup" dataUsingEncoding:NSUTF8StringEncoding];
     
     [self.discoveredPeripheral writeValue:data forCharacteristic:characteristic
-                      type:CBCharacteristicWriteWithResponse];
+                                     type:CBCharacteristicWriteWithResponse];
 }
-
 
 @end
