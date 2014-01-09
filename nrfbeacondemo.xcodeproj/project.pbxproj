@@ -28,6 +28,7 @@
 		CC604B7D1868A6D50011A48D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CC604B7B1868A6D50011A48D /* InfoPlist.strings */; };
 		CC604B7F1868A6D50011A48D /* BeaconDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC604B7E1868A6D50011A48D /* BeaconDemoTests.m */; };
 		CC604B891868B2490011A48D /* bell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CC604B881868B2490011A48D /* bell.mp3 */; };
+		CCA0BCAB187EF6BE0030A9F4 /* dimmed_view.png in Resources */ = {isa = PBXBuildFile; fileRef = CCA0BCAA187EF6BE0030A9F4 /* dimmed_view.png */; };
 		CCEAC7F5187B310800FCBEFB /* black_boots.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCEAC7F3187B310800FCBEFB /* black_boots.jpg */; };
 		CCEAC7F6187B310800FCBEFB /* green_boots.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCEAC7F4187B310800FCBEFB /* green_boots.jpg */; };
 		CCEAC7FA187B334700FCBEFB /* red_boots_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCEAC7F9187B334700FCBEFB /* red_boots_2.jpg */; };
@@ -76,6 +77,7 @@
 		CC604B7C1868A6D50011A48D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CC604B7E1868A6D50011A48D /* BeaconDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeaconDemoTests.m; sourceTree = "<group>"; };
 		CC604B881868B2490011A48D /* bell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bell.mp3; sourceTree = "<group>"; };
+		CCA0BCAA187EF6BE0030A9F4 /* dimmed_view.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dimmed_view.png; sourceTree = "<group>"; };
 		CCEAC7F3187B310800FCBEFB /* black_boots.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = black_boots.jpg; sourceTree = "<group>"; };
 		CCEAC7F4187B310800FCBEFB /* green_boots.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = green_boots.jpg; sourceTree = "<group>"; };
 		CCEAC7F9187B334700FCBEFB /* red_boots_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = red_boots_2.jpg; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 		CC604B5A1868A6D50011A48D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CCA0BCAA187EF6BE0030A9F4 /* dimmed_view.png */,
 				84E47DF5187B917B0043042F /* user-retina.png */,
 				84E47DF6187B917B0043042F /* user.png */,
 				CCEAC7F9187B334700FCBEFB /* red_boots_2.jpg */,
@@ -289,6 +292,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCA0BCAB187EF6BE0030A9F4 /* dimmed_view.png in Resources */,
 				CC604B6C1868A6D50011A48D /* Images.xcassets in Resources */,
 				84E47DF7187B917B0043042F /* user-retina.png in Resources */,
 				84E47DF8187B917B0043042F /* user.png in Resources */,

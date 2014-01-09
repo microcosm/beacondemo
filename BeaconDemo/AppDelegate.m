@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import <CoreBluetooth/CoreBluetooth.h>
+
 
 @implementation AppDelegate
 
@@ -17,6 +19,8 @@
 //        
 //    }
     
+    NSArray *centralManagerIdentifiers = launchOptions[UIApplicationLaunchOptionsBluetoothPeripheralsKey];
+
     return YES;
 }
 							
@@ -30,6 +34,18 @@
 {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    NSDate *futureDate = [NSDate dateWithTimeIntervalSinceNow:10];
+    
+    UILocalNotification* localNotification = [[UILocalNotification alloc] init];
+    localNotification.fireDate = futureDate;
+    localNotification.alertBody = @"Welcome to the BRAND Boots Store!";
+    localNotification.alertAction = @"enter the experience!";
+    localNotification.timeZone = [NSTimeZone defaultTimeZone];
+    
+    [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"reloadData" object:self];
+    
     UINavigationController *rootView = ((UINavigationController*)self.window.rootViewController);
     
     [rootView.visibleViewController.navigationController popToRootViewControllerAnimated:NO];

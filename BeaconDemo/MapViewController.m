@@ -27,6 +27,7 @@ static const CGFloat FADE_TIME = 1.0;
     @property (nonatomic) CGPoint userPosition;
     @property (nonatomic) BOOL userIsDetected;
 
+
     //Temporary for testing without beacons
     @property (strong, nonatomic) NSTimer *timer;
 
@@ -50,6 +51,8 @@ static const CGFloat FADE_TIME = 1.0;
     [super viewDidLoad];
     [self setupViews];
     [self setupBeaconTracking];
+    
+    //\[self setModalPresentationStyle:UIModalPresentationCurrentContext];
     
     //Temporary for testing without beacons
 //    self.timer = [NSTimer scheduledTimerWithTimeInterval:2.0
@@ -84,10 +87,21 @@ static const CGFloat FADE_TIME = 1.0;
                inRegion:(CLBeaconRegion *)region
 {
     self.beaconManager.nearestBeacon = [beacons objectAtIndex:0];
+    
+    [self checkIfNearestBeaconIsAlert:self.beaconManager.nearestBeacon];
+    
     self.beaconManager.beacons = beacons;
     
     if(self.beaconManager.hasNearestBeaconChanged){
         [self userDidEnterZone];
+    }
+}
+
+- (void)checkIfNearestBeaconIsAlert:(CLBeacon *)beacon {
+    if ([[self.beaconManager beaconIdentifier:beacon] isEqualToString:@"B9407F30-F5F8-466E-AFF9-25556B57FE6D:61612:59156"]) {
+
+           // [self performSegueWithIdentifier:@"toProductDetails" sender:self];
+ 
     }
 }
 

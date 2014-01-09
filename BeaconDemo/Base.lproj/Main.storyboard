@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
-        <!--Wish List View Controller - iBeacon demo-->
+        <!--Wish List View Controller - Welcome-->
         <scene sceneID="vFz-dJ-3sG">
             <objects>
                 <viewController id="LHE-o6-RDq" customClass="WishListViewController" sceneMemberID="viewController">
@@ -16,38 +16,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to the ThoughtWorks Boot Store!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L36-y8-Zh0">
-                                <rect key="frame" x="12" y="78" width="328" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Martin's Boots" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L36-y8-Zh0">
+                                <rect key="frame" x="109" y="273" width="103" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uN9-Sh-v3I">
-                                <rect key="frame" x="0.0" y="351" width="320" height="44"/>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="bottom" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uN9-Sh-v3I">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
-                                    <barButtonItem title="Yes, please!" width="298" id="bFA-0x-yoH">
+                                    <barButtonItem title="Take me to it" width="298" id="bFA-0x-yoH">
                                         <connections>
                                             <segue destination="VoP-1P-ZCn" kind="push" id="f8S-h4-rfX"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="We notice you have XYZ boots in your wish list. We have them in-store now. Would you like to try them on?" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="009-ey-nRI">
-                                <rect key="frame" x="35" y="120" width="247" height="123"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="009-ey-nRI">
+                                <rect key="frame" x="37" y="311" width="247" height="163"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">You have entered the Brand Store! We would like to use your precise location to offer a richer shopping experience! Do you agree?</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="boots" translatesAutoresizingMaskIntoConstraints="NO" id="3v4-7p-BRl">
+                                <rect key="frame" x="61" y="119" width="199" height="146"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="iBeacon demo" id="6qu-Qi-JlU"/>
+                    <navigationItem key="navigationItem" title="Welcome" id="6qu-Qi-JlU"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y0c-Ai-vbP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-282" y="-475"/>
+            <point key="canvasLocation" x="-370" y="-475"/>
         </scene>
         <!--Sales Associate Help View Controller - Sales Associate Help View-->
         <scene sceneID="K4P-ep-D7l">
@@ -61,49 +66,79 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oVY-fd-fnO">
-                                <rect key="frame" x="20" y="75" width="280" height="186"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oVY-fd-fnO">
+                                <rect key="frame" x="20" y="31" width="280" height="131"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2rC-Mm-ApA">
-                                <rect key="frame" x="101" y="417" width="118" height="30"/>
+                                <rect key="frame" x="46" y="156" width="229" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Send Notification">
+                                <state key="normal" title="Allow the User to purchase boots">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="sendCustomerNotificationToStartApp:" destination="tkp-r1-k7r" eventType="touchUpInside" id="4ao-cy-ogi"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2.)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fCw-wd-gka">
+                                <rect key="frame" x="20" y="160" width="19" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1.) First wait for user to pick color" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ohS-B7-gw4">
+                                <rect key="frame" x="20" y="81" width="257" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3.)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8DQ-XD-E1L">
+                                <rect key="frame" x="20" y="238" width="19" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a0Y-ti-t40">
+                                <rect key="frame" x="46" y="234" width="145" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Reset the application">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetApplication:" destination="tkp-r1-k7r" eventType="touchUpInside" id="p6a-h2-mGH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <toolbarItems/>
                     <navigationItem key="navigationItem" title="Sales Associate Help View" id="Ijs-uN-cVZ"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="textview" destination="oVY-fd-fnO" id="Obp-xf-6Fu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bRN-KQ-GJJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-275" y="-1166"/>
+            <point key="canvasLocation" x="-370" y="-1258"/>
         </scene>
-        <!--Customer Help View Controller - Please select a color-->
+        <!--Customer Help View Controller - Marten's Boots-->
         <scene sceneID="DEs-E7-laZ">
             <objects>
                 <viewController id="OA0-mD-etp" customClass="CustomerHelpViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Rua-QW-ofw"/>
-                        <viewControllerLayoutGuide type="bottom" id="WBF-Me-DwJ"/>
+                        <viewControllerLayoutGuide type="top" id="E7T-jJ-DDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="q1q-cD-G6G"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Hf7-fN-lD3">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5dR-rU-Wgs">
-                                <rect key="frame" x="5" y="70" width="25" height="31"/>
+                                <rect key="frame" x="-25" y="-77" width="75" height="294"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -113,64 +148,250 @@
                                 </connections>
                             </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="boots" translatesAutoresizingMaskIntoConstraints="NO" id="Fwh-js-qHF">
-                                <rect key="frame" x="61" y="112" width="199" height="146"/>
+                                <rect key="frame" x="94" y="166" width="133" height="112"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="1" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7G4-QP-gp1">
-                                <rect key="frame" x="5" y="271" width="99" height="64"/>
+                                <rect key="frame" x="47" y="308" width="43" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="red_boots_2.jpg">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cnl-7p-75C">
-                                <rect key="frame" x="109" y="254" width="103" height="98"/>
+                                <rect key="frame" x="106" y="299" width="42" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="black_boots.jpg">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x8P-P0-wkS">
-                                <rect key="frame" x="220" y="266" width="91" height="73"/>
+                                <rect key="frame" x="167" y="300" width="46" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="green_boots.jpg">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="and a sales associate will be there shortly" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kyX-Ta-CjH">
-                                <rect key="frame" x="1" y="70" width="319" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose color of boots" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kyX-Ta-CjH">
+                                <rect key="frame" x="75" y="111" width="171" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="TEST" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kqJ-32-ndr">
-                                <rect key="frame" x="20" y="364" width="42" height="21"/>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jVf-Eu-15y">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem width="14" id="dCT-5m-55E"/>
+                                    <barButtonItem style="plain" id="UNG-aY-FYI">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="x8k-HQ-ZWO">
+                                            <rect key="frame" x="40" y="7" width="252" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="Purchase!">
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <segue destination="wrc-Zg-uHz" kind="push" id="8OU-dt-F0N"/>
+                                            </connections>
+                                        </button>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="A sales associate is on the way!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jq2-Va-IEp">
+                                <rect key="frame" x="33" y="437" width="244" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="42" id="shU-OU-FBL"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Please select a color" id="6mf-xg-Q5v"/>
+                    <navigationItem key="navigationItem" title="Marten's Boots" id="6mf-xg-Q5v"/>
                     <connections>
                         <outlet property="blackBoot" destination="Cnl-7p-75C" id="ctv-ra-rYN"/>
                         <outlet property="greenBoot" destination="x8P-P0-wkS" id="Me3-sY-aDg"/>
+                        <outlet property="helpLabel" destination="jq2-Va-IEp" id="tFu-ZA-e53"/>
+                        <outlet property="purchaseButton" destination="x8k-HQ-ZWO" id="wMO-0q-9dk"/>
                         <outlet property="redBoot" destination="7G4-QP-gp1" id="eyJ-jD-cBq"/>
-                        <outlet property="testLabel" destination="kqJ-32-ndr" id="qE4-uj-CBP"/>
                         <outlet property="textView" destination="5dR-rU-Wgs" id="wcT-ry-eXk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="viv-Df-VVN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="903" y="-553"/>
+            <point key="canvasLocation" x="369" y="-475"/>
         </scene>
-        <!--Map View Controller - Find your Boots-->
+        <!--View Controller - Confirm your purchase-->
+        <scene sceneID="eoW-fy-xWJ">
+            <objects>
+                <viewController id="wrc-Zg-uHz" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wEh-Hf-clC"/>
+                        <viewControllerLayoutGuide type="bottom" id="SjT-QE-OHc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vgv-6h-Gqd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Purchase page image" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jnP-cB-uFl">
+                                <rect key="frame" x="89" y="139" width="167" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="28t-Qy-RGS">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Purchase Online" width="301" id="04j-f4-Oh4">
+                                        <connections>
+                                            <segue destination="nH5-cd-5ww" kind="push" id="cNQ-cv-Smr"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Confirm your purchase" id="SI0-yJ-Xcp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Aiw-b4-Tek" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="740" y="-475"/>
+        </scene>
+        <!--View Controller - Award-->
+        <scene sceneID="czG-5h-cbH">
+            <objects>
+                <viewController id="7hD-YK-Js4" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OmN-OO-7Rt"/>
+                        <viewControllerLayoutGuide type="bottom" id="dwc-q5-uWW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WUX-B5-7Oa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Have a nice warm" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dcn-zM-lK4">
+                                <rect key="frame" x="91" y="259" width="138" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Starbucks Coffee" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vqU-Zv-Enc">
+                                <rect key="frame" x="94" y="288" width="133" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pif-C7-td0">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem style="plain" id="Tls-bJ-5aV">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gkf-Fk-0nv">
+                                            <rect key="frame" x="16" y="6" width="302" height="33"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="Claim it">
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <segue destination="YF4-up-UyW" kind="push" id="FSL-Wv-o9g"/>
+                                            </connections>
+                                        </button>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Award" id="wwI-mN-0XJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3wd-NA-Emj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1492" y="-475"/>
+        </scene>
+        <!--Wish List View Controller - NRF Demo Complete-->
+        <scene sceneID="v1w-9o-xGF">
+            <objects>
+                <viewController id="YF4-up-UyW" customClass="WishListViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WVA-ro-zR4"/>
+                        <viewControllerLayoutGuide type="bottom" id="djB-w9-Dau"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="l6k-UY-WNL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="You have experienced &quot;Brand&quot; as a consumer! TW rep will now show you the retail experience!" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QZ0-ef-sPY">
+                                <rect key="frame" x="15" y="175" width="290" height="285"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="NRF Demo Complete" id="WID-5s-egh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VRm-Mb-yyW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1867" y="-475"/>
+        </scene>
+        <!--View Controller - Congratulations-->
+        <scene sceneID="LPy-4W-jb7">
+            <objects>
+                <viewController id="nH5-cd-5ww" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fCl-NZ-5Yw"/>
+                        <viewControllerLayoutGuide type="bottom" id="m4I-01-lbY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="t6g-7f-ygn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Surprise!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OFD-rY-Yom">
+                                <rect key="frame" x="126" y="155" width="69" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="We appreciate your pruchase via mobile cell. Check out your award!" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aHF-LJ-PB6">
+                                <rect key="frame" x="40" y="254" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F9d-dP-4TH">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem style="plain" id="3X6-LA-CIA">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="y04-zd-HlI">
+                                            <rect key="frame" x="16" y="6" width="295" height="33"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="Check out your award!">
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <segue destination="7hD-YK-Js4" kind="push" id="IAd-wM-wOR"/>
+                                            </connections>
+                                        </button>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Congratulations" id="FXg-GJ-sZn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cMN-k5-QOa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1110" y="-475"/>
+        </scene>
+        <!--Map View Controller - Map-->
         <scene sceneID="7jx-FU-Fjc">
             <objects>
                 <viewController id="VoP-1P-ZCn" customClass="MapViewController" sceneMemberID="viewController">
@@ -183,35 +404,35 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OWj-Nd-CRP">
-                                <rect key="frame" x="0.0" y="436" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
-                                    <barButtonItem style="plain" id="8gt-gT-H3p">
-                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="JoD-lm-ELG">
-                                            <rect key="frame" x="16" y="6" width="301" height="33"/>
+                                    <barButtonItem style="plain" id="ocE-PY-zC0">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="wZY-eN-JeH">
+                                            <rect key="frame" x="16" y="6" width="289" height="33"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <state key="normal" title="Found it!">
+                                            <state key="normal" title="Just show me the item">
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
                                             <connections>
-                                                <segue destination="OA0-mD-etp" kind="push" id="yqm-Y8-LEU"/>
+                                                <segue destination="OA0-mD-etp" kind="push" identifier="toProductDetails" id="pa8-fE-d9N"/>
                                             </connections>
                                         </button>
                                     </barButtonItem>
                                 </items>
                             </toolbar>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="map" translatesAutoresizingMaskIntoConstraints="NO" id="J4n-En-PMn">
-                                <rect key="frame" x="0.0" y="64" width="320" height="372"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="460"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="boots" translatesAutoresizingMaskIntoConstraints="NO" id="RVe-vN-hxW">
-                                <rect key="frame" x="212" y="140" width="77" height="75"/>
+                                <rect key="frame" x="213" y="89" width="77" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Find your Boots" id="iFu-MK-DaH"/>
+                    <navigationItem key="navigationItem" title="Map" id="iFu-MK-DaH"/>
                     <connections>
                         <outlet property="boots" destination="RVe-vN-hxW" id="2B7-73-Rg3"/>
                         <outlet property="map" destination="J4n-En-PMn" id="2xV-Qx-Bka"/>
@@ -219,7 +440,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BDL-aN-JkC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="481" y="-559"/>
+            <point key="canvasLocation" x="5" y="-475"/>
         </scene>
         <!--First Time Run View Controller-->
         <scene sceneID="Tb7-v5-eLG">
@@ -234,7 +455,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZOL-zx-ps3">
-                                <rect key="frame" x="137" y="393" width="68" height="30"/>
+                                <rect key="frame" x="119" y="393" width="68" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Customer">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -245,7 +466,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ibq-5l-ez9">
-                                <rect key="frame" x="106" y="141" width="109" height="30"/>
+                                <rect key="frame" x="99" y="142" width="109" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Sales Associate">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -262,7 +483,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iWP-Bm-Jmb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-845" y="-877"/>
+            <point key="canvasLocation" x="-945" y="-877"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kmE-3Z-I0y">
