@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
-        <!--Wish List View Controller - Welcome-->
+        <!--Opt In View Controller - Notification-->
         <scene sceneID="vFz-dJ-3sG">
             <objects>
-                <viewController id="LHE-o6-RDq" customClass="WishListViewController" sceneMemberID="viewController">
+                <viewController id="LHE-o6-RDq" customClass="OptInViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="pxf-fu-eic"/>
                         <viewControllerLayoutGuide type="bottom" id="r69-8I-vzI"/>
@@ -24,39 +24,29 @@
                                         <rect key="frame" x="0.0" y="373" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                         <items>
-                                            <barButtonItem title="Take me to it" width="298" id="bFA-0x-yoH">
+                                            <barButtonItem title="I Agree" width="298" id="bFA-0x-yoH">
                                                 <connections>
-                                                    <segue destination="VoP-1P-ZCn" kind="push" id="f8S-h4-rfX"/>
+                                                    <segue destination="omz-hH-ymF" kind="push" id="e6S-qD-fud"/>
                                                 </connections>
                                             </barButtonItem>
                                         </items>
                                     </toolbar>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="009-ey-nRI">
+                                        <rect key="frame" x="20" y="166" width="280" height="99"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <string key="text">You have entered the Brand Store! We would like to use your precise location to offer a richer shopping experience!
+Do you agree?</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Martin's Boots" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L36-y8-Zh0">
-                                <rect key="frame" x="0.0" y="273" width="320" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="009-ey-nRI">
-                                <rect key="frame" x="20" y="311" width="280" height="99"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <string key="text">You have entered the Brand Store! We would like to use your precise location to offer a richer shopping experience!
-Do you agree?</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="boots" translatesAutoresizingMaskIntoConstraints="NO" id="3v4-7p-BRl">
-                                <rect key="frame" x="61" y="119" width="199" height="146"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Welcome" id="6qu-Qi-JlU"/>
+                    <navigationItem key="navigationItem" title="Notification" id="6qu-Qi-JlU"/>
                     <connections>
                         <outlet property="background" destination="Esu-OM-Al9" id="Gg3-qr-NoS"/>
                         <outlet property="label" destination="L36-y8-Zh0" id="aZS-rS-iVX"/>
@@ -65,7 +55,7 @@ Do you agree?</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y0c-Ai-vbP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-370" y="-475"/>
+            <point key="canvasLocation" x="-508" y="-467"/>
         </scene>
         <!--Sales Associate Help View Controller - Sales Associate Help View-->
         <scene sceneID="K4P-ep-D7l">
@@ -440,6 +430,55 @@ Do you agree?</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cMN-k5-QOa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1110" y="-475"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="RMF-3G-ayv">
+            <objects>
+                <viewController id="omz-hH-ymF" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GVL-Sa-FUS"/>
+                        <viewControllerLayoutGuide type="bottom" id="CcK-Pt-iUu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VAV-mE-7V0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="boots" translatesAutoresizingMaskIntoConstraints="NO" id="3v4-7p-BRl">
+                                <rect key="frame" x="43" y="165" width="199" height="146"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Martin's Boots" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L36-y8-Zh0">
+                                <rect key="frame" x="122" y="325" width="320" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vC9-m0-heq">
+                                <rect key="frame" x="0.0" y="436" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem style="plain" id="Iqs-fM-dhj">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Rao-qi-9Lu">
+                                            <rect key="frame" x="16" y="6" width="300" height="33"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="Take me to them">
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <segue destination="VoP-1P-ZCn" kind="push" id="1yf-IG-Waf"/>
+                                            </connections>
+                                        </button>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Rna-hO-jSZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Xa-2K-c7Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-394" y="171"/>
         </scene>
         <!--Map View Controller - Map-->
         <scene sceneID="7jx-FU-Fjc">

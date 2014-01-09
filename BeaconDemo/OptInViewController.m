@@ -6,16 +6,16 @@
 //  Copyright (c) 2013 dteng. All rights reserved.
 //
 
-#import "WishListViewController.h"
+#import "OptInViewController.h"
 
-@interface WishListViewController ()
+@interface OptInViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *label;
 @property (weak, nonatomic) IBOutlet UITextView *text;
 @property (weak, nonatomic) IBOutlet UIView *background;
 
 @end
 
-@implementation WishListViewController
+@implementation OptInViewController
 
 - (void)viewDidLoad
 {

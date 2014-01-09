@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WishListViewController : UIViewController
+@interface OptInViewController : UIViewController
 
 @end
