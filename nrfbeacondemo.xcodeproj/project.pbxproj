@@ -30,6 +30,7 @@
 		CC604B7D1868A6D50011A48D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CC604B7B1868A6D50011A48D /* InfoPlist.strings */; };
 		CC604B7F1868A6D50011A48D /* BeaconDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC604B7E1868A6D50011A48D /* BeaconDemoTests.m */; };
 		CC604B891868B2490011A48D /* bell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CC604B881868B2490011A48D /* bell.mp3 */; };
+		CC8B5E26187F68180063757E /* LastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8B5E25187F68180063757E /* LastViewController.m */; };
 		CCA0BCAB187EF6BE0030A9F4 /* dimmed_view.png in Resources */ = {isa = PBXBuildFile; fileRef = CCA0BCAA187EF6BE0030A9F4 /* dimmed_view.png */; };
 		CCEAC7F5187B310800FCBEFB /* black_boots.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCEAC7F3187B310800FCBEFB /* black_boots.jpg */; };
 		CCEAC7F6187B310800FCBEFB /* green_boots.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCEAC7F4187B310800FCBEFB /* green_boots.jpg */; };
@@ -81,6 +82,8 @@
 		CC604B7C1868A6D50011A48D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CC604B7E1868A6D50011A48D /* BeaconDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeaconDemoTests.m; sourceTree = "<group>"; };
 		CC604B881868B2490011A48D /* bell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bell.mp3; sourceTree = "<group>"; };
+		CC8B5E24187F68180063757E /* LastViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LastViewController.h; sourceTree = "<group>"; };
+		CC8B5E25187F68180063757E /* LastViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LastViewController.m; sourceTree = "<group>"; };
 		CCA0BCAA187EF6BE0030A9F4 /* dimmed_view.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dimmed_view.png; sourceTree = "<group>"; };
 		CCEAC7F3187B310800FCBEFB /* black_boots.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = black_boots.jpg; sourceTree = "<group>"; };
 		CCEAC7F4187B310800FCBEFB /* green_boots.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = green_boots.jpg; sourceTree = "<group>"; };
@@ -173,6 +176,8 @@
 				CCFB3BE8187638EE00E07824 /* TransferService.h */,
 				CC0EC5B2186A049900DC77CB /* WishListViewController.h */,
 				CC0EC5B3186A049900DC77CB /* WishListViewController.m */,
+				CC8B5E24187F68180063757E /* LastViewController.h */,
+				CC8B5E25187F68180063757E /* LastViewController.m */,
 				CC604B681868A6D50011A48D /* MapViewController.h */,
 				CC604B691868A6D50011A48D /* MapViewController.m */,
 				CC604B6B1868A6D50011A48D /* Images.xcassets */,
@@ -336,6 +341,7 @@
 				CC489558187C8FD2005E2B72 /* FirstTimeRunViewController.m in Sources */,
 				CCFB3BEB1876437200E07824 /* SalesAssociateHelpViewController.m in Sources */,
 				8446F72A18721CBB0058BB85 /* DictionaryFactory.m in Sources */,
+				CC8B5E26187F68180063757E /* LastViewController.m in Sources */,
 				CC604B601868A6D50011A48D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
