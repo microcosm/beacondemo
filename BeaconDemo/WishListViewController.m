@@ -17,20 +17,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+
 
 }
 
-- (void) viewDidDisappear:(BOOL)animated {
 
-}
-
-- (void) viewDidAppear:(BOOL)animated {
-    [self.navigationItem setHidesBackButton:YES animated:NO];
-}
-
-- (void) viewWillAppear:(BOOL)animated {
-    [self.navigationItem setHidesBackButton:YES animated:NO];
-}
 
 - (void)didReceiveMemoryWarning
 {

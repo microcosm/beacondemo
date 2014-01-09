@@ -52,7 +52,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y0c-Ai-vbP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-282" y="-475"/>
+            <point key="canvasLocation" x="-370" y="-475"/>
         </scene>
         <!--Sales Associate Help View Controller - Sales Associate Help View-->
         <scene sceneID="K4P-ep-D7l">
@@ -95,6 +95,22 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3.)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8DQ-XD-E1L">
+                                <rect key="frame" x="20" y="238" width="19" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a0Y-ti-t40">
+                                <rect key="frame" x="46" y="234" width="145" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Reset the application">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetApplication:" destination="tkp-r1-k7r" eventType="touchUpInside" id="p6a-h2-mGH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -107,22 +123,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bRN-KQ-GJJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-275" y="-1166"/>
+            <point key="canvasLocation" x="-370" y="-1258"/>
         </scene>
         <!--Customer Help View Controller - Marten's Boots-->
         <scene sceneID="DEs-E7-laZ">
             <objects>
                 <viewController id="OA0-mD-etp" customClass="CustomerHelpViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Rua-QW-ofw"/>
-                        <viewControllerLayoutGuide type="bottom" id="WBF-Me-DwJ"/>
+                        <viewControllerLayoutGuide type="top" id="E7T-jJ-DDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="q1q-cD-G6G"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Hf7-fN-lD3">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5dR-rU-Wgs">
-                                <rect key="frame" x="5" y="70" width="25" height="31"/>
+                                <rect key="frame" x="-25" y="-77" width="75" height="294"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -132,32 +148,32 @@
                                 </connections>
                             </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="boots" translatesAutoresizingMaskIntoConstraints="NO" id="Fwh-js-qHF">
-                                <rect key="frame" x="61" y="136" width="199" height="146"/>
+                                <rect key="frame" x="94" y="166" width="133" height="112"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="1" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7G4-QP-gp1">
-                                <rect key="frame" x="5" y="343" width="99" height="64"/>
+                                <rect key="frame" x="47" y="308" width="43" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="red_boots_2.jpg">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cnl-7p-75C">
-                                <rect key="frame" x="109" y="321" width="103" height="98"/>
+                                <rect key="frame" x="106" y="299" width="42" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="black_boots.jpg">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x8P-P0-wkS">
-                                <rect key="frame" x="220" y="327" width="91" height="73"/>
+                                <rect key="frame" x="167" y="300" width="46" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="green_boots.jpg">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose color of boots" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kyX-Ta-CjH">
-                                <rect key="frame" x="72" y="65" width="171" height="21"/>
+                                <rect key="frame" x="75" y="111" width="171" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -167,10 +183,10 @@
                                 <rect key="frame" x="0.0" y="524" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
-                                    <barButtonItem id="dCT-5m-55E"/>
+                                    <barButtonItem width="14" id="dCT-5m-55E"/>
                                     <barButtonItem style="plain" id="UNG-aY-FYI">
                                         <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="x8k-HQ-ZWO">
-                                            <rect key="frame" x="38" y="7" width="252" height="30"/>
+                                            <rect key="frame" x="40" y="7" width="252" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <state key="normal" title="Purchase!">
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -182,20 +198,14 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="and Sales associate assist you" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PVn-tA-fca">
-                                <rect key="frame" x="38" y="83" width="236" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="A sales associate is on the way!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jq2-Va-IEp">
-                                <rect key="frame" x="46" y="456" width="244" height="21"/>
+                                <rect key="frame" x="33" y="437" width="244" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Marten's Boots" id="6mf-xg-Q5v"/>
                     <connections>
@@ -209,7 +219,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="viv-Df-VVN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="389" y="-475"/>
+            <point key="canvasLocation" x="369" y="-475"/>
         </scene>
         <!--View Controller - Confirm your purchase-->
         <scene sceneID="eoW-fy-xWJ">
@@ -248,7 +258,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Aiw-b4-Tek" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="724" y="-475"/>
+            <point key="canvasLocation" x="740" y="-475"/>
         </scene>
         <!--View Controller - Award-->
         <scene sceneID="czG-5h-cbH">
@@ -299,7 +309,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3wd-NA-Emj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1444" y="-478"/>
+            <point key="canvasLocation" x="1492" y="-475"/>
         </scene>
         <!--Wish List View Controller - NRF Demo Complete-->
         <scene sceneID="v1w-9o-xGF">
@@ -379,7 +389,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cMN-k5-QOa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1058" y="-475"/>
+            <point key="canvasLocation" x="1110" y="-475"/>
         </scene>
         <!--Map View Controller - Map-->
         <scene sceneID="7jx-FU-Fjc">
@@ -405,7 +415,7 @@
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
                                             <connections>
-                                                <segue destination="OA0-mD-etp" kind="push" id="pa8-fE-d9N"/>
+                                                <segue destination="OA0-mD-etp" kind="push" identifier="toProductDetails" id="pa8-fE-d9N"/>
                                             </connections>
                                         </button>
                                     </barButtonItem>
@@ -416,7 +426,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="boots" translatesAutoresizingMaskIntoConstraints="NO" id="RVe-vN-hxW">
-                                <rect key="frame" x="212" y="140" width="77" height="75"/>
+                                <rect key="frame" x="213" y="89" width="77" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -430,7 +440,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BDL-aN-JkC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="57" y="-475"/>
+            <point key="canvasLocation" x="5" y="-475"/>
         </scene>
         <!--First Time Run View Controller-->
         <scene sceneID="Tb7-v5-eLG">
@@ -445,7 +455,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZOL-zx-ps3">
-                                <rect key="frame" x="137" y="393" width="68" height="30"/>
+                                <rect key="frame" x="119" y="393" width="68" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Customer">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -456,7 +466,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ibq-5l-ez9">
-                                <rect key="frame" x="106" y="141" width="109" height="30"/>
+                                <rect key="frame" x="99" y="142" width="109" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Sales Associate">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -473,7 +483,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iWP-Bm-Jmb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-845" y="-877"/>
+            <point key="canvasLocation" x="-945" y="-877"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kmE-3Z-I0y">
