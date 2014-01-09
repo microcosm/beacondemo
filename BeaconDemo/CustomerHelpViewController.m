@@ -13,8 +13,7 @@
 @property (strong, nonatomic) IBOutlet UILabel *testLabel;
 
 @property (nonatomic) BOOL buttonPressed;
-@property (strong, nonatomic) IBOutlet UIButton *purchaseButton;
-@property (strong, nonatomic) IBOutlet UILabel *helpLabel;
+
 
 @property (strong, nonatomic) IBOutlet UIButton *redBoot;
 @property (strong, nonatomic) IBOutlet UIButton *blackBoot;
@@ -31,10 +30,8 @@
 
 - (void)viewDidLoad
 {
-    self.purchaseButton.enabled = NO;
-    self.purchaseButton.hidden = YES;
+
     
-    self.helpLabel.hidden = YES;
     
     [super viewDidLoad];
     
@@ -187,9 +184,6 @@
 - (void)peripheralManager:(CBPeripheralManager *)peripheral didReceiveWriteRequests:(NSArray *)requests {
 
     
-    self.purchaseButton.enabled = YES;
-    self.purchaseButton.hidden = NO;
-    
     self.textView.text = @"";
     
     [self sendData];
@@ -204,7 +198,6 @@
 
 - (IBAction)buttonDidChange:(id)sender {
     
-    self.helpLabel.hidden = NO;
     
     if (self.buttonPressed == NO) {
         NSString *color;

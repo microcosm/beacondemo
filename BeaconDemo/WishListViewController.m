@@ -35,6 +35,13 @@
 
 }
 
+- (void) viewDidAppear:(BOOL)animated {
+    [self.navigationItem setHidesBackButton:YES animated:YES];
+}
+
+- (void) viewWillAppear:(BOOL)animated {
+    [self.navigationItem setHidesBackButton:YES animated:YES];
+}
 
 
 - (void)didReceiveMemoryWarning
