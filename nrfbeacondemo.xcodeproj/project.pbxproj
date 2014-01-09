@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		8446F7271871F8ED0058BB85 /* BeaconLayoutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8446F7261871F8ED0058BB85 /* BeaconLayoutManager.m */; };
 		8446F72A18721CBB0058BB85 /* DictionaryFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8446F72918721CBB0058BB85 /* DictionaryFactory.m */; };
+		8497E524187F2A9A003E50CD /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8497E522187F2A9A003E50CD /* OpenSans-ExtraBold.ttf */; };
+		8497E525187F2A9A003E50CD /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8497E523187F2A9A003E50CD /* OpenSans-Light.ttf */; };
 		84E47DF7187B917B0043042F /* user-retina.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E47DF5187B917B0043042F /* user-retina.png */; };
 		84E47DF8187B917B0043042F /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E47DF6187B917B0043042F /* user.png */; };
 		CC0EC5B4186A049900DC77CB /* WishListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0EC5B3186A049900DC77CB /* WishListViewController.m */; };
@@ -51,6 +53,8 @@
 		8446F7261871F8ED0058BB85 /* BeaconLayoutManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeaconLayoutManager.m; sourceTree = "<group>"; };
 		8446F72818721CBB0058BB85 /* DictionaryFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DictionaryFactory.h; sourceTree = "<group>"; };
 		8446F72918721CBB0058BB85 /* DictionaryFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DictionaryFactory.m; sourceTree = "<group>"; };
+		8497E522187F2A9A003E50CD /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-ExtraBold.ttf"; path = "Supporting Files/OpenSans-ExtraBold.ttf"; sourceTree = SOURCE_ROOT; };
+		8497E523187F2A9A003E50CD /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-Light.ttf"; path = "Supporting Files/OpenSans-Light.ttf"; sourceTree = SOURCE_ROOT; };
 		84E47DF5187B917B0043042F /* user-retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "user-retina.png"; path = "Images.xcassets/user.imageset/user-retina.png"; sourceTree = "<group>"; };
 		84E47DF6187B917B0043042F /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = user.png; path = Images.xcassets/user.imageset/user.png; sourceTree = "<group>"; };
 		CC0EC5B2186A049900DC77CB /* WishListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WishListViewController.h; sourceTree = "<group>"; };
@@ -180,6 +184,8 @@
 		CC604B5A1868A6D50011A48D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8497E522187F2A9A003E50CD /* OpenSans-ExtraBold.ttf */,
+				8497E523187F2A9A003E50CD /* OpenSans-Light.ttf */,
 				CCA0BCAA187EF6BE0030A9F4 /* dimmed_view.png */,
 				84E47DF5187B917B0043042F /* user-retina.png */,
 				84E47DF6187B917B0043042F /* user.png */,
@@ -293,10 +299,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCA0BCAB187EF6BE0030A9F4 /* dimmed_view.png in Resources */,
+				8497E524187F2A9A003E50CD /* OpenSans-ExtraBold.ttf in Resources */,
 				CC604B6C1868A6D50011A48D /* Images.xcassets in Resources */,
 				84E47DF7187B917B0043042F /* user-retina.png in Resources */,
 				84E47DF8187B917B0043042F /* user.png in Resources */,
 				CCEAC7F6187B310800FCBEFB /* green_boots.jpg in Resources */,
+				8497E525187F2A9A003E50CD /* OpenSans-Light.ttf in Resources */,
 				CCEAC7FA187B334700FCBEFB /* red_boots_2.jpg in Resources */,
 				CCEAC7F5187B310800FCBEFB /* black_boots.jpg in Resources */,
 				CC604B5E1868A6D50011A48D /* InfoPlist.strings in Resources */,
