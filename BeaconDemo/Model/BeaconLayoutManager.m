@@ -58,6 +58,8 @@
     }
     else{
         NSLog(@"Did not move.");
+//        self.hasNearestBeaconChanged = TRUE;
+//        _nearestBeacon = nearestBeacon;
     }
 }
 

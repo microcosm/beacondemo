@@ -93,7 +93,40 @@ static const CGFloat FADE_TIME = 1.0;
 
 - (void)userDidEnterZone
 {
+    CGSize mapSizeScaled = CGSizeMake(self.map.bounds.size.width - 40, self.map.bounds.size.height);
+    CGFloat xSize = mapSizeScaled.width/2.0;
+    CGFloat ySize = mapSizeScaled.height/3.0;
+    CGPoint oldPosition = self.userPosition;
     self.userPosition = [self.beaconManager pointerPosition];
+    CGFloat xMove = self.userPosition.x - oldPosition.x;
+    CGFloat yMove = self.userPosition.y - oldPosition.y;
+    CGFloat newX = self.userPosition.x;
+    CGFloat newY = self.userPosition.y;
+    
+    if(fabs(xMove) > xSize)
+    {
+        if(xMove >= 0)
+        {
+            newX = oldPosition.x + xSize;
+        }
+        else
+        {
+            newX = oldPosition.x - xSize;
+        }
+    }
+    if(fabs(yMove) > ySize)
+    {
+        if(yMove >= 0)
+        {
+            newY = oldPosition.y + ySize;
+        }
+        else
+        {
+            newY = oldPosition.y - ySize;
+        }
+    }
+
+    self.userPosition = CGPointMake(newX, newY);
     
     if(self.userIsDetected)
     {
