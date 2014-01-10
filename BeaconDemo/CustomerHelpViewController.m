@@ -4,20 +4,18 @@
 
 @interface CustomerHelpViewController () <CBPeripheralManagerDelegate, UITextViewDelegate>
 
-@property (strong, nonatomic) IBOutlet UITextView       *textView;
+
 @property (strong, nonatomic) CBPeripheralManager       *peripheralManager;
 @property (strong, nonatomic) CBMutableCharacteristic   *transferCharacteristic;
 @property (strong, nonatomic) CBMutableCharacteristic   *notifyCharacteristic;
 @property (strong, nonatomic) NSData                    *dataToSend;
 @property (nonatomic, readwrite) NSInteger              sendDataIndex;
-@property (strong, nonatomic) IBOutlet UILabel *testLabel;
 
 @property (nonatomic) BOOL buttonPressed;
 
 
-@property (strong, nonatomic) IBOutlet UIButton *redBoot;
-@property (strong, nonatomic) IBOutlet UIButton *blackBoot;
-@property (strong, nonatomic) IBOutlet UIButton *greenBoot;
+@property (strong, nonatomic) IBOutlet UITextView *textView;
+
 
 @property (weak, nonatomic) IBOutlet UIView *background;
 
@@ -261,6 +259,8 @@
         
         self.textView.text = [NSString stringWithFormat:@"%@", self.color];
     
+    [self.peripheralManager startAdvertising:@{ CBAdvertisementDataServiceUUIDsKey : @[[CBUUID UUIDWithString:TRANSFER_SERVICE_UUID]]}];
+    [self.peripheralManager startAdvertising:@{ CBAdvertisementDataServiceUUIDsKey : @[[CBUUID UUIDWithString:TRANSFER_SERVICE_UUID]]}];
 }
 
 -(UIColor*)colorWithHexString:(NSString*)hex
