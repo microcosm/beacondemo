@@ -52,6 +52,9 @@
     
     self.background.backgroundColor = [self colorWithHexString:@"efeff4"];
     
+    self.textView.text = [NSString stringWithFormat:@"BOOTS COLORS: ------"];
+
+    
 }
 
 -(void)peripheralManager:(CBPeripheralManager *)peripheral willRestoreState:(NSDictionary *)dict {
@@ -95,7 +98,6 @@
 
 - (void)viewWillDisappear:(BOOL)animated
 {
-    [self.peripheralManager stopAdvertising];
     
     [super viewWillDisappear:animated];
 }
@@ -189,6 +191,8 @@
         
         self.sendDataIndex += amountToSend;
         
+        [self.peripheralManager stopAdvertising];
+
         if (self.sendDataIndex >= self.dataToSend.length) {
             
             sendingEOM = YES;
@@ -199,6 +203,7 @@
                 sendingEOM = NO;
                 
                 NSLog(@"Sent: EOM");
+
             }
             
             return;
@@ -207,8 +212,6 @@
 }
 
 - (void)peripheralManager:(CBPeripheralManager *)peripheral didReceiveWriteRequests:(NSArray *)requests {
-
-    
     self.textView.text = @"";
     
     [self sendData];
@@ -230,9 +233,6 @@
 }
 
 - (IBAction)buttonDidChange:(id)sender {
-    
-    
-        
         if ([sender tag] == 1){
             self.color = @"dark gray";
         }
@@ -257,10 +257,7 @@
             self.color = @"yellow";
         }
         
-        self.textView.text = [NSString stringWithFormat:@"%@", self.color];
-    
-    [self.peripheralManager startAdvertising:@{ CBAdvertisementDataServiceUUIDsKey : @[[CBUUID UUIDWithString:TRANSFER_SERVICE_UUID]]}];
-    [self.peripheralManager startAdvertising:@{ CBAdvertisementDataServiceUUIDsKey : @[[CBUUID UUIDWithString:TRANSFER_SERVICE_UUID]]}];
+        self.textView.text = [NSString stringWithFormat:@"BOOTS COLORS: %@ ", self.color];
 }
 
 -(UIColor*)colorWithHexString:(NSString*)hex

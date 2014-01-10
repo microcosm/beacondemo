@@ -5,11 +5,11 @@
 
 @interface SalesAssociateHelpViewController () <CBCentralManagerDelegate, CBPeripheralDelegate>
 
-@property (strong, nonatomic) IBOutlet UITextView   *textview;
 @property (strong, nonatomic) CBCentralManager      *centralManager;
 @property (strong, nonatomic) CBPeripheral          *discoveredPeripheral;
 @property (strong, nonatomic) CBPeripheral          *savedPeripheral;
 @property (strong, nonatomic) NSMutableData         *data;
+@property (strong, nonatomic) IBOutlet UITextView *textview;
 
 @end
 
@@ -150,7 +150,7 @@
     
     if ([stringFromData isEqualToString:@"EOM"]) {
         
-        [self.textview setText:[[NSString alloc] initWithData:self.data encoding:NSUTF8StringEncoding]];
+        self.textview.text = [[NSString alloc] initWithData:self.data encoding:NSUTF8StringEncoding];
         
         [peripheral setNotifyValue:NO forCharacteristic:characteristic];
         
