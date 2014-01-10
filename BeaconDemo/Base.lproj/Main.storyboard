@@ -155,25 +155,6 @@ Do you agree?</string>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                     </view>
-                                    <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jVf-Eu-15y">
-                                        <rect key="frame" x="0.0" y="373" width="320" height="44"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                        <items>
-                                            <barButtonItem width="14" id="dCT-5m-55E"/>
-                                            <barButtonItem style="plain" id="UNG-aY-FYI">
-                                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="x8k-HQ-ZWO">
-                                                    <rect key="frame" x="40" y="7" width="252" height="30"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" title="Purchase!">
-                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </state>
-                                                    <connections>
-                                                        <segue destination="wrc-Zg-uHz" kind="push" id="8OU-dt-F0N"/>
-                                                    </connections>
-                                                </button>
-                                            </barButtonItem>
-                                        </items>
-                                    </toolbar>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="product-detail-box.png" translatesAutoresizingMaskIntoConstraints="NO" id="MPe-hJ-EgJ">
                                         <rect key="frame" x="13" y="10" width="295" height="358"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -236,6 +217,17 @@ Do you agree?</string>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="928-OG-v8B">
+                                        <rect key="frame" x="-2" y="368" width="323" height="53"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button" image="button-call-assistant.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didCallAssistant:" destination="OA0-mD-etp" eventType="touchUpInside" id="fxW-g5-biW"/>
+                                            <segue destination="wrc-Zg-uHz" kind="push" id="J5F-4G-MZL"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
@@ -245,6 +237,7 @@ Do you agree?</string>
                     <navigationItem key="navigationItem" title="Boots Details" id="6mf-xg-Q5v"/>
                     <connections>
                         <outlet property="background" destination="mbI-Ie-3Vk" id="Vtr-Pk-LPQ"/>
+                        <outlet property="callAssistant" destination="928-OG-v8B" id="03J-zH-Yu3"/>
                         <outlet property="color1" destination="PFq-NH-7yF" id="zJD-mk-pMt"/>
                         <outlet property="color2" destination="61p-kd-4AY" id="616-up-Rz0"/>
                         <outlet property="color3" destination="trW-3r-Ooc" id="crw-j5-5OK"/>
@@ -653,6 +646,7 @@ Shall we guide you to them?</string>
     <resources>
         <image name="booth.png" width="640" height="746"/>
         <image name="boots" width="107" height="103"/>
+        <image name="button-call-assistant.png" width="640" height="116"/>
         <image name="product-detail-box.png" width="640" height="777"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

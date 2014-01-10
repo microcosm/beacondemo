@@ -29,6 +29,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *color6;
 
 @property (strong, nonatomic) NSString* color;
+@property (weak, nonatomic) IBOutlet UIButton *callAssistant;
 
 @end
 
@@ -49,7 +50,7 @@
     if ([currentDevice.model rangeOfString:@"Simulator"].location == NSNotFound) {
         _peripheralManager = [[CBPeripheralManager alloc] initWithDelegate:self queue:nil options:@{CBPeripheralManagerOptionRestoreIdentifierKey: @"myPeripheralManager"}];
     }
-    
+    self.color = @"[no color chosen!]";
     
     self.background.backgroundColor = [self colorWithHexString:@"efeff4"];
     
@@ -215,6 +216,15 @@
     [self sendData];
 }
 
+- (IBAction)didCallAssistant:(id)sender {
+    
+    [self.peripheralManager startAdvertising:@{ CBAdvertisementDataServiceUUIDsKey : @[[CBUUID UUIDWithString:TRANSFER_SERVICE_UUID]]}];
+    [self.peripheralManager startAdvertising:@{ CBAdvertisementDataServiceUUIDsKey : @[[CBUUID UUIDWithString:TRANSFER_SERVICE_UUID]]}];
+    [self.peripheralManager startAdvertising:@{ CBAdvertisementDataServiceUUIDsKey : @[[CBUUID UUIDWithString:TRANSFER_SERVICE_UUID]]}];
+    [self.peripheralManager startAdvertising:@{ CBAdvertisementDataServiceUUIDsKey : @[[CBUUID UUIDWithString:TRANSFER_SERVICE_UUID]]}];
+    [self.peripheralManager startAdvertising:@{ CBAdvertisementDataServiceUUIDsKey : @[[CBUUID UUIDWithString:TRANSFER_SERVICE_UUID]]}];
+
+}
 
 - (void)peripheralManagerIsReadyToUpdateSubscribers:(CBPeripheralManager *)peripheral
 {
@@ -250,13 +260,7 @@
         }
         
         self.textView.text = [NSString stringWithFormat:@"%@", self.color];
-        
-        [self.peripheralManager startAdvertising:@{ CBAdvertisementDataServiceUUIDsKey : @[[CBUUID UUIDWithString:TRANSFER_SERVICE_UUID]]}];
-        [self.peripheralManager startAdvertising:@{ CBAdvertisementDataServiceUUIDsKey : @[[CBUUID UUIDWithString:TRANSFER_SERVICE_UUID]]}];
-        [self.peripheralManager startAdvertising:@{ CBAdvertisementDataServiceUUIDsKey : @[[CBUUID UUIDWithString:TRANSFER_SERVICE_UUID]]}];
-        [self.peripheralManager startAdvertising:@{ CBAdvertisementDataServiceUUIDsKey : @[[CBUUID UUIDWithString:TRANSFER_SERVICE_UUID]]}];
-        [self.peripheralManager startAdvertising:@{ CBAdvertisementDataServiceUUIDsKey : @[[CBUUID UUIDWithString:TRANSFER_SERVICE_UUID]]}];
-
+    
 }
 
 -(UIColor*)colorWithHexString:(NSString*)hex
