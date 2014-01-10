@@ -354,7 +354,7 @@ Do you agree?</string>
             </objects>
             <point key="canvasLocation" x="1095" y="-475"/>
         </scene>
-        <!--View Controller - Award-->
+        <!--View Controller - Your gift-->
         <scene sceneID="czG-5h-cbH">
             <objects>
                 <viewController id="7hD-YK-Js4" sceneMemberID="viewController">
@@ -370,43 +370,33 @@ Do you agree?</string>
                                 <rect key="frame" x="0.0" y="63" width="320" height="461"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pif-C7-td0">
-                                        <rect key="frame" x="0.0" y="375" width="320" height="44"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                        <items>
-                                            <barButtonItem style="plain" id="Tls-bJ-5aV">
-                                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gkf-Fk-0nv">
-                                                    <rect key="frame" x="16" y="6" width="302" height="33"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" title="Claim it">
-                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </state>
-                                                    <connections>
-                                                        <segue destination="YF4-up-UyW" kind="push" id="FSL-Wv-o9g"/>
-                                                    </connections>
-                                                </button>
-                                            </barButtonItem>
-                                        </items>
-                                    </toolbar>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XDu-BS-Uqb">
+                                        <rect key="frame" x="12" y="12" width="295" height="344"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="starbucks.png" translatesAutoresizingMaskIntoConstraints="NO" id="qe2-89-Hiz">
+                                        <rect key="frame" x="12" y="7" width="295" height="358"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bnf-ru-nEI">
+                                        <rect key="frame" x="-3" y="365" width="323" height="53"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button" image="button-claim-it.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didCallAssistant:" destination="OA0-mD-etp" eventType="touchUpInside" id="7UW-Tu-NlY"/>
+                                            <segue destination="YF4-up-UyW" kind="push" id="u97-bY-Jgc"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Have a nice warm" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dcn-zM-lK4">
-                                <rect key="frame" x="91" y="259" width="138" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Starbucks Coffee" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vqU-Zv-Enc">
-                                <rect key="frame" x="94" y="288" width="133" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Award" id="wwI-mN-0XJ"/>
+                    <navigationItem key="navigationItem" title="Your gift" id="wwI-mN-0XJ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3wd-NA-Emj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -474,40 +464,29 @@ Do you agree?</string>
                                 <rect key="frame" x="0.0" y="63" width="320" height="461"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F9d-dP-4TH">
-                                        <rect key="frame" x="0.0" y="372" width="320" height="44"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                        <items>
-                                            <barButtonItem style="plain" id="3X6-LA-CIA">
-                                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="y04-zd-HlI">
-                                                    <rect key="frame" x="16" y="6" width="295" height="33"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" title="Check out your award!">
-                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </state>
-                                                    <connections>
-                                                        <segue destination="7hD-YK-Js4" kind="push" id="IAd-wM-wOR"/>
-                                                    </connections>
-                                                </button>
-                                            </barButtonItem>
-                                        </items>
-                                    </toolbar>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vt4-hF-ccH">
+                                        <rect key="frame" x="14" y="12" width="295" height="344"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="a-gift.png" translatesAutoresizingMaskIntoConstraints="NO" id="1BP-oP-Oee">
+                                        <rect key="frame" x="14" y="7" width="295" height="358"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ool-E1-MaU">
+                                        <rect key="frame" x="-1" y="365" width="323" height="53"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button" image="button-unwrap-gift.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didCallAssistant:" destination="OA0-mD-etp" eventType="touchUpInside" id="9zD-V7-mgj"/>
+                                            <segue destination="7hD-YK-Js4" kind="push" id="KZl-9V-icN"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Surprise!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OFD-rY-Yom">
-                                <rect key="frame" x="126" y="155" width="69" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="We appreciate your pruchase via mobile cell. Check out your award!" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aHF-LJ-PB6">
-                                <rect key="frame" x="40" y="254" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -702,14 +681,18 @@ Shall we guide you to them?</string>
         </scene>
     </scenes>
     <resources>
+        <image name="a-gift.png" width="640" height="777"/>
         <image name="booth.png" width="640" height="746"/>
         <image name="boots" width="107" height="103"/>
         <image name="button-assistant-on-way.png" width="405" height="116"/>
         <image name="button-buy-now.png" width="235" height="116"/>
         <image name="button-call-assistant.png" width="640" height="116"/>
+        <image name="button-claim-it.png" width="640" height="116"/>
         <image name="button-purchase.png" width="640" height="116"/>
+        <image name="button-unwrap-gift.png" width="640" height="116"/>
         <image name="product-detail-box.png" width="640" height="777"/>
         <image name="purchase-page.png" width="640" height="777"/>
+        <image name="starbucks.png" width="640" height="777"/>
         <image name="wait-a-moment.png" width="538" height="591"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

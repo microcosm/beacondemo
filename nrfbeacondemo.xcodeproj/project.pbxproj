@@ -18,6 +18,10 @@
 		845A700C187F8BD700EFD2C0 /* ConfirmPurchaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845A700B187F8BD700EFD2C0 /* ConfirmPurchaseViewController.m */; };
 		845A700E187F939C00EFD2C0 /* purchase-page.png in Resources */ = {isa = PBXBuildFile; fileRef = 845A700D187F939C00EFD2C0 /* purchase-page.png */; };
 		845A7010187F948000EFD2C0 /* button-purchase.png in Resources */ = {isa = PBXBuildFile; fileRef = 845A700F187F948000EFD2C0 /* button-purchase.png */; };
+		845A7015187F9A0900EFD2C0 /* a-gift.png in Resources */ = {isa = PBXBuildFile; fileRef = 845A7011187F9A0900EFD2C0 /* a-gift.png */; };
+		845A7016187F9A0900EFD2C0 /* button-claim-it.png in Resources */ = {isa = PBXBuildFile; fileRef = 845A7012187F9A0900EFD2C0 /* button-claim-it.png */; };
+		845A7017187F9A0900EFD2C0 /* button-unwrap-gift.png in Resources */ = {isa = PBXBuildFile; fileRef = 845A7013187F9A0900EFD2C0 /* button-unwrap-gift.png */; };
+		845A7018187F9A0900EFD2C0 /* starbucks.png in Resources */ = {isa = PBXBuildFile; fileRef = 845A7014187F9A0900EFD2C0 /* starbucks.png */; };
 		8497E524187F2A9A003E50CD /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8497E522187F2A9A003E50CD /* OpenSans-ExtraBold.ttf */; };
 		8497E525187F2A9A003E50CD /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8497E523187F2A9A003E50CD /* OpenSans-Light.ttf */; };
 		84D4B59B187F714A0044AE06 /* WishListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D4B59A187F714A0044AE06 /* WishListViewController.m */; };
@@ -76,6 +80,10 @@
 		845A700B187F8BD700EFD2C0 /* ConfirmPurchaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfirmPurchaseViewController.m; sourceTree = "<group>"; };
 		845A700D187F939C00EFD2C0 /* purchase-page.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "purchase-page.png"; path = "Supporting Files/purchase-page.png"; sourceTree = SOURCE_ROOT; };
 		845A700F187F948000EFD2C0 /* button-purchase.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-purchase.png"; path = "Supporting Files/button-purchase.png"; sourceTree = SOURCE_ROOT; };
+		845A7011187F9A0900EFD2C0 /* a-gift.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "a-gift.png"; path = "Supporting Files/a-gift.png"; sourceTree = SOURCE_ROOT; };
+		845A7012187F9A0900EFD2C0 /* button-claim-it.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-claim-it.png"; path = "Supporting Files/button-claim-it.png"; sourceTree = SOURCE_ROOT; };
+		845A7013187F9A0900EFD2C0 /* button-unwrap-gift.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-unwrap-gift.png"; path = "Supporting Files/button-unwrap-gift.png"; sourceTree = SOURCE_ROOT; };
+		845A7014187F9A0900EFD2C0 /* starbucks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = starbucks.png; path = "Supporting Files/starbucks.png"; sourceTree = SOURCE_ROOT; };
 		8497E522187F2A9A003E50CD /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-ExtraBold.ttf"; path = "Supporting Files/OpenSans-ExtraBold.ttf"; sourceTree = SOURCE_ROOT; };
 		8497E523187F2A9A003E50CD /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-Light.ttf"; path = "Supporting Files/OpenSans-Light.ttf"; sourceTree = SOURCE_ROOT; };
 		84D4B599187F714A0044AE06 /* WishListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WishListViewController.h; sourceTree = "<group>"; };
@@ -192,7 +200,6 @@
 				CC604B621868A6D50011A48D /* AppDelegate.h */,
 				CC604B631868A6D50011A48D /* AppDelegate.m */,
 				CC604B651868A6D50011A48D /* Main.storyboard */,
-				845A700F187F948000EFD2C0 /* button-purchase.png */,
 				845A700A187F8BD700EFD2C0 /* ConfirmPurchaseViewController.h */,
 				845A700B187F8BD700EFD2C0 /* ConfirmPurchaseViewController.m */,
 				845A7007187F890900EFD2C0 /* WaitAMomentViewController.h */,
@@ -221,6 +228,11 @@
 		CC604B5A1868A6D50011A48D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				845A7011187F9A0900EFD2C0 /* a-gift.png */,
+				845A7012187F9A0900EFD2C0 /* button-claim-it.png */,
+				845A7013187F9A0900EFD2C0 /* button-unwrap-gift.png */,
+				845A7014187F9A0900EFD2C0 /* starbucks.png */,
+				845A700F187F948000EFD2C0 /* button-purchase.png */,
 				845A700D187F939C00EFD2C0 /* purchase-page.png */,
 				845A7003187F82E200EFD2C0 /* button-assistant-on-way.png */,
 				845A7004187F82E200EFD2C0 /* button-buy-now.png */,
@@ -344,12 +356,16 @@
 			files = (
 				CCA0BCAB187EF6BE0030A9F4 /* dimmed_view.png in Resources */,
 				845A700E187F939C00EFD2C0 /* purchase-page.png in Resources */,
+				845A7018187F9A0900EFD2C0 /* starbucks.png in Resources */,
 				845A7010187F948000EFD2C0 /* button-purchase.png in Resources */,
+				845A7016187F9A0900EFD2C0 /* button-claim-it.png in Resources */,
+				845A7015187F9A0900EFD2C0 /* a-gift.png in Resources */,
 				8497E524187F2A9A003E50CD /* OpenSans-ExtraBold.ttf in Resources */,
 				CC604B6C1868A6D50011A48D /* Images.xcassets in Resources */,
 				845A7000187F7F4400EFD2C0 /* button-call-assistant.png in Resources */,
 				845A7002187F819B00EFD2C0 /* wait-a-moment.png in Resources */,
 				84E47DF7187B917B0043042F /* user-retina.png in Resources */,
+				845A7017187F9A0900EFD2C0 /* button-unwrap-gift.png in Resources */,
 				84E47DF8187B917B0043042F /* user.png in Resources */,
 				CCEAC7F6187B310800FCBEFB /* green_boots.jpg in Resources */,
 				845A6FFE187F779C00EFD2C0 /* product-detail-box.png in Resources */,
