@@ -526,7 +526,7 @@ Shall we guide you to them?</string>
                                         <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="wZY-eN-JeH">
                                             <rect key="frame" x="16" y="6" width="289" height="33"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <state key="normal" title="Just show me the item">
+                                            <state key="normal" title="Let me see the boot details!">
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
                                             <connections>
@@ -536,12 +536,12 @@ Shall we guide you to them?</string>
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="map" translatesAutoresizingMaskIntoConstraints="NO" id="J4n-En-PMn">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="booth.png" translatesAutoresizingMaskIntoConstraints="NO" id="J4n-En-PMn">
                                 <rect key="frame" x="0.0" y="63" width="320" height="373"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="boots" translatesAutoresizingMaskIntoConstraints="NO" id="RVe-vN-hxW">
-                                <rect key="frame" x="213" y="89" width="77" height="75"/>
+                                <rect key="frame" x="185" y="75" width="64" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -623,9 +623,9 @@ Shall we guide you to them?</string>
     </scenes>
     <resources>
         <image name="black_boots.jpg" width="500" height="375"/>
+        <image name="booth.png" width="640" height="746"/>
         <image name="boots" width="107" height="103"/>
         <image name="green_boots.jpg" width="640" height="440"/>
-        <image name="map" width="320" height="459"/>
         <image name="red_boots_2.jpg" width="964" height="520"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

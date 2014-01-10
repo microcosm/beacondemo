@@ -13,8 +13,8 @@
 
 static const int BEACON_RES_X = 3;
 static const int BEACON_RES_Y = 4;
-static const CGFloat MOVE_TIME = 1.0;
-static const CGFloat FADE_TIME = 1.0;
+static const CGFloat MOVE_TIME = 0.3;
+static const CGFloat FADE_TIME = 0.3;
 
 @interface MapViewController () <CLLocationManagerDelegate>
 
@@ -37,7 +37,7 @@ static const CGFloat FADE_TIME = 1.0;
 
 - (BeaconLayoutManager *)beaconManager
 {
-    CGSize mapSizeScaled = CGSizeMake(self.map.bounds.size.width - 40, self.map.bounds.size.height);
+    CGSize mapSizeScaled = CGSizeMake(self.map.bounds.size.width - 160, self.map.bounds.size.height);
     if (!_beaconManager) {
         _beaconManager = [[BeaconLayoutManager alloc] initWithBeaconResolution: CGSizeMake(BEACON_RES_X, BEACON_RES_Y)
                                                                     screenSize: mapSizeScaled
@@ -55,18 +55,17 @@ static const CGFloat FADE_TIME = 1.0;
     //\[self setModalPresentationStyle:UIModalPresentationCurrentContext];
     
     //Temporary for testing without beacons
-//    self.timer = [NSTimer scheduledTimerWithTimeInterval:2.0
-//                                                  target:self
-//                                                selector:@selector(userDidEnterZone)
-//                                                userInfo:nil
-//                                                 repeats:YES];
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:0.5
+                                                  target:self
+                                                selector:@selector(userDidEnterZone)
+                                                userInfo:nil
+                                                 repeats:YES];
 }
 
 - (void)setupViews
 {
     self.user = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"user"]];
     [self.user setAlpha:0];
-    
     [self.map addSubview:self.user];
     [self.map addSubview:self.boots];
 }
@@ -140,7 +139,7 @@ static const CGFloat FADE_TIME = 1.0;
         }
     }
 
-    self.userPosition = CGPointMake(newX, newY);
+    self.userPosition = CGPointMake(newX + 65, newY);
     
     if(self.userIsDetected)
     {
