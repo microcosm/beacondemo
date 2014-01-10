@@ -598,8 +598,8 @@
                                 <rect key="frame" x="0.0" y="63" width="320" height="373"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="boots" translatesAutoresizingMaskIntoConstraints="NO" id="RVe-vN-hxW">
-                                <rect key="frame" x="185" y="75" width="64" height="63"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="boots-glow.png" translatesAutoresizingMaskIntoConstraints="NO" id="RVe-vN-hxW">
+                                <rect key="frame" x="175" y="63" width="85" height="89"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z8X-1c-bwD">
@@ -694,7 +694,7 @@
         <image name="BRAND-01.png" width="360" height="360"/>
         <image name="a-gift.png" width="640" height="777"/>
         <image name="booth.png" width="640" height="746"/>
-        <image name="boots" width="107" height="103"/>
+        <image name="boots-glow.png" width="167" height="173"/>
         <image name="boots_rotated.png" width="449" height="530"/>
         <image name="button-assistant-on-way.png" width="405" height="116"/>
         <image name="button-buy-now.png" width="235" height="116"/>
