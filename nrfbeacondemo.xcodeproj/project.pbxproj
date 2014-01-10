@@ -14,6 +14,7 @@
 		845A7002187F819B00EFD2C0 /* wait-a-moment.png in Resources */ = {isa = PBXBuildFile; fileRef = 845A7001187F819B00EFD2C0 /* wait-a-moment.png */; };
 		845A7005187F82E200EFD2C0 /* button-assistant-on-way.png in Resources */ = {isa = PBXBuildFile; fileRef = 845A7003187F82E200EFD2C0 /* button-assistant-on-way.png */; };
 		845A7006187F82E200EFD2C0 /* button-buy-now.png in Resources */ = {isa = PBXBuildFile; fileRef = 845A7004187F82E200EFD2C0 /* button-buy-now.png */; };
+		845A7009187F890900EFD2C0 /* WaitAMomentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845A7008187F890900EFD2C0 /* WaitAMomentViewController.m */; };
 		8497E524187F2A9A003E50CD /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8497E522187F2A9A003E50CD /* OpenSans-ExtraBold.ttf */; };
 		8497E525187F2A9A003E50CD /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8497E523187F2A9A003E50CD /* OpenSans-Light.ttf */; };
 		84D4B59B187F714A0044AE06 /* WishListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D4B59A187F714A0044AE06 /* WishListViewController.m */; };
@@ -66,6 +67,8 @@
 		845A7001187F819B00EFD2C0 /* wait-a-moment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "wait-a-moment.png"; path = "Supporting Files/wait-a-moment.png"; sourceTree = SOURCE_ROOT; };
 		845A7003187F82E200EFD2C0 /* button-assistant-on-way.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-assistant-on-way.png"; path = "Supporting Files/button-assistant-on-way.png"; sourceTree = SOURCE_ROOT; };
 		845A7004187F82E200EFD2C0 /* button-buy-now.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-buy-now.png"; path = "Supporting Files/button-buy-now.png"; sourceTree = SOURCE_ROOT; };
+		845A7007187F890900EFD2C0 /* WaitAMomentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaitAMomentViewController.h; sourceTree = "<group>"; };
+		845A7008187F890900EFD2C0 /* WaitAMomentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaitAMomentViewController.m; sourceTree = "<group>"; };
 		8497E522187F2A9A003E50CD /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-ExtraBold.ttf"; path = "Supporting Files/OpenSans-ExtraBold.ttf"; sourceTree = SOURCE_ROOT; };
 		8497E523187F2A9A003E50CD /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-Light.ttf"; path = "Supporting Files/OpenSans-Light.ttf"; sourceTree = SOURCE_ROOT; };
 		84D4B599187F714A0044AE06 /* WishListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WishListViewController.h; sourceTree = "<group>"; };
@@ -182,6 +185,8 @@
 				CC604B621868A6D50011A48D /* AppDelegate.h */,
 				CC604B631868A6D50011A48D /* AppDelegate.m */,
 				CC604B651868A6D50011A48D /* Main.storyboard */,
+				845A7007187F890900EFD2C0 /* WaitAMomentViewController.h */,
+				845A7008187F890900EFD2C0 /* WaitAMomentViewController.m */,
 				CC489556187C8FD2005E2B72 /* FirstTimeRunViewController.h */,
 				CC489557187C8FD2005E2B72 /* FirstTimeRunViewController.m */,
 				CCFB3BE91876437200E07824 /* SalesAssociateHelpViewController.h */,
@@ -373,6 +378,7 @@
 				8446F72A18721CBB0058BB85 /* DictionaryFactory.m in Sources */,
 				CC8B5E26187F68180063757E /* LastViewController.m in Sources */,
 				CC604B601868A6D50011A48D /* main.m in Sources */,
+				845A7009187F890900EFD2C0 /* WaitAMomentViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

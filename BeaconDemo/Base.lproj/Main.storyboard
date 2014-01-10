@@ -250,10 +250,10 @@ Do you agree?</string>
             </objects>
             <point key="canvasLocation" x="369" y="-475"/>
         </scene>
-        <!--View Controller - Wait a moment-->
+        <!--WaitA Moment View Controller - Wait a moment-->
         <scene sceneID="g97-9z-y1r">
             <objects>
-                <viewController id="4WT-GK-GER" sceneMemberID="viewController">
+                <viewController id="4WT-GK-GER" customClass="WaitAMomentViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="PeM-a8-n3K"/>
                         <viewControllerLayoutGuide type="bottom" id="qUZ-ll-ZaB"/>
@@ -294,6 +294,9 @@ Do you agree?</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Wait a moment" id="Cdf-oe-zmC"/>
+                    <connections>
+                        <outlet property="background" destination="hCy-t0-owz" id="Rmq-Na-0iJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iUf-s5-fYV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
