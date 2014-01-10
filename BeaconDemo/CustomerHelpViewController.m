@@ -52,9 +52,8 @@
     
     UIDevice *currentDevice = [UIDevice currentDevice];
     if ([currentDevice.model rangeOfString:@"Simulator"].location == NSNotFound) {
-        _peripheralManager = [[CBPeripheralManager alloc] initWithDelegate:self queue:nil options:@{CBPeripheralManagerOptionRestoreIdentifierKey: @"myPeripheralManager"}];
+        _peripheralManager = [[CBPeripheralManager alloc] initWithDelegate:self queue:nil];
     }
-    self.color = @"[no color chosen!]";
     
     self.background.backgroundColor = [self colorWithHexString:@"efeff4"];
     

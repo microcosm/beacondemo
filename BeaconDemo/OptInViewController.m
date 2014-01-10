@@ -18,6 +18,13 @@
 
 @implementation OptInViewController
 
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+    [self.navigationItem setHidesBackButton:YES animated:YES];
+    self.navigationItem.backBarButtonItem.title = @"";
+
+    return self;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -33,17 +40,18 @@
      self.text.textColor = [self colorWithHexString:@"2c3e50"];
      self.text.backgroundColor = [UIColor colorWithHue:0 saturation:0 brightness:0 alpha:0];
      self.text.textAlignment = NSTextAlignmentCenter;
-
 }
 
 - (void) viewDidAppear:(BOOL)animated {
+    self.navigationItem.backBarButtonItem.title = @"";
     [self.navigationItem setHidesBackButton:YES animated:YES];
 }
 
 - (void) viewWillAppear:(BOOL)animated {
+    self.navigationItem.backBarButtonItem.title = @"";
     [self.navigationItem setHidesBackButton:YES animated:YES];
-}
 
+}
 
 - (void)didReceiveMemoryWarning
 {

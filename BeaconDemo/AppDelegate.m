@@ -18,9 +18,6 @@
 //    if (locationNotification) {
 //        
 //    }
-    
-    NSArray *centralManagerIdentifiers = launchOptions[UIApplicationLaunchOptionsBluetoothPeripheralsKey];
-
     return YES;
 }
 							
@@ -38,7 +35,7 @@
     
     UILocalNotification* localNotification = [[UILocalNotification alloc] init];
     localNotification.fireDate = futureDate;
-    localNotification.alertBody = @"Welcome to the BRAND Boots Store!";
+    localNotification.alertBody = @"Welcome to The Brand Store!";
     localNotification.alertAction = @"enter the experience!";
     localNotification.timeZone = [NSTimeZone defaultTimeZone];
     
