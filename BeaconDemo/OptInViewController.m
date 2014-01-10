@@ -9,6 +9,7 @@
 #import "OptInViewController.h"
 
 @interface OptInViewController ()
+
 @property (weak, nonatomic) IBOutlet UILabel *label;
 @property (weak, nonatomic) IBOutlet UITextView *text;
 @property (weak, nonatomic) IBOutlet UIView *background;
