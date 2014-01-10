@@ -237,37 +237,37 @@
                                         <rect key="frame" x="46" y="27" width="228" height="189"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="color_border.png" translatesAutoresizingMaskIntoConstraints="NO" id="r7T-zm-8fx">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="color_border2.png" translatesAutoresizingMaskIntoConstraints="NO" id="r7T-zm-8fx">
                                         <rect key="frame" x="32" y="314" width="30" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="color_border.png" translatesAutoresizingMaskIntoConstraints="NO" id="stv-oX-tze">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="color_border2.png" translatesAutoresizingMaskIntoConstraints="NO" id="stv-oX-tze">
                                         <rect key="frame" x="137" y="314" width="30" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="color_border.png" translatesAutoresizingMaskIntoConstraints="NO" id="gNQ-fK-bBt">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="color_border2.png" translatesAutoresizingMaskIntoConstraints="NO" id="gNQ-fK-bBt">
                                         <rect key="frame" x="102" y="314" width="30" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="color_border.png" translatesAutoresizingMaskIntoConstraints="NO" id="hdG-SV-0Ks">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="color_border2.png" translatesAutoresizingMaskIntoConstraints="NO" id="hdG-SV-0Ks">
                                         <rect key="frame" x="67" y="314" width="30" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="color_border.png" translatesAutoresizingMaskIntoConstraints="NO" id="rzx-GQ-Y9M">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="color_border2.png" translatesAutoresizingMaskIntoConstraints="NO" id="rzx-GQ-Y9M">
                                         <rect key="frame" x="172" y="314" width="30" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="color_border.png" translatesAutoresizingMaskIntoConstraints="NO" id="KRs-Sn-Imx">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="color_border2.png" translatesAutoresizingMaskIntoConstraints="NO" id="KRs-Sn-Imx">
                                         <rect key="frame" x="207" y="314" width="30" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -705,7 +705,7 @@
         <image name="button-i-agree.png" width="640" height="116"/>
         <image name="button-purchase.png" width="640" height="116"/>
         <image name="button-unwrap-gift.png" width="640" height="116"/>
-        <image name="color_border.png" width="60" height="60"/>
+        <image name="color_border2.png" width="60" height="60"/>
         <image name="complete2.png" width="640" height="777"/>
         <image name="product-detail-box.png" width="640" height="777"/>
         <image name="purchase-page.png" width="640" height="777"/>
