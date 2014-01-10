@@ -11,6 +11,7 @@
 		8446F72A18721CBB0058BB85 /* DictionaryFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8446F72918721CBB0058BB85 /* DictionaryFactory.m */; };
 		8497E524187F2A9A003E50CD /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8497E522187F2A9A003E50CD /* OpenSans-ExtraBold.ttf */; };
 		8497E525187F2A9A003E50CD /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8497E523187F2A9A003E50CD /* OpenSans-Light.ttf */; };
+		84D4B59B187F714A0044AE06 /* WishListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D4B59A187F714A0044AE06 /* WishListViewController.m */; };
 		84E47DF7187B917B0043042F /* user-retina.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E47DF5187B917B0043042F /* user-retina.png */; };
 		84E47DF8187B917B0043042F /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E47DF6187B917B0043042F /* user.png */; };
 		CC0EC5B4186A049900DC77CB /* OptInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0EC5B3186A049900DC77CB /* OptInViewController.m */; };
@@ -56,6 +57,8 @@
 		8446F72918721CBB0058BB85 /* DictionaryFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DictionaryFactory.m; sourceTree = "<group>"; };
 		8497E522187F2A9A003E50CD /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-ExtraBold.ttf"; path = "Supporting Files/OpenSans-ExtraBold.ttf"; sourceTree = SOURCE_ROOT; };
 		8497E523187F2A9A003E50CD /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-Light.ttf"; path = "Supporting Files/OpenSans-Light.ttf"; sourceTree = SOURCE_ROOT; };
+		84D4B599187F714A0044AE06 /* WishListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WishListViewController.h; sourceTree = "<group>"; };
+		84D4B59A187F714A0044AE06 /* WishListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WishListViewController.m; sourceTree = "<group>"; };
 		84E47DF5187B917B0043042F /* user-retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "user-retina.png"; path = "Images.xcassets/user.imageset/user-retina.png"; sourceTree = "<group>"; };
 		84E47DF6187B917B0043042F /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = user.png; path = Images.xcassets/user.imageset/user.png; sourceTree = "<group>"; };
 		CC0EC5B2186A049900DC77CB /* OptInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptInViewController.h; sourceTree = "<group>"; };
@@ -176,6 +179,8 @@
 				CCFB3BE8187638EE00E07824 /* TransferService.h */,
 				CC0EC5B2186A049900DC77CB /* OptInViewController.h */,
 				CC0EC5B3186A049900DC77CB /* OptInViewController.m */,
+				84D4B599187F714A0044AE06 /* WishListViewController.h */,
+				84D4B59A187F714A0044AE06 /* WishListViewController.m */,
 				CC8B5E24187F68180063757E /* LastViewController.h */,
 				CC8B5E25187F68180063757E /* LastViewController.m */,
 				CC604B681868A6D50011A48D /* MapViewController.h */,
@@ -333,6 +338,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84D4B59B187F714A0044AE06 /* WishListViewController.m in Sources */,
 				CCFB3BE71876387100E07824 /* CustomerHelpViewController.m in Sources */,
 				8446F7271871F8ED0058BB85 /* BeaconLayoutManager.m in Sources */,
 				CC604B6A1868A6D50011A48D /* MapViewController.m in Sources */,
