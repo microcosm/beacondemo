@@ -1,20 +1,20 @@
 //
-//  WaitAMomentViewController.h
+//  ConfirmPurchaseViewController.h
 //  BeaconDemo
 //
 //  Created by dteng on 12/24/13.
 //  Copyright (c) 2013 dteng. All rights reserved.
 //
 
-#import "WaitAMomentViewController.h"
+#import "ConfirmPurchaseViewController.h"
 
-@interface WaitAMomentViewController ()
+@interface ConfirmPurchaseViewController ()
 
 @property (weak, nonatomic) IBOutlet UIView *background;
 
 @end
 
-@implementation WaitAMomentViewController
+@implementation ConfirmPurchaseViewController
 
 - (void)viewDidLoad
 {

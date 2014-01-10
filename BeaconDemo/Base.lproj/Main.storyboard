@@ -302,10 +302,10 @@ Do you agree?</string>
             </objects>
             <point key="canvasLocation" x="707" y="-475"/>
         </scene>
-        <!--View Controller - Confirm your purchase-->
+        <!--Confirm Purchase View Controller - Confirm your purchase-->
         <scene sceneID="eoW-fy-xWJ">
             <objects>
-                <viewController id="wrc-Zg-uHz" sceneMemberID="viewController">
+                <viewController id="wrc-Zg-uHz" customClass="ConfirmPurchaseViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wEh-Hf-clC"/>
                         <viewControllerLayoutGuide type="bottom" id="SjT-QE-OHc"/>
@@ -318,27 +318,33 @@ Do you agree?</string>
                                 <rect key="frame" x="0.0" y="63" width="320" height="461"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="28t-Qy-RGS">
-                                        <rect key="frame" x="0.0" y="375" width="320" height="44"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                        <items>
-                                            <barButtonItem title="Purchase Online" width="301" id="04j-f4-Oh4">
-                                                <connections>
-                                                    <segue destination="nH5-cd-5ww" kind="push" id="cNQ-cv-Smr"/>
-                                                </connections>
-                                            </barButtonItem>
-                                        </items>
-                                    </toolbar>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GrV-mJ-HjX">
+                                        <rect key="frame" x="12" y="13" width="295" height="344"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="purchase-page.png" translatesAutoresizingMaskIntoConstraints="NO" id="XV2-MN-oB9">
+                                        <rect key="frame" x="12" y="8" width="295" height="358"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="boots" translatesAutoresizingMaskIntoConstraints="NO" id="4j6-bw-axN">
+                                        <rect key="frame" x="12" y="43" width="105" height="89"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eI3-sc-3HL">
+                                        <rect key="frame" x="-3" y="366" width="323" height="53"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button" image="button-purchase.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didCallAssistant:" destination="OA0-mD-etp" eventType="touchUpInside" id="Pgs-Yr-esO"/>
+                                            <segue destination="nH5-cd-5ww" kind="push" id="TT5-Hd-mW7"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Purchase page image" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jnP-cB-uFl">
-                                <rect key="frame" x="89" y="139" width="167" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -346,7 +352,7 @@ Do you agree?</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Aiw-b4-Tek" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1094" y="-500"/>
+            <point key="canvasLocation" x="1095" y="-475"/>
         </scene>
         <!--View Controller - Award-->
         <scene sceneID="czG-5h-cbH">
@@ -404,7 +410,7 @@ Do you agree?</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3wd-NA-Emj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1492" y="-475"/>
+            <point key="canvasLocation" x="1843" y="-475"/>
         </scene>
         <!--Last View Controller - NRF Demo Complete-->
         <scene sceneID="v1w-9o-xGF">
@@ -450,7 +456,7 @@ Do you agree?</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VRm-Mb-yyW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1867" y="-475"/>
+            <point key="canvasLocation" x="2234" y="-456"/>
         </scene>
         <!--View Controller - Congratulations-->
         <scene sceneID="LPy-4W-jb7">
@@ -509,7 +515,7 @@ Do you agree?</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cMN-k5-QOa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1470" y="-457"/>
+            <point key="canvasLocation" x="1471" y="-475"/>
         </scene>
         <!--Wish List View Controller-->
         <scene sceneID="RMF-3G-ayv">
@@ -701,7 +707,9 @@ Shall we guide you to them?</string>
         <image name="button-assistant-on-way.png" width="405" height="116"/>
         <image name="button-buy-now.png" width="235" height="116"/>
         <image name="button-call-assistant.png" width="640" height="116"/>
+        <image name="button-purchase.png" width="640" height="116"/>
         <image name="product-detail-box.png" width="640" height="777"/>
+        <image name="purchase-page.png" width="640" height="777"/>
         <image name="wait-a-moment.png" width="538" height="591"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
