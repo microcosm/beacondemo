@@ -7,6 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		842CB972187FA0D7009C9C82 /* complete2.png in Resources */ = {isa = PBXBuildFile; fileRef = 842CB971187FA0D7009C9C82 /* complete2.png */; };
+		842CB98F187FA0EF009C9C82 /* a-gift.png in Resources */ = {isa = PBXBuildFile; fileRef = 842CB974187FA0EF009C9C82 /* a-gift.png */; };
+		842CB990187FA0EF009C9C82 /* Bell tree.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 842CB975187FA0EF009C9C82 /* Bell tree.mp3 */; };
+		842CB991187FA0EF009C9C82 /* booth.png in Resources */ = {isa = PBXBuildFile; fileRef = 842CB976187FA0EF009C9C82 /* booth.png */; };
+		842CB992187FA0EF009C9C82 /* black_boots.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 842CB978187FA0EF009C9C82 /* black_boots.jpg */; };
+		842CB993187FA0EF009C9C82 /* green_boots.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 842CB979187FA0EF009C9C82 /* green_boots.jpg */; };
+		842CB994187FA0EF009C9C82 /* red_boots.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 842CB97A187FA0EF009C9C82 /* red_boots.jpg */; };
+		842CB995187FA0EF009C9C82 /* red_boots_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 842CB97B187FA0EF009C9C82 /* red_boots_2.jpg */; };
+		842CB996187FA0EF009C9C82 /* button-assistant-on-way.png in Resources */ = {isa = PBXBuildFile; fileRef = 842CB97C187FA0EF009C9C82 /* button-assistant-on-way.png */; };
+		842CB997187FA0EF009C9C82 /* button-buy-now.png in Resources */ = {isa = PBXBuildFile; fileRef = 842CB97D187FA0EF009C9C82 /* button-buy-now.png */; };
+		842CB998187FA0EF009C9C82 /* button-call-assistant.png in Resources */ = {isa = PBXBuildFile; fileRef = 842CB97E187FA0EF009C9C82 /* button-call-assistant.png */; };
+		842CB999187FA0EF009C9C82 /* button-claim-it.png in Resources */ = {isa = PBXBuildFile; fileRef = 842CB97F187FA0EF009C9C82 /* button-claim-it.png */; };
+		842CB99A187FA0EF009C9C82 /* button-purchase.png in Resources */ = {isa = PBXBuildFile; fileRef = 842CB980187FA0EF009C9C82 /* button-purchase.png */; };
+		842CB99B187FA0EF009C9C82 /* button-unwrap-gift.png in Resources */ = {isa = PBXBuildFile; fileRef = 842CB981187FA0EF009C9C82 /* button-unwrap-gift.png */; };
+		842CB99C187FA0EF009C9C82 /* complete2.png in Resources */ = {isa = PBXBuildFile; fileRef = 842CB982187FA0EF009C9C82 /* complete2.png */; };
+		842CB99D187FA0EF009C9C82 /* map.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 842CB983187FA0EF009C9C82 /* map.jpeg */; };
+		842CB99E187FA0EF009C9C82 /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 842CB984187FA0EF009C9C82 /* OpenSans-ExtraBold.ttf */; };
+		842CB99F187FA0EF009C9C82 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 842CB985187FA0EF009C9C82 /* OpenSans-Light.ttf */; };
+		842CB9A0187FA0EF009C9C82 /* product-detail-box.png in Resources */ = {isa = PBXBuildFile; fileRef = 842CB986187FA0EF009C9C82 /* product-detail-box.png */; };
+		842CB9A1187FA0EF009C9C82 /* customer-v1.psd in Resources */ = {isa = PBXBuildFile; fileRef = 842CB988187FA0EF009C9C82 /* customer-v1.psd */; };
+		842CB9A2187FA0EF009C9C82 /* customer-v2.psd in Resources */ = {isa = PBXBuildFile; fileRef = 842CB989187FA0EF009C9C82 /* customer-v2.psd */; };
+		842CB9A3187FA0EF009C9C82 /* purchase-page.png in Resources */ = {isa = PBXBuildFile; fileRef = 842CB98A187FA0EF009C9C82 /* purchase-page.png */; };
+		842CB9A4187FA0EF009C9C82 /* starbucks.png in Resources */ = {isa = PBXBuildFile; fileRef = 842CB98B187FA0EF009C9C82 /* starbucks.png */; };
+		842CB9A5187FA0EF009C9C82 /* Timberland-Pro-Work-Boots.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 842CB98C187FA0EF009C9C82 /* Timberland-Pro-Work-Boots.jpg */; };
+		842CB9A6187FA0EF009C9C82 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = 842CB98D187FA0EF009C9C82 /* user.png */; };
+		842CB9A7187FA0EF009C9C82 /* wait-a-moment.png in Resources */ = {isa = PBXBuildFile; fileRef = 842CB98E187FA0EF009C9C82 /* wait-a-moment.png */; };
 		8446F7271871F8ED0058BB85 /* BeaconLayoutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8446F7261871F8ED0058BB85 /* BeaconLayoutManager.m */; };
 		8446F72A18721CBB0058BB85 /* DictionaryFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8446F72918721CBB0058BB85 /* DictionaryFactory.m */; };
 		845A6FFE187F779C00EFD2C0 /* product-detail-box.png in Resources */ = {isa = PBXBuildFile; fileRef = 845A6FFD187F779C00EFD2C0 /* product-detail-box.png */; };
@@ -22,7 +48,6 @@
 		845A7016187F9A0900EFD2C0 /* button-claim-it.png in Resources */ = {isa = PBXBuildFile; fileRef = 845A7012187F9A0900EFD2C0 /* button-claim-it.png */; };
 		845A7017187F9A0900EFD2C0 /* button-unwrap-gift.png in Resources */ = {isa = PBXBuildFile; fileRef = 845A7013187F9A0900EFD2C0 /* button-unwrap-gift.png */; };
 		845A7018187F9A0900EFD2C0 /* starbucks.png in Resources */ = {isa = PBXBuildFile; fileRef = 845A7014187F9A0900EFD2C0 /* starbucks.png */; };
-		845A701A187F9C1F00EFD2C0 /* complete.png in Resources */ = {isa = PBXBuildFile; fileRef = 845A7019187F9C1F00EFD2C0 /* complete.png */; };
 		8497E524187F2A9A003E50CD /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8497E522187F2A9A003E50CD /* OpenSans-ExtraBold.ttf */; };
 		8497E525187F2A9A003E50CD /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8497E523187F2A9A003E50CD /* OpenSans-Light.ttf */; };
 		84D4B59B187F714A0044AE06 /* WishListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D4B59A187F714A0044AE06 /* WishListViewController.m */; };
@@ -66,6 +91,32 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		842CB971187FA0D7009C9C82 /* complete2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = complete2.png; path = "Supporting Files/complete2.png"; sourceTree = SOURCE_ROOT; };
+		842CB974187FA0EF009C9C82 /* a-gift.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "a-gift.png"; sourceTree = "<group>"; };
+		842CB975187FA0EF009C9C82 /* Bell tree.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Bell tree.mp3"; sourceTree = "<group>"; };
+		842CB976187FA0EF009C9C82 /* booth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = booth.png; sourceTree = "<group>"; };
+		842CB978187FA0EF009C9C82 /* black_boots.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = black_boots.jpg; sourceTree = "<group>"; };
+		842CB979187FA0EF009C9C82 /* green_boots.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = green_boots.jpg; sourceTree = "<group>"; };
+		842CB97A187FA0EF009C9C82 /* red_boots.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = red_boots.jpg; sourceTree = "<group>"; };
+		842CB97B187FA0EF009C9C82 /* red_boots_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = red_boots_2.jpg; sourceTree = "<group>"; };
+		842CB97C187FA0EF009C9C82 /* button-assistant-on-way.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-assistant-on-way.png"; sourceTree = "<group>"; };
+		842CB97D187FA0EF009C9C82 /* button-buy-now.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-buy-now.png"; sourceTree = "<group>"; };
+		842CB97E187FA0EF009C9C82 /* button-call-assistant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-call-assistant.png"; sourceTree = "<group>"; };
+		842CB97F187FA0EF009C9C82 /* button-claim-it.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-claim-it.png"; sourceTree = "<group>"; };
+		842CB980187FA0EF009C9C82 /* button-purchase.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-purchase.png"; sourceTree = "<group>"; };
+		842CB981187FA0EF009C9C82 /* button-unwrap-gift.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-unwrap-gift.png"; sourceTree = "<group>"; };
+		842CB982187FA0EF009C9C82 /* complete2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = complete2.png; sourceTree = "<group>"; };
+		842CB983187FA0EF009C9C82 /* map.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = map.jpeg; sourceTree = "<group>"; };
+		842CB984187FA0EF009C9C82 /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		842CB985187FA0EF009C9C82 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		842CB986187FA0EF009C9C82 /* product-detail-box.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "product-detail-box.png"; sourceTree = "<group>"; };
+		842CB988187FA0EF009C9C82 /* customer-v1.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = "customer-v1.psd"; sourceTree = "<group>"; };
+		842CB989187FA0EF009C9C82 /* customer-v2.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = "customer-v2.psd"; sourceTree = "<group>"; };
+		842CB98A187FA0EF009C9C82 /* purchase-page.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "purchase-page.png"; sourceTree = "<group>"; };
+		842CB98B187FA0EF009C9C82 /* starbucks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = starbucks.png; sourceTree = "<group>"; };
+		842CB98C187FA0EF009C9C82 /* Timberland-Pro-Work-Boots.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Timberland-Pro-Work-Boots.jpg"; sourceTree = "<group>"; };
+		842CB98D187FA0EF009C9C82 /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
+		842CB98E187FA0EF009C9C82 /* wait-a-moment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wait-a-moment.png"; sourceTree = "<group>"; };
 		8446F7251871F8ED0058BB85 /* BeaconLayoutManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeaconLayoutManager.h; sourceTree = "<group>"; };
 		8446F7261871F8ED0058BB85 /* BeaconLayoutManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeaconLayoutManager.m; sourceTree = "<group>"; };
 		8446F72818721CBB0058BB85 /* DictionaryFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DictionaryFactory.h; sourceTree = "<group>"; };
@@ -85,7 +136,6 @@
 		845A7012187F9A0900EFD2C0 /* button-claim-it.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-claim-it.png"; path = "Supporting Files/button-claim-it.png"; sourceTree = SOURCE_ROOT; };
 		845A7013187F9A0900EFD2C0 /* button-unwrap-gift.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-unwrap-gift.png"; path = "Supporting Files/button-unwrap-gift.png"; sourceTree = SOURCE_ROOT; };
 		845A7014187F9A0900EFD2C0 /* starbucks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = starbucks.png; path = "Supporting Files/starbucks.png"; sourceTree = SOURCE_ROOT; };
-		845A7019187F9C1F00EFD2C0 /* complete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = complete.png; path = "Supporting Files/complete.png"; sourceTree = SOURCE_ROOT; };
 		8497E522187F2A9A003E50CD /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-ExtraBold.ttf"; path = "Supporting Files/OpenSans-ExtraBold.ttf"; sourceTree = SOURCE_ROOT; };
 		8497E523187F2A9A003E50CD /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-Light.ttf"; path = "Supporting Files/OpenSans-Light.ttf"; sourceTree = SOURCE_ROOT; };
 		84D4B599187F714A0044AE06 /* WishListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WishListViewController.h; sourceTree = "<group>"; };
@@ -154,6 +204,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		842CB973187FA0EF009C9C82 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				842CB974187FA0EF009C9C82 /* a-gift.png */,
+				842CB975187FA0EF009C9C82 /* Bell tree.mp3 */,
+				842CB976187FA0EF009C9C82 /* booth.png */,
+				842CB977187FA0EF009C9C82 /* Boots */,
+				842CB97C187FA0EF009C9C82 /* button-assistant-on-way.png */,
+				842CB97D187FA0EF009C9C82 /* button-buy-now.png */,
+				842CB97E187FA0EF009C9C82 /* button-call-assistant.png */,
+				842CB97F187FA0EF009C9C82 /* button-claim-it.png */,
+				842CB980187FA0EF009C9C82 /* button-purchase.png */,
+				842CB981187FA0EF009C9C82 /* button-unwrap-gift.png */,
+				842CB982187FA0EF009C9C82 /* complete2.png */,
+				842CB983187FA0EF009C9C82 /* map.jpeg */,
+				842CB984187FA0EF009C9C82 /* OpenSans-ExtraBold.ttf */,
+				842CB985187FA0EF009C9C82 /* OpenSans-Light.ttf */,
+				842CB986187FA0EF009C9C82 /* product-detail-box.png */,
+				842CB987187FA0EF009C9C82 /* PSDs */,
+				842CB98A187FA0EF009C9C82 /* purchase-page.png */,
+				842CB98B187FA0EF009C9C82 /* starbucks.png */,
+				842CB98C187FA0EF009C9C82 /* Timberland-Pro-Work-Boots.jpg */,
+				842CB98D187FA0EF009C9C82 /* user.png */,
+				842CB98E187FA0EF009C9C82 /* wait-a-moment.png */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		842CB977187FA0EF009C9C82 /* Boots */ = {
+			isa = PBXGroup;
+			children = (
+				842CB978187FA0EF009C9C82 /* black_boots.jpg */,
+				842CB979187FA0EF009C9C82 /* green_boots.jpg */,
+				842CB97A187FA0EF009C9C82 /* red_boots.jpg */,
+				842CB97B187FA0EF009C9C82 /* red_boots_2.jpg */,
+			);
+			path = Boots;
+			sourceTree = "<group>";
+		};
+		842CB987187FA0EF009C9C82 /* PSDs */ = {
+			isa = PBXGroup;
+			children = (
+				842CB988187FA0EF009C9C82 /* customer-v1.psd */,
+				842CB989187FA0EF009C9C82 /* customer-v2.psd */,
+			);
+			path = PSDs;
+			sourceTree = "<group>";
+		};
 		8446F7231871F3860058BB85 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +266,7 @@
 		CC604B471868A6D50011A48D = {
 			isa = PBXGroup;
 			children = (
+				842CB973187FA0EF009C9C82 /* Supporting Files */,
 				CC604B591868A6D50011A48D /* BeaconDemo */,
 				CC604B781868A6D50011A48D /* BeaconDemoTests */,
 				CC604B521868A6D50011A48D /* Frameworks */,
@@ -202,6 +301,7 @@
 				CC604B621868A6D50011A48D /* AppDelegate.h */,
 				CC604B631868A6D50011A48D /* AppDelegate.m */,
 				CC604B651868A6D50011A48D /* Main.storyboard */,
+				842CB971187FA0D7009C9C82 /* complete2.png */,
 				845A700A187F8BD700EFD2C0 /* ConfirmPurchaseViewController.h */,
 				845A700B187F8BD700EFD2C0 /* ConfirmPurchaseViewController.m */,
 				845A7007187F890900EFD2C0 /* WaitAMomentViewController.h */,
@@ -230,7 +330,6 @@
 		CC604B5A1868A6D50011A48D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				845A7019187F9C1F00EFD2C0 /* complete.png */,
 				845A7011187F9A0900EFD2C0 /* a-gift.png */,
 				845A7012187F9A0900EFD2C0 /* button-claim-it.png */,
 				845A7013187F9A0900EFD2C0 /* button-unwrap-gift.png */,
@@ -357,30 +456,55 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				842CB9A5187FA0EF009C9C82 /* Timberland-Pro-Work-Boots.jpg in Resources */,
+				842CB996187FA0EF009C9C82 /* button-assistant-on-way.png in Resources */,
+				842CB99A187FA0EF009C9C82 /* button-purchase.png in Resources */,
+				842CB99E187FA0EF009C9C82 /* OpenSans-ExtraBold.ttf in Resources */,
+				842CB9A4187FA0EF009C9C82 /* starbucks.png in Resources */,
 				CCA0BCAB187EF6BE0030A9F4 /* dimmed_view.png in Resources */,
-				845A701A187F9C1F00EFD2C0 /* complete.png in Resources */,
 				845A700E187F939C00EFD2C0 /* purchase-page.png in Resources */,
 				845A7018187F9A0900EFD2C0 /* starbucks.png in Resources */,
 				845A7010187F948000EFD2C0 /* button-purchase.png in Resources */,
+				842CB992187FA0EF009C9C82 /* black_boots.jpg in Resources */,
+				842CB991187FA0EF009C9C82 /* booth.png in Resources */,
+				842CB997187FA0EF009C9C82 /* button-buy-now.png in Resources */,
+				842CB9A7187FA0EF009C9C82 /* wait-a-moment.png in Resources */,
 				845A7016187F9A0900EFD2C0 /* button-claim-it.png in Resources */,
+				842CB99D187FA0EF009C9C82 /* map.jpeg in Resources */,
 				845A7015187F9A0900EFD2C0 /* a-gift.png in Resources */,
 				8497E524187F2A9A003E50CD /* OpenSans-ExtraBold.ttf in Resources */,
+				842CB9A1187FA0EF009C9C82 /* customer-v1.psd in Resources */,
+				842CB994187FA0EF009C9C82 /* red_boots.jpg in Resources */,
 				CC604B6C1868A6D50011A48D /* Images.xcassets in Resources */,
 				845A7000187F7F4400EFD2C0 /* button-call-assistant.png in Resources */,
 				845A7002187F819B00EFD2C0 /* wait-a-moment.png in Resources */,
+				842CB999187FA0EF009C9C82 /* button-claim-it.png in Resources */,
 				84E47DF7187B917B0043042F /* user-retina.png in Resources */,
+				842CB993187FA0EF009C9C82 /* green_boots.jpg in Resources */,
 				845A7017187F9A0900EFD2C0 /* button-unwrap-gift.png in Resources */,
+				842CB995187FA0EF009C9C82 /* red_boots_2.jpg in Resources */,
+				842CB99C187FA0EF009C9C82 /* complete2.png in Resources */,
+				842CB9A3187FA0EF009C9C82 /* purchase-page.png in Resources */,
 				84E47DF8187B917B0043042F /* user.png in Resources */,
 				CCEAC7F6187B310800FCBEFB /* green_boots.jpg in Resources */,
+				842CB9A0187FA0EF009C9C82 /* product-detail-box.png in Resources */,
 				845A6FFE187F779C00EFD2C0 /* product-detail-box.png in Resources */,
 				845A7006187F82E200EFD2C0 /* button-buy-now.png in Resources */,
 				84D4B59F187F742C0044AE06 /* booth.png in Resources */,
+				842CB990187FA0EF009C9C82 /* Bell tree.mp3 in Resources */,
+				842CB99F187FA0EF009C9C82 /* OpenSans-Light.ttf in Resources */,
 				845A7005187F82E200EFD2C0 /* button-assistant-on-way.png in Resources */,
+				842CB9A2187FA0EF009C9C82 /* customer-v2.psd in Resources */,
 				8497E525187F2A9A003E50CD /* OpenSans-Light.ttf in Resources */,
+				842CB9A6187FA0EF009C9C82 /* user.png in Resources */,
 				CCEAC7FA187B334700FCBEFB /* red_boots_2.jpg in Resources */,
+				842CB972187FA0D7009C9C82 /* complete2.png in Resources */,
+				842CB98F187FA0EF009C9C82 /* a-gift.png in Resources */,
 				CCEAC7F5187B310800FCBEFB /* black_boots.jpg in Resources */,
 				CC604B5E1868A6D50011A48D /* InfoPlist.strings in Resources */,
 				CC604B891868B2490011A48D /* bell.mp3 in Resources */,
+				842CB998187FA0EF009C9C82 /* button-call-assistant.png in Resources */,
+				842CB99B187FA0EF009C9C82 /* button-unwrap-gift.png in Resources */,
 				CC604B671868A6D50011A48D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
