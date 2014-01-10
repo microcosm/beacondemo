@@ -13,6 +13,7 @@
 @property (strong, nonatomic) IBOutlet UIView *background;
 @property (strong, nonatomic) IBOutlet UILabel *titleLabel;
 @property (strong, nonatomic) IBOutlet UITextView *bodyTextView;
+@property (strong, nonatomic) IBOutlet UIImageView *bootSelected;
 
 @end
 
@@ -78,6 +79,22 @@
                                                 options:@{ CBCentralManagerScanOptionAllowDuplicatesKey : @YES }];
     
     NSLog(@"Scanning started");
+}
+
+- (void)setImageOfBootForString:(NSString *)stringOfImage {
+    if ([stringOfImage isEqualToString: @"black"]) {
+        self.bootSelected.image = [UIImage imageNamed:@"boots_rotated_gray.png"];
+    } else if ([stringOfImage isEqualToString: @"maroon"]) {
+        self.bootSelected.image = [UIImage imageNamed:@"boots_rotated_red.png"];
+    } else if ([stringOfImage isEqualToString: @"yellow"]) {
+        self.bootSelected.image = [UIImage imageNamed:@"boots_rotated_yellow.png"];
+    }else if ([stringOfImage isEqualToString: @"green"]) {
+        self.bootSelected.image = [UIImage imageNamed:@"boots_rotated_green.png"];
+    }else if ([stringOfImage isEqualToString: @"cyan"]) {
+        self.bootSelected.image = [UIImage imageNamed:@"boots_rotated_cyan.png"];
+    }else if ([stringOfImage isEqualToString: @"white"]) {
+        self.bootSelected.image = [UIImage imageNamed:@"boots_rotated_white.png"];
+    }
 }
 
 
@@ -166,6 +183,8 @@
     if ([stringFromData isEqualToString:@"EOM"]) {
         
         self.textview.text = [[NSString alloc] initWithData:self.data encoding:NSUTF8StringEncoding];
+        
+        [self setImageOfBootForString:self.textview.text];
         
         [peripheral setNotifyValue:NO forCharacteristic:characteristic];
         

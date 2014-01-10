@@ -80,6 +80,12 @@
 		CC604B891868B2490011A48D /* bell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CC604B881868B2490011A48D /* bell.mp3 */; };
 		CC70B665188093BA00DBD225 /* color_border.png in Resources */ = {isa = PBXBuildFile; fileRef = CC70B664188093BA00DBD225 /* color_border.png */; };
 		CC70B667188093D900DBD225 /* color_border2.png in Resources */ = {isa = PBXBuildFile; fileRef = CC70B666188093D900DBD225 /* color_border2.png */; };
+		CC70B66E188098A500DBD225 /* boots_rotated_cyan.png in Resources */ = {isa = PBXBuildFile; fileRef = CC70B668188098A500DBD225 /* boots_rotated_cyan.png */; };
+		CC70B66F188098A500DBD225 /* boots_rotated_gray.png in Resources */ = {isa = PBXBuildFile; fileRef = CC70B669188098A500DBD225 /* boots_rotated_gray.png */; };
+		CC70B670188098A500DBD225 /* boots_rotated_green.png in Resources */ = {isa = PBXBuildFile; fileRef = CC70B66A188098A500DBD225 /* boots_rotated_green.png */; };
+		CC70B671188098A500DBD225 /* boots_rotated_red.png in Resources */ = {isa = PBXBuildFile; fileRef = CC70B66B188098A500DBD225 /* boots_rotated_red.png */; };
+		CC70B672188098A500DBD225 /* boots_rotated_white.png in Resources */ = {isa = PBXBuildFile; fileRef = CC70B66C188098A500DBD225 /* boots_rotated_white.png */; };
+		CC70B673188098A500DBD225 /* boots_rotated_yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = CC70B66D188098A500DBD225 /* boots_rotated_yellow.png */; };
 		CC8B5E26187F68180063757E /* LastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8B5E25187F68180063757E /* LastViewController.m */; };
 		CCA0BCAB187EF6BE0030A9F4 /* dimmed_view.png in Resources */ = {isa = PBXBuildFile; fileRef = CCA0BCAA187EF6BE0030A9F4 /* dimmed_view.png */; };
 		CCD1BD4D1880823200BFC798 /* checkbox-unchecked-gray-hi.png in Resources */ = {isa = PBXBuildFile; fileRef = CCD1BD4C1880823200BFC798 /* checkbox-unchecked-gray-hi.png */; };
@@ -186,6 +192,12 @@
 		CC604B881868B2490011A48D /* bell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bell.mp3; sourceTree = "<group>"; };
 		CC70B664188093BA00DBD225 /* color_border.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = color_border.png; sourceTree = "<group>"; };
 		CC70B666188093D900DBD225 /* color_border2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = color_border2.png; sourceTree = "<group>"; };
+		CC70B668188098A500DBD225 /* boots_rotated_cyan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boots_rotated_cyan.png; sourceTree = "<group>"; };
+		CC70B669188098A500DBD225 /* boots_rotated_gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boots_rotated_gray.png; sourceTree = "<group>"; };
+		CC70B66A188098A500DBD225 /* boots_rotated_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boots_rotated_green.png; sourceTree = "<group>"; };
+		CC70B66B188098A500DBD225 /* boots_rotated_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boots_rotated_red.png; sourceTree = "<group>"; };
+		CC70B66C188098A500DBD225 /* boots_rotated_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boots_rotated_white.png; sourceTree = "<group>"; };
+		CC70B66D188098A500DBD225 /* boots_rotated_yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boots_rotated_yellow.png; sourceTree = "<group>"; };
 		CC8B5E24187F68180063757E /* LastViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LastViewController.h; sourceTree = "<group>"; };
 		CC8B5E25187F68180063757E /* LastViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LastViewController.m; sourceTree = "<group>"; };
 		CCA0BCAA187EF6BE0030A9F4 /* dimmed_view.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dimmed_view.png; sourceTree = "<group>"; };
@@ -321,6 +333,12 @@
 				CC604B621868A6D50011A48D /* AppDelegate.h */,
 				CC604B631868A6D50011A48D /* AppDelegate.m */,
 				CC604B651868A6D50011A48D /* Main.storyboard */,
+				CC70B668188098A500DBD225 /* boots_rotated_cyan.png */,
+				CC70B669188098A500DBD225 /* boots_rotated_gray.png */,
+				CC70B66A188098A500DBD225 /* boots_rotated_green.png */,
+				CC70B66B188098A500DBD225 /* boots_rotated_red.png */,
+				CC70B66C188098A500DBD225 /* boots_rotated_white.png */,
+				CC70B66D188098A500DBD225 /* boots_rotated_yellow.png */,
 				845A700A187F8BD700EFD2C0 /* ConfirmPurchaseViewController.h */,
 				845A700B187F8BD700EFD2C0 /* ConfirmPurchaseViewController.m */,
 				845A7007187F890900EFD2C0 /* WaitAMomentViewController.h */,
@@ -493,24 +511,28 @@
 				CC70B665188093BA00DBD225 /* color_border.png in Resources */,
 				842CB9A4187FA0EF009C9C82 /* starbucks.png in Resources */,
 				CCA0BCAB187EF6BE0030A9F4 /* dimmed_view.png in Resources */,
+				CC70B673188098A500DBD225 /* boots_rotated_yellow.png in Resources */,
 				845A700E187F939C00EFD2C0 /* purchase-page.png in Resources */,
 				845A7018187F9A0900EFD2C0 /* starbucks.png in Resources */,
 				845A7010187F948000EFD2C0 /* button-purchase.png in Resources */,
 				842CB992187FA0EF009C9C82 /* black_boots.jpg in Resources */,
 				842CB991187FA0EF009C9C82 /* booth.png in Resources */,
 				842CB997187FA0EF009C9C82 /* button-buy-now.png in Resources */,
+				CC70B66E188098A500DBD225 /* boots_rotated_cyan.png in Resources */,
 				840DB809187FA59600D7D1F8 /* BRAND-01.png in Resources */,
 				84A23EE518807D1700297BEA /* boots_rotated.png in Resources */,
 				842CB9A7187FA0EF009C9C82 /* wait-a-moment.png in Resources */,
 				845A7016187F9A0900EFD2C0 /* button-claim-it.png in Resources */,
 				842CB99D187FA0EF009C9C82 /* map.jpeg in Resources */,
 				840DB805187FA3B900D7D1F8 /* button-found-it.png in Resources */,
+				CC70B66F188098A500DBD225 /* boots_rotated_gray.png in Resources */,
 				845A7015187F9A0900EFD2C0 /* a-gift.png in Resources */,
 				8497E524187F2A9A003E50CD /* OpenSans-ExtraBold.ttf in Resources */,
 				842CB9A1187FA0EF009C9C82 /* customer-v1.psd in Resources */,
 				842CB994187FA0EF009C9C82 /* red_boots.jpg in Resources */,
 				CC604B6C1868A6D50011A48D /* Images.xcassets in Resources */,
 				845A7000187F7F4400EFD2C0 /* button-call-assistant.png in Resources */,
+				CC70B671188098A500DBD225 /* boots_rotated_red.png in Resources */,
 				845A7002187F819B00EFD2C0 /* wait-a-moment.png in Resources */,
 				840DB806187FA3B900D7D1F8 /* button-help-find.png in Resources */,
 				842CB999187FA0EF009C9C82 /* button-claim-it.png in Resources */,
@@ -527,6 +549,7 @@
 				845A6FFE187F779C00EFD2C0 /* product-detail-box.png in Resources */,
 				840DB807187FA3B900D7D1F8 /* button-i-agree.png in Resources */,
 				845A7006187F82E200EFD2C0 /* button-buy-now.png in Resources */,
+				CC70B672188098A500DBD225 /* boots_rotated_white.png in Resources */,
 				84D4B59F187F742C0044AE06 /* booth.png in Resources */,
 				842CB990187FA0EF009C9C82 /* Bell tree.mp3 in Resources */,
 				842CB99F187FA0EF009C9C82 /* OpenSans-Light.ttf in Resources */,
@@ -534,6 +557,7 @@
 				842CB9A2187FA0EF009C9C82 /* customer-v2.psd in Resources */,
 				CC70B667188093D900DBD225 /* color_border2.png in Resources */,
 				8497E525187F2A9A003E50CD /* OpenSans-Light.ttf in Resources */,
+				CC70B670188098A500DBD225 /* boots_rotated_green.png in Resources */,
 				842CB9A6187FA0EF009C9C82 /* user.png in Resources */,
 				CCEAC7FA187B334700FCBEFB /* red_boots_2.jpg in Resources */,
 				842CB972187FA0D7009C9C82 /* complete2.png in Resources */,

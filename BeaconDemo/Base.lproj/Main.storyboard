@@ -86,7 +86,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wk5-r2-rob">
-                                                <rect key="frame" x="20" y="208" width="240" height="145"/>
+                                                <rect key="frame" x="20" y="9" width="240" height="47"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
@@ -100,7 +100,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z60-xo-N9G">
-                                                <rect key="frame" x="0.0" y="93" width="280" height="212"/>
+                                                <rect key="frame" x="0.0" y="101" width="280" height="212"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <string key="text">The user will pick a boot and it will appear below. After you have helped the user, please reset the color at the end of the interaction.</string>
@@ -118,6 +118,10 @@
                                                     <action selector="resetApplication:" destination="tkp-r1-k7r" eventType="touchUpInside" id="p6a-h2-mGH"/>
                                                 </connections>
                                             </button>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U5B-SS-9NT">
+                                                <rect key="frame" x="70" y="204" width="140" height="140"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                     </view>
@@ -134,6 +138,7 @@
                     <connections>
                         <outlet property="background" destination="mhx-BY-KJD" id="VeG-Q2-bDH"/>
                         <outlet property="bodyTextView" destination="Z60-xo-N9G" id="eqt-4I-ScC"/>
+                        <outlet property="bootSelected" destination="U5B-SS-9NT" id="oEG-q9-lo9"/>
                         <outlet property="textview" destination="wk5-r2-rob" id="VWe-eO-V4i"/>
                         <outlet property="titleLabel" destination="Pwq-BA-O6c" id="3gr-qG-QTR"/>
                     </connections>
@@ -296,6 +301,7 @@
                         <outlet property="color4" destination="5qH-ya-9eG" id="KZ9-fv-POD"/>
                         <outlet property="color5" destination="ncP-Ji-wgZ" id="XaJ-aJ-Vxk"/>
                         <outlet property="color6" destination="ItP-yv-13s" id="Wr6-SQ-HD6"/>
+                        <outlet property="currentBoot" destination="gbb-aB-R1E" id="Ucf-Gh-TpV"/>
                         <outlet property="cyanHighlighted" destination="stv-oX-tze" id="N2i-BT-VC4"/>
                         <outlet property="greenHighlighted" destination="rzx-GQ-Y9M" id="Q0s-Jh-Jjy"/>
                         <outlet property="maroonHighlighted" destination="hdG-SV-0Ks" id="SxO-AK-82G"/>

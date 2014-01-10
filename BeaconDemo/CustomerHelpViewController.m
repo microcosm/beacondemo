@@ -13,6 +13,7 @@
 
 @property (nonatomic) BOOL buttonPressed;
 
+@property (strong, nonatomic) IBOutlet UIImageView *currentBoot;
 
 @property (strong, nonatomic) IBOutlet UITextView *textView;
 
@@ -57,7 +58,7 @@
     
     self.background.backgroundColor = [self colorWithHexString:@"efeff4"];
     
-    self.textView.text = [NSString stringWithFormat:@"BOOTS COLORS: ------"];
+    self.textView.text = [NSString stringWithFormat:@"-"];
 
     
 }
@@ -252,6 +253,8 @@
             self.cyanHighlighted.hidden = YES;
             self.greenHighlighted.hidden = YES;
             self.yellowHighlighted.hidden = YES;
+            
+            self.currentBoot.image = [UIImage imageNamed:@"boots_rotated_gray.png"];
         }
         
         if ([sender tag] == 2){
@@ -263,8 +266,11 @@
             self.cyanHighlighted.hidden = YES;
             self.greenHighlighted.hidden = YES;
             self.yellowHighlighted.hidden = YES;
+            
+            self.currentBoot.image = [UIImage imageNamed:@"boots_rotated_red.png"];
+
         }
-        
+    
         if ([sender tag] == 3){
             self.color = @"white";
             
@@ -274,8 +280,11 @@
             self.cyanHighlighted.hidden = YES;
             self.greenHighlighted.hidden = YES;
             self.yellowHighlighted.hidden = YES;
+            
+            self.currentBoot.image = [UIImage imageNamed:@"boots_rotated_white.png"];
+
         }
-        
+    
         if ([sender tag] == 4){
             self.color = @"cyan";
             
@@ -285,8 +294,11 @@
             self.cyanHighlighted.hidden = NO;
             self.greenHighlighted.hidden = YES;
             self.yellowHighlighted.hidden = YES;
+            
+            self.currentBoot.image = [UIImage imageNamed:@"boots_rotated_cyan.png"];
+
         }
-        
+    
         if ([sender tag] == 5){
             self.color = @"green";
             
@@ -296,8 +308,11 @@
             self.cyanHighlighted.hidden = YES;
             self.greenHighlighted.hidden = NO;
             self.yellowHighlighted.hidden = YES;
+            
+            self.currentBoot.image = [UIImage imageNamed:@"boots_rotated_green.png"];
+
         }
-        
+    
         if ([sender tag] == 6){
             self.color = @"yellow";
             
@@ -307,9 +322,12 @@
             self.cyanHighlighted.hidden = YES;
             self.greenHighlighted.hidden = YES;
             self.yellowHighlighted.hidden = NO;
+            
+            self.currentBoot.image = [UIImage imageNamed:@"boots_rotated_yellow.png"];
+
         }
-        
-        self.textView.text = [NSString stringWithFormat:@"BOOTS COLORS: %@ ", self.color];
+    
+        self.textView.text = [NSString stringWithFormat:@"%@", self.color];
 }
 
 -(UIColor*)colorWithHexString:(NSString*)hex
