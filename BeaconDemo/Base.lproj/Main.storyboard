@@ -61,7 +61,7 @@ Do you agree?</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y0c-Ai-vbP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-508" y="-467"/>
+            <point key="canvasLocation" x="-785" y="-475"/>
         </scene>
         <!--Sales Associate Help View Controller - Sales Associate Help View-->
         <scene sceneID="K4P-ep-D7l">
@@ -300,7 +300,7 @@ Do you agree?</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iUf-s5-fYV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="707" y="-475"/>
+            <point key="canvasLocation" x="722" y="-475"/>
         </scene>
         <!--Confirm Purchase View Controller - Confirm your purchase-->
         <scene sceneID="eoW-fy-xWJ">
@@ -402,7 +402,7 @@ Do you agree?</string>
             </objects>
             <point key="canvasLocation" x="1843" y="-475"/>
         </scene>
-        <!--Last View Controller - NRF Demo Complete-->
+        <!--Last View Controller - Demo complete-->
         <scene sceneID="v1w-9o-xGF">
             <objects>
                 <viewController id="YF4-up-UyW" customClass="LastViewController" sceneMemberID="viewController">
@@ -414,39 +414,23 @@ Do you agree?</string>
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="You have experienced &quot;Brand&quot; as a consumer! TW rep will now show you the retail experience!" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QZ0-ef-sPY">
-                                <rect key="frame" x="15" y="175" width="290" height="197"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qai-0U-UPb">
-                                <rect key="frame" x="0.0" y="436" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <items>
-                                    <barButtonItem style="plain" id="EPq-y4-CbV">
-                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="JgE-x0-IlC">
-                                            <rect key="frame" x="16" y="6" width="302" height="33"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <state key="normal" title="Next experience">
-                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                            </state>
-                                            <connections>
-                                                <action selector="nextExperience:" destination="YF4-up-UyW" eventType="touchUpInside" id="iUO-8k-9bv"/>
-                                            </connections>
-                                        </button>
-                                    </barButtonItem>
-                                </items>
-                            </toolbar>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9a0-9c-cV2">
+                                <rect key="frame" x="12" y="76" width="295" height="344"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="complete.png" translatesAutoresizingMaskIntoConstraints="NO" id="fcp-i9-B1p">
+                                <rect key="frame" x="12" y="91" width="295" height="358"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="NRF Demo Complete" id="WID-5s-egh"/>
+                    <navigationItem key="navigationItem" title="Demo complete" id="WID-5s-egh"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VRm-Mb-yyW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2234" y="-456"/>
+            <point key="canvasLocation" x="2187" y="-475"/>
         </scene>
         <!--View Controller - Congratulations-->
         <scene sceneID="LPy-4W-jb7">
@@ -494,7 +478,7 @@ Do you agree?</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cMN-k5-QOa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1471" y="-475"/>
+            <point key="canvasLocation" x="1475" y="-475"/>
         </scene>
         <!--Wish List View Controller-->
         <scene sceneID="RMF-3G-ayv">
@@ -563,7 +547,7 @@ Shall we guide you to them?</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Xa-2K-c7Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-394" y="171"/>
+            <point key="canvasLocation" x="-405" y="-475"/>
         </scene>
         <!--Map View Controller - Map-->
         <scene sceneID="7jx-FU-Fjc">
@@ -690,6 +674,7 @@ Shall we guide you to them?</string>
         <image name="button-claim-it.png" width="640" height="116"/>
         <image name="button-purchase.png" width="640" height="116"/>
         <image name="button-unwrap-gift.png" width="640" height="116"/>
+        <image name="complete.png" width="640" height="777"/>
         <image name="product-detail-box.png" width="640" height="777"/>
         <image name="purchase-page.png" width="640" height="777"/>
         <image name="starbucks.png" width="640" height="777"/>
