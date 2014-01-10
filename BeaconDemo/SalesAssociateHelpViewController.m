@@ -10,6 +10,9 @@
 @property (strong, nonatomic) CBPeripheral          *savedPeripheral;
 @property (strong, nonatomic) NSMutableData         *data;
 @property (strong, nonatomic) IBOutlet UITextView *textview;
+@property (strong, nonatomic) IBOutlet UIView *background;
+@property (strong, nonatomic) IBOutlet UILabel *titleLabel;
+@property (strong, nonatomic) IBOutlet UITextView *bodyTextView;
 
 @end
 
@@ -20,6 +23,18 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.background.backgroundColor = [self colorWithHexString:@"efeff4"];
+    
+    self.titleLabel.font = [UIFont fontWithName:@"OpenSans-ExtraBold" size:25];
+    self.titleLabel.textColor = [self colorWithHexString:@"2c3e50"];
+    self.titleLabel.backgroundColor = [UIColor colorWithHue:0 saturation:0 brightness:0 alpha:0];
+    self.titleLabel.textAlignment = NSTextAlignmentCenter;
+    
+    self.bodyTextView.font = [UIFont fontWithName:@"OpenSans-Light" size:15];
+    self.bodyTextView.textColor = [self colorWithHexString:@"2c3e50"];
+    self.bodyTextView.backgroundColor = [UIColor colorWithHue:0 saturation:0 brightness:0 alpha:0];
+    self.bodyTextView.textAlignment = NSTextAlignmentCenter;
     
     
     UIDevice *currentDevice = [UIDevice currentDevice];
@@ -239,6 +254,42 @@
 
 - (IBAction)resetApplication:(id)sender {
     [self.textview setText:@""];
+}
+
+-(UIColor*)colorWithHexString:(NSString*)hex
+{
+    NSString *cString = [[hex stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] uppercaseString];
+    
+    // String should be 6 or 8 characters
+    if ([cString length] < 6) return [UIColor grayColor];
+    
+    // strip 0X if it appears
+    if ([cString hasPrefix:@"0X"]) cString = [cString substringFromIndex:2];
+    
+    if ([cString length] != 6) return  [UIColor grayColor];
+    
+    // Separate into r, g, b substrings
+    NSRange range;
+    range.location = 0;
+    range.length = 2;
+    NSString *rString = [cString substringWithRange:range];
+    
+    range.location = 2;
+    NSString *gString = [cString substringWithRange:range];
+    
+    range.location = 4;
+    NSString *bString = [cString substringWithRange:range];
+    
+    // Scan values
+    unsigned int r, g, b;
+    [[NSScanner scannerWithString:rString] scanHexInt:&r];
+    [[NSScanner scannerWithString:gString] scanHexInt:&g];
+    [[NSScanner scannerWithString:bString] scanHexInt:&b];
+    
+    return [UIColor colorWithRed:((float) r / 255.0f)
+                           green:((float) g / 255.0f)
+                            blue:((float) b / 255.0f)
+                           alpha:1.0f];
 }
 
 @end
