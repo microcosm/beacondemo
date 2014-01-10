@@ -225,7 +225,7 @@ Do you agree?</string>
                                         </state>
                                         <connections>
                                             <action selector="didCallAssistant:" destination="OA0-mD-etp" eventType="touchUpInside" id="fxW-g5-biW"/>
-                                            <segue destination="wrc-Zg-uHz" kind="push" id="J5F-4G-MZL"/>
+                                            <segue destination="4WT-GK-GER" kind="push" id="AaB-Sz-8BI"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -249,6 +249,55 @@ Do you agree?</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="viv-Df-VVN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="369" y="-475"/>
+        </scene>
+        <!--View Controller - Wait a moment-->
+        <scene sceneID="g97-9z-y1r">
+            <objects>
+                <viewController id="4WT-GK-GER" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PeM-a8-n3K"/>
+                        <viewControllerLayoutGuide type="bottom" id="qUZ-ll-ZaB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hCy-t0-owz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6CP-rz-bcl">
+                                <rect key="frame" x="14" y="79" width="295" height="344"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wait-a-moment.png" translatesAutoresizingMaskIntoConstraints="NO" id="O7w-IS-qeG">
+                                        <rect key="frame" x="25" y="37" width="244" height="270"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hKj-yS-Hoh">
+                                <rect key="frame" x="-2" y="431" width="188" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="button-assistant-on-way.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XHs-LE-jZj">
+                                <rect key="frame" x="189" y="431" width="136" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="button-buy-now.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wrc-Zg-uHz" kind="push" id="4m2-YV-yNz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Wait a moment" id="Cdf-oe-zmC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iUf-s5-fYV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="707" y="-475"/>
         </scene>
         <!--View Controller - Confirm your purchase-->
         <scene sceneID="eoW-fy-xWJ">
@@ -294,7 +343,7 @@ Do you agree?</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Aiw-b4-Tek" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="740" y="-475"/>
+            <point key="canvasLocation" x="1094" y="-500"/>
         </scene>
         <!--View Controller - Award-->
         <scene sceneID="czG-5h-cbH">
@@ -457,7 +506,7 @@ Do you agree?</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cMN-k5-QOa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1110" y="-475"/>
+            <point key="canvasLocation" x="1470" y="-457"/>
         </scene>
         <!--Wish List View Controller-->
         <scene sceneID="RMF-3G-ayv">
@@ -646,8 +695,11 @@ Shall we guide you to them?</string>
     <resources>
         <image name="booth.png" width="640" height="746"/>
         <image name="boots" width="107" height="103"/>
+        <image name="button-assistant-on-way.png" width="405" height="116"/>
+        <image name="button-buy-now.png" width="235" height="116"/>
         <image name="button-call-assistant.png" width="640" height="116"/>
         <image name="product-detail-box.png" width="640" height="777"/>
+        <image name="wait-a-moment.png" width="538" height="591"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

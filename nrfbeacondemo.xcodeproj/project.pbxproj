@@ -11,6 +11,9 @@
 		8446F72A18721CBB0058BB85 /* DictionaryFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8446F72918721CBB0058BB85 /* DictionaryFactory.m */; };
 		845A6FFE187F779C00EFD2C0 /* product-detail-box.png in Resources */ = {isa = PBXBuildFile; fileRef = 845A6FFD187F779C00EFD2C0 /* product-detail-box.png */; };
 		845A7000187F7F4400EFD2C0 /* button-call-assistant.png in Resources */ = {isa = PBXBuildFile; fileRef = 845A6FFF187F7F4400EFD2C0 /* button-call-assistant.png */; };
+		845A7002187F819B00EFD2C0 /* wait-a-moment.png in Resources */ = {isa = PBXBuildFile; fileRef = 845A7001187F819B00EFD2C0 /* wait-a-moment.png */; };
+		845A7005187F82E200EFD2C0 /* button-assistant-on-way.png in Resources */ = {isa = PBXBuildFile; fileRef = 845A7003187F82E200EFD2C0 /* button-assistant-on-way.png */; };
+		845A7006187F82E200EFD2C0 /* button-buy-now.png in Resources */ = {isa = PBXBuildFile; fileRef = 845A7004187F82E200EFD2C0 /* button-buy-now.png */; };
 		8497E524187F2A9A003E50CD /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8497E522187F2A9A003E50CD /* OpenSans-ExtraBold.ttf */; };
 		8497E525187F2A9A003E50CD /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8497E523187F2A9A003E50CD /* OpenSans-Light.ttf */; };
 		84D4B59B187F714A0044AE06 /* WishListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D4B59A187F714A0044AE06 /* WishListViewController.m */; };
@@ -60,6 +63,9 @@
 		8446F72918721CBB0058BB85 /* DictionaryFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DictionaryFactory.m; sourceTree = "<group>"; };
 		845A6FFD187F779C00EFD2C0 /* product-detail-box.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "product-detail-box.png"; path = "Supporting Files/product-detail-box.png"; sourceTree = SOURCE_ROOT; };
 		845A6FFF187F7F4400EFD2C0 /* button-call-assistant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-call-assistant.png"; path = "Supporting Files/button-call-assistant.png"; sourceTree = SOURCE_ROOT; };
+		845A7001187F819B00EFD2C0 /* wait-a-moment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "wait-a-moment.png"; path = "Supporting Files/wait-a-moment.png"; sourceTree = SOURCE_ROOT; };
+		845A7003187F82E200EFD2C0 /* button-assistant-on-way.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-assistant-on-way.png"; path = "Supporting Files/button-assistant-on-way.png"; sourceTree = SOURCE_ROOT; };
+		845A7004187F82E200EFD2C0 /* button-buy-now.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-buy-now.png"; path = "Supporting Files/button-buy-now.png"; sourceTree = SOURCE_ROOT; };
 		8497E522187F2A9A003E50CD /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-ExtraBold.ttf"; path = "Supporting Files/OpenSans-ExtraBold.ttf"; sourceTree = SOURCE_ROOT; };
 		8497E523187F2A9A003E50CD /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-Light.ttf"; path = "Supporting Files/OpenSans-Light.ttf"; sourceTree = SOURCE_ROOT; };
 		84D4B599187F714A0044AE06 /* WishListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WishListViewController.h; sourceTree = "<group>"; };
@@ -176,7 +182,6 @@
 				CC604B621868A6D50011A48D /* AppDelegate.h */,
 				CC604B631868A6D50011A48D /* AppDelegate.m */,
 				CC604B651868A6D50011A48D /* Main.storyboard */,
-				845A6FFF187F7F4400EFD2C0 /* button-call-assistant.png */,
 				CC489556187C8FD2005E2B72 /* FirstTimeRunViewController.h */,
 				CC489557187C8FD2005E2B72 /* FirstTimeRunViewController.m */,
 				CCFB3BE91876437200E07824 /* SalesAssociateHelpViewController.h */,
@@ -201,6 +206,10 @@
 		CC604B5A1868A6D50011A48D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				845A7003187F82E200EFD2C0 /* button-assistant-on-way.png */,
+				845A7004187F82E200EFD2C0 /* button-buy-now.png */,
+				845A7001187F819B00EFD2C0 /* wait-a-moment.png */,
+				845A6FFF187F7F4400EFD2C0 /* button-call-assistant.png */,
 				845A6FFD187F779C00EFD2C0 /* product-detail-box.png */,
 				84D4B59E187F742C0044AE06 /* booth.png */,
 				8497E522187F2A9A003E50CD /* OpenSans-ExtraBold.ttf */,
@@ -321,11 +330,14 @@
 				8497E524187F2A9A003E50CD /* OpenSans-ExtraBold.ttf in Resources */,
 				CC604B6C1868A6D50011A48D /* Images.xcassets in Resources */,
 				845A7000187F7F4400EFD2C0 /* button-call-assistant.png in Resources */,
+				845A7002187F819B00EFD2C0 /* wait-a-moment.png in Resources */,
 				84E47DF7187B917B0043042F /* user-retina.png in Resources */,
 				84E47DF8187B917B0043042F /* user.png in Resources */,
 				CCEAC7F6187B310800FCBEFB /* green_boots.jpg in Resources */,
 				845A6FFE187F779C00EFD2C0 /* product-detail-box.png in Resources */,
+				845A7006187F82E200EFD2C0 /* button-buy-now.png in Resources */,
 				84D4B59F187F742C0044AE06 /* booth.png in Resources */,
+				845A7005187F82E200EFD2C0 /* button-assistant-on-way.png in Resources */,
 				8497E525187F2A9A003E50CD /* OpenSans-Light.ttf in Resources */,
 				CCEAC7FA187B334700FCBEFB /* red_boots_2.jpg in Resources */,
 				CCEAC7F5187B310800FCBEFB /* black_boots.jpg in Resources */,
