@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
-        <!--Opt In View Controller - The Brand Shop-->
+        <!--Opt In View Controller - The Brand Store-->
         <scene sceneID="vFz-dJ-3sG">
             <objects>
                 <viewController id="LHE-o6-RDq" customClass="OptInViewController" sceneMemberID="viewController">
@@ -46,13 +46,17 @@ Do you agree?</string>
                                             <segue destination="omz-hH-ymF" kind="push" id="vUe-J8-1fH"/>
                                         </connections>
                                     </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BRAND-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="yTk-OM-c2n">
+                                        <rect key="frame" x="101" y="26" width="115" height="115"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="The Brand Shop" id="6qu-Qi-JlU"/>
+                    <navigationItem key="navigationItem" title="The Brand Store" id="6qu-Qi-JlU"/>
                     <connections>
                         <outlet property="background" destination="Esu-OM-Al9" id="Gg3-qr-NoS"/>
                         <outlet property="label" destination="KrB-6q-lg9" id="xpw-iI-hHI"/>
@@ -134,7 +138,7 @@ Do you agree?</string>
             </objects>
             <point key="canvasLocation" x="-370" y="-1258"/>
         </scene>
-        <!--Customer Help View Controller - The Brand Shop-->
+        <!--Customer Help View Controller - The Brand Store-->
         <scene sceneID="DEs-E7-laZ">
             <objects>
                 <viewController id="OA0-mD-etp" customClass="CustomerHelpViewController" sceneMemberID="viewController">
@@ -234,7 +238,7 @@ Do you agree?</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="The Brand Shop" id="6mf-xg-Q5v"/>
+                    <navigationItem key="navigationItem" title="The Brand Store" id="6mf-xg-Q5v"/>
                     <connections>
                         <outlet property="background" destination="mbI-Ie-3Vk" id="Vtr-Pk-LPQ"/>
                         <outlet property="callAssistant" destination="928-OG-v8B" id="03J-zH-Yu3"/>
@@ -250,7 +254,7 @@ Do you agree?</string>
             </objects>
             <point key="canvasLocation" x="369" y="-475"/>
         </scene>
-        <!--WaitA Moment View Controller - The Brand Shop-->
+        <!--WaitA Moment View Controller - The Brand Store-->
         <scene sceneID="g97-9z-y1r">
             <objects>
                 <viewController id="4WT-GK-GER" customClass="WaitAMomentViewController" sceneMemberID="viewController">
@@ -293,7 +297,7 @@ Do you agree?</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="The Brand Shop" id="Cdf-oe-zmC"/>
+                    <navigationItem key="navigationItem" title="The Brand Store" id="Cdf-oe-zmC"/>
                     <connections>
                         <outlet property="background" destination="hCy-t0-owz" id="Rmq-Na-0iJ"/>
                     </connections>
@@ -302,7 +306,7 @@ Do you agree?</string>
             </objects>
             <point key="canvasLocation" x="722" y="-475"/>
         </scene>
-        <!--Confirm Purchase View Controller - The Brand Shop-->
+        <!--Confirm Purchase View Controller - The Brand Store-->
         <scene sceneID="eoW-fy-xWJ">
             <objects>
                 <viewController id="wrc-Zg-uHz" customClass="ConfirmPurchaseViewController" sceneMemberID="viewController">
@@ -348,13 +352,13 @@ Do you agree?</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="The Brand Shop" id="SI0-yJ-Xcp"/>
+                    <navigationItem key="navigationItem" title="The Brand Store" id="SI0-yJ-Xcp"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Aiw-b4-Tek" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1095" y="-475"/>
         </scene>
-        <!--View Controller - The Brand Shop-->
+        <!--View Controller - The Brand Store-->
         <scene sceneID="czG-5h-cbH">
             <objects>
                 <viewController id="7hD-YK-Js4" sceneMemberID="viewController">
@@ -391,7 +395,7 @@ Do you agree?</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="The Brand Shop" id="wwI-mN-0XJ"/>
+                    <navigationItem key="navigationItem" title="The Brand Store" id="wwI-mN-0XJ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3wd-NA-Emj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -410,7 +414,11 @@ Do you agree?</string>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="complete2.png" translatesAutoresizingMaskIntoConstraints="NO" id="fcp-i9-B1p">
-                                <rect key="frame" x="12" y="91" width="295" height="358"/>
+                                <rect key="frame" x="12" y="157" width="295" height="358"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BRAND-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="M2B-if-QVB">
+                                <rect key="frame" x="102" y="92" width="115" height="115"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -422,7 +430,7 @@ Do you agree?</string>
             </objects>
             <point key="canvasLocation" x="2187" y="-475"/>
         </scene>
-        <!--View Controller - The Brand Shop-->
+        <!--View Controller - The Brand Store-->
         <scene sceneID="LPy-4W-jb7">
             <objects>
                 <viewController id="nH5-cd-5ww" sceneMemberID="viewController">
@@ -459,13 +467,13 @@ Do you agree?</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="The Brand Shop" id="FXg-GJ-sZn"/>
+                    <navigationItem key="navigationItem" title="The Brand Store" id="FXg-GJ-sZn"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cMN-k5-QOa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1475" y="-475"/>
         </scene>
-        <!--Wish List View Controller - The Brand Shop-->
+        <!--Wish List View Controller - The Brand Store-->
         <scene sceneID="RMF-3G-ayv">
             <objects>
                 <viewController id="omz-hH-ymF" customClass="WishListViewController" sceneMemberID="viewController">
@@ -516,7 +524,7 @@ Shall we guide you to them?</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="The Brand Shop" id="Rna-hO-jSZ"/>
+                    <navigationItem key="navigationItem" title="The Brand Store" id="Rna-hO-jSZ"/>
                     <connections>
                         <outlet property="background" destination="Qi9-69-yHa" id="Ij2-T5-d0X"/>
                         <outlet property="label" destination="wjD-ao-Sd6" id="zov-G8-cff"/>
@@ -527,7 +535,7 @@ Shall we guide you to them?</string>
             </objects>
             <point key="canvasLocation" x="-405" y="-475"/>
         </scene>
-        <!--Map View Controller - The Brand Shop-->
+        <!--Map View Controller - The Brand Store-->
         <scene sceneID="7jx-FU-Fjc">
             <objects>
                 <viewController id="VoP-1P-ZCn" customClass="MapViewController" sceneMemberID="viewController">
@@ -561,7 +569,7 @@ Shall we guide you to them?</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="The Brand Shop" id="iFu-MK-DaH"/>
+                    <navigationItem key="navigationItem" title="The Brand Store" id="iFu-MK-DaH"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="boots" destination="RVe-vN-hxW" id="2B7-73-Rg3"/>
@@ -636,6 +644,7 @@ Shall we guide you to them?</string>
         </scene>
     </scenes>
     <resources>
+        <image name="BRAND-01.png" width="360" height="360"/>
         <image name="a-gift.png" width="640" height="777"/>
         <image name="booth.png" width="640" height="746"/>
         <image name="boots" width="107" height="103"/>

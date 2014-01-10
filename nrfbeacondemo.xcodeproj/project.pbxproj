@@ -10,6 +10,7 @@
 		840DB805187FA3B900D7D1F8 /* button-found-it.png in Resources */ = {isa = PBXBuildFile; fileRef = 840DB802187FA3B900D7D1F8 /* button-found-it.png */; };
 		840DB806187FA3B900D7D1F8 /* button-help-find.png in Resources */ = {isa = PBXBuildFile; fileRef = 840DB803187FA3B900D7D1F8 /* button-help-find.png */; };
 		840DB807187FA3B900D7D1F8 /* button-i-agree.png in Resources */ = {isa = PBXBuildFile; fileRef = 840DB804187FA3B900D7D1F8 /* button-i-agree.png */; };
+		840DB809187FA59600D7D1F8 /* BRAND-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 840DB808187FA59600D7D1F8 /* BRAND-01.png */; };
 		842CB972187FA0D7009C9C82 /* complete2.png in Resources */ = {isa = PBXBuildFile; fileRef = 842CB971187FA0D7009C9C82 /* complete2.png */; };
 		842CB98F187FA0EF009C9C82 /* a-gift.png in Resources */ = {isa = PBXBuildFile; fileRef = 842CB974187FA0EF009C9C82 /* a-gift.png */; };
 		842CB990187FA0EF009C9C82 /* Bell tree.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 842CB975187FA0EF009C9C82 /* Bell tree.mp3 */; };
@@ -97,6 +98,7 @@
 		840DB802187FA3B900D7D1F8 /* button-found-it.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-found-it.png"; path = "../Supporting Files/button-found-it.png"; sourceTree = "<group>"; };
 		840DB803187FA3B900D7D1F8 /* button-help-find.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-help-find.png"; path = "../Supporting Files/button-help-find.png"; sourceTree = "<group>"; };
 		840DB804187FA3B900D7D1F8 /* button-i-agree.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-i-agree.png"; path = "../Supporting Files/button-i-agree.png"; sourceTree = "<group>"; };
+		840DB808187FA59600D7D1F8 /* BRAND-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "BRAND-01.png"; path = "Supporting Files/BRAND-01.png"; sourceTree = SOURCE_ROOT; };
 		842CB971187FA0D7009C9C82 /* complete2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = complete2.png; path = "Supporting Files/complete2.png"; sourceTree = SOURCE_ROOT; };
 		842CB974187FA0EF009C9C82 /* a-gift.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "a-gift.png"; sourceTree = "<group>"; };
 		842CB975187FA0EF009C9C82 /* Bell tree.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Bell tree.mp3"; sourceTree = "<group>"; };
@@ -335,6 +337,7 @@
 		CC604B5A1868A6D50011A48D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				840DB808187FA59600D7D1F8 /* BRAND-01.png */,
 				840DB802187FA3B900D7D1F8 /* button-found-it.png */,
 				840DB803187FA3B900D7D1F8 /* button-help-find.png */,
 				840DB804187FA3B900D7D1F8 /* button-i-agree.png */,
@@ -477,6 +480,7 @@
 				842CB992187FA0EF009C9C82 /* black_boots.jpg in Resources */,
 				842CB991187FA0EF009C9C82 /* booth.png in Resources */,
 				842CB997187FA0EF009C9C82 /* button-buy-now.png in Resources */,
+				840DB809187FA59600D7D1F8 /* BRAND-01.png in Resources */,
 				842CB9A7187FA0EF009C9C82 /* wait-a-moment.png in Resources */,
 				845A7016187F9A0900EFD2C0 /* button-claim-it.png in Resources */,
 				842CB99D187FA0EF009C9C82 /* map.jpeg in Resources */,
