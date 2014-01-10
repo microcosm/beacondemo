@@ -25,6 +25,12 @@
 @property (weak, nonatomic) IBOutlet UIButton *color4;
 @property (weak, nonatomic) IBOutlet UIButton *color5;
 @property (weak, nonatomic) IBOutlet UIButton *color6;
+@property (strong, nonatomic) IBOutlet UIImageView *blackHighlighted;
+@property (strong, nonatomic) IBOutlet UIImageView *maroonHighlighted;
+@property (strong, nonatomic) IBOutlet UIImageView *whiteHighlighted;
+@property (strong, nonatomic) IBOutlet UIImageView *cyanHighlighted;
+@property (strong, nonatomic) IBOutlet UIImageView *greenHighlighted;
+@property (strong, nonatomic) IBOutlet UIImageView *yellowHighlighted;
 
 @property (strong, nonatomic) NSString* color;
 @property (weak, nonatomic) IBOutlet UIButton *callAssistant;
@@ -68,6 +74,13 @@
     self.color4.tag = 4;
     self.color5.tag = 5;
     self.color6.tag = 6;
+    
+    self.maroonHighlighted.hidden = YES;
+    self.blackHighlighted.hidden = YES;
+    self.whiteHighlighted.hidden = YES;
+    self.cyanHighlighted.hidden = YES;
+    self.greenHighlighted.hidden = YES;
+    self.yellowHighlighted.hidden = YES;
     
     [self.color1 addTarget:self
                     action:@selector(buttonDidChange:)
@@ -201,9 +214,8 @@
             
             if (eomSent) {
                 sendingEOM = NO;
-                
-                NSLog(@"Sent: EOM");
 
+                NSLog(@"Sent: EOM");
             }
             
             return;
@@ -235,26 +247,67 @@
 - (IBAction)buttonDidChange:(id)sender {
         if ([sender tag] == 1){
             self.color = @"dark gray";
+            self.maroonHighlighted.hidden = YES;
+            self.blackHighlighted.hidden = NO;
+            self.whiteHighlighted.hidden = YES;
+            self.cyanHighlighted.hidden = YES;
+            self.greenHighlighted.hidden = YES;
+            self.yellowHighlighted.hidden = YES;
         }
         
         if ([sender tag] == 2){
             self.color = @"maroon";
+            
+            self.maroonHighlighted.hidden = NO;
+            self.blackHighlighted.hidden = YES;
+            self.whiteHighlighted.hidden = YES;
+            self.cyanHighlighted.hidden = YES;
+            self.greenHighlighted.hidden = YES;
+            self.yellowHighlighted.hidden = YES;
         }
         
         if ([sender tag] == 3){
             self.color = @"white";
+            
+            self.maroonHighlighted.hidden = YES;
+            self.blackHighlighted.hidden = YES;
+            self.whiteHighlighted.hidden = NO;
+            self.cyanHighlighted.hidden = YES;
+            self.greenHighlighted.hidden = YES;
+            self.yellowHighlighted.hidden = YES;
         }
         
         if ([sender tag] == 4){
             self.color = @"cyan";
+            
+            self.maroonHighlighted.hidden = YES;
+            self.blackHighlighted.hidden = YES;
+            self.whiteHighlighted.hidden = YES;
+            self.cyanHighlighted.hidden = NO;
+            self.greenHighlighted.hidden = YES;
+            self.yellowHighlighted.hidden = YES;
         }
         
         if ([sender tag] == 5){
             self.color = @"green";
+            
+            self.maroonHighlighted.hidden = YES;
+            self.blackHighlighted.hidden = YES;
+            self.whiteHighlighted.hidden = YES;
+            self.cyanHighlighted.hidden = YES;
+            self.greenHighlighted.hidden = NO;
+            self.yellowHighlighted.hidden = YES;
         }
         
         if ([sender tag] == 6){
             self.color = @"yellow";
+            
+            self.maroonHighlighted.hidden = YES;
+            self.blackHighlighted.hidden = YES;
+            self.whiteHighlighted.hidden = YES;
+            self.cyanHighlighted.hidden = YES;
+            self.greenHighlighted.hidden = YES;
+            self.yellowHighlighted.hidden = NO;
         }
         
         self.textView.text = [NSString stringWithFormat:@"BOOTS COLORS: %@ ", self.color];

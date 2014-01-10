@@ -237,6 +237,42 @@
                                         <rect key="frame" x="46" y="27" width="228" height="189"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="color_border.png" translatesAutoresizingMaskIntoConstraints="NO" id="r7T-zm-8fx">
+                                        <rect key="frame" x="32" y="314" width="30" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="color_border.png" translatesAutoresizingMaskIntoConstraints="NO" id="stv-oX-tze">
+                                        <rect key="frame" x="137" y="314" width="30" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="color_border.png" translatesAutoresizingMaskIntoConstraints="NO" id="gNQ-fK-bBt">
+                                        <rect key="frame" x="102" y="314" width="30" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="color_border.png" translatesAutoresizingMaskIntoConstraints="NO" id="hdG-SV-0Ks">
+                                        <rect key="frame" x="67" y="314" width="30" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="color_border.png" translatesAutoresizingMaskIntoConstraints="NO" id="rzx-GQ-Y9M">
+                                        <rect key="frame" x="172" y="314" width="30" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="color_border.png" translatesAutoresizingMaskIntoConstraints="NO" id="KRs-Sn-Imx">
+                                        <rect key="frame" x="207" y="314" width="30" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
@@ -246,6 +282,7 @@
                     <navigationItem key="navigationItem" title="The Brand Store" id="6mf-xg-Q5v"/>
                     <connections>
                         <outlet property="background" destination="mbI-Ie-3Vk" id="Vtr-Pk-LPQ"/>
+                        <outlet property="blackHighlighted" destination="r7T-zm-8fx" id="fNt-Uh-aQY"/>
                         <outlet property="callAssistant" destination="928-OG-v8B" id="03J-zH-Yu3"/>
                         <outlet property="color1" destination="PFq-NH-7yF" id="zJD-mk-pMt"/>
                         <outlet property="color2" destination="61p-kd-4AY" id="616-up-Rz0"/>
@@ -253,7 +290,12 @@
                         <outlet property="color4" destination="5qH-ya-9eG" id="KZ9-fv-POD"/>
                         <outlet property="color5" destination="ncP-Ji-wgZ" id="XaJ-aJ-Vxk"/>
                         <outlet property="color6" destination="ItP-yv-13s" id="Wr6-SQ-HD6"/>
+                        <outlet property="cyanHighlighted" destination="stv-oX-tze" id="N2i-BT-VC4"/>
+                        <outlet property="greenHighlighted" destination="rzx-GQ-Y9M" id="Q0s-Jh-Jjy"/>
+                        <outlet property="maroonHighlighted" destination="hdG-SV-0Ks" id="SxO-AK-82G"/>
                         <outlet property="textView" destination="MnI-og-rQY" id="Cm9-N7-nWK"/>
+                        <outlet property="whiteHighlighted" destination="gNQ-fK-bBt" id="mcM-Bf-wew"/>
+                        <outlet property="yellowHighlighted" destination="KRs-Sn-Imx" id="Lb5-fl-3zv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="viv-Df-VVN" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -663,6 +705,7 @@
         <image name="button-i-agree.png" width="640" height="116"/>
         <image name="button-purchase.png" width="640" height="116"/>
         <image name="button-unwrap-gift.png" width="640" height="116"/>
+        <image name="color_border.png" width="60" height="60"/>
         <image name="complete2.png" width="640" height="777"/>
         <image name="product-detail-box.png" width="640" height="777"/>
         <image name="purchase-page.png" width="640" height="777"/>

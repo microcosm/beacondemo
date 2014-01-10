@@ -79,6 +79,8 @@
 		CC604B891868B2490011A48D /* bell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CC604B881868B2490011A48D /* bell.mp3 */; };
 		CC8B5E26187F68180063757E /* LastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8B5E25187F68180063757E /* LastViewController.m */; };
 		CCA0BCAB187EF6BE0030A9F4 /* dimmed_view.png in Resources */ = {isa = PBXBuildFile; fileRef = CCA0BCAA187EF6BE0030A9F4 /* dimmed_view.png */; };
+		CCD1BD4D1880823200BFC798 /* checkbox-unchecked-gray-hi.png in Resources */ = {isa = PBXBuildFile; fileRef = CCD1BD4C1880823200BFC798 /* checkbox-unchecked-gray-hi.png */; };
+		CCD1BD4F188086B700BFC798 /* color_border.png in Resources */ = {isa = PBXBuildFile; fileRef = CCD1BD4E188086B700BFC798 /* color_border.png */; };
 		CCEAC7F5187B310800FCBEFB /* black_boots.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCEAC7F3187B310800FCBEFB /* black_boots.jpg */; };
 		CCEAC7F6187B310800FCBEFB /* green_boots.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCEAC7F4187B310800FCBEFB /* green_boots.jpg */; };
 		CCEAC7FA187B334700FCBEFB /* red_boots_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCEAC7F9187B334700FCBEFB /* red_boots_2.jpg */; };
@@ -182,6 +184,8 @@
 		CC8B5E24187F68180063757E /* LastViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LastViewController.h; sourceTree = "<group>"; };
 		CC8B5E25187F68180063757E /* LastViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LastViewController.m; sourceTree = "<group>"; };
 		CCA0BCAA187EF6BE0030A9F4 /* dimmed_view.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dimmed_view.png; sourceTree = "<group>"; };
+		CCD1BD4C1880823200BFC798 /* checkbox-unchecked-gray-hi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkbox-unchecked-gray-hi.png"; sourceTree = "<group>"; };
+		CCD1BD4E188086B700BFC798 /* color_border.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = color_border.png; sourceTree = "<group>"; };
 		CCEAC7F3187B310800FCBEFB /* black_boots.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = black_boots.jpg; sourceTree = "<group>"; };
 		CCEAC7F4187B310800FCBEFB /* green_boots.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = green_boots.jpg; sourceTree = "<group>"; };
 		CCEAC7F9187B334700FCBEFB /* red_boots_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = red_boots_2.jpg; sourceTree = "<group>"; };
@@ -341,6 +345,8 @@
 		CC604B5A1868A6D50011A48D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CCD1BD4E188086B700BFC798 /* color_border.png */,
+				CCD1BD4C1880823200BFC798 /* checkbox-unchecked-gray-hi.png */,
 				84A23EE418807D1700297BEA /* boots_rotated.png */,
 				84A23EE218807C6000297BEA /* boots.png */,
 				840DB808187FA59600D7D1F8 /* BRAND-01.png */,
@@ -511,6 +517,7 @@
 				84A23EE318807C6000297BEA /* boots.png in Resources */,
 				CCEAC7F6187B310800FCBEFB /* green_boots.jpg in Resources */,
 				842CB9A0187FA0EF009C9C82 /* product-detail-box.png in Resources */,
+				CCD1BD4F188086B700BFC798 /* color_border.png in Resources */,
 				845A6FFE187F779C00EFD2C0 /* product-detail-box.png in Resources */,
 				840DB807187FA3B900D7D1F8 /* button-i-agree.png in Resources */,
 				845A7006187F82E200EFD2C0 /* button-buy-now.png in Resources */,
@@ -529,6 +536,7 @@
 				CC604B891868B2490011A48D /* bell.mp3 in Resources */,
 				842CB998187FA0EF009C9C82 /* button-call-assistant.png in Resources */,
 				842CB99B187FA0EF009C9C82 /* button-unwrap-gift.png in Resources */,
+				CCD1BD4D1880823200BFC798 /* checkbox-unchecked-gray-hi.png in Resources */,
 				CC604B671868A6D50011A48D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
