@@ -134,7 +134,7 @@ Do you agree?</string>
             </objects>
             <point key="canvasLocation" x="-370" y="-1258"/>
         </scene>
-        <!--Customer Help View Controller - Marten's Boots-->
+        <!--Customer Help View Controller - Boots Details-->
         <scene sceneID="DEs-E7-laZ">
             <objects>
                 <viewController id="OA0-mD-etp" customClass="CustomerHelpViewController" sceneMemberID="viewController">
@@ -150,6 +150,11 @@ Do you agree?</string>
                                 <rect key="frame" x="0.0" y="63" width="320" height="461"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JLd-WR-40e">
+                                        <rect key="frame" x="13" y="15" width="295" height="344"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    </view>
                                     <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jVf-Eu-15y">
                                         <rect key="frame" x="0.0" y="373" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -169,59 +174,77 @@ Do you agree?</string>
                                             </barButtonItem>
                                         </items>
                                     </toolbar>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="product-detail-box.png" translatesAutoresizingMaskIntoConstraints="NO" id="MPe-hJ-EgJ">
+                                        <rect key="frame" x="13" y="10" width="295" height="358"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="boots" translatesAutoresizingMaskIntoConstraints="NO" id="Fwh-js-qHF">
+                                        <rect key="frame" x="66" y="40" width="188" height="159"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PFq-NH-7yF">
+                                        <rect key="frame" x="32" y="314" width="30" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.26666668057441711" green="0.26666668057441711" blue="0.26666668057441711" alpha="1" colorSpace="deviceRGB"/>
+                                        <color key="tintColor" red="0.26666668057441711" green="0.26666668057441711" blue="0.26666668057441711" alpha="1" colorSpace="deviceRGB"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="61p-kd-4AY">
+                                        <rect key="frame" x="67" y="314" width="30" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.49803924560546875" green="0.16078431904315948" blue="0.18823531270027161" alpha="1" colorSpace="deviceRGB"/>
+                                        <color key="tintColor" red="0.26666668059999998" green="0.26666668059999998" blue="0.26666668059999998" alpha="1" colorSpace="deviceRGB"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="trW-3r-Ooc">
+                                        <rect key="frame" x="102" y="314" width="30" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.92941182851791382" green="0.92941182851791382" blue="0.92941182851791382" alpha="1" colorSpace="deviceRGB"/>
+                                        <color key="tintColor" red="0.26666668059999998" green="0.26666668059999998" blue="0.26666668059999998" alpha="1" colorSpace="deviceRGB"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5qH-ya-9eG">
+                                        <rect key="frame" x="137" y="314" width="30" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.0" green="0.67450982332229614" blue="0.62352943420410156" alpha="1" colorSpace="deviceRGB"/>
+                                        <color key="tintColor" red="0.26666668059999998" green="0.26666668059999998" blue="0.26666668059999998" alpha="1" colorSpace="deviceRGB"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ncP-Ji-wgZ">
+                                        <rect key="frame" x="172" y="314" width="30" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.0" green="0.68235296010971069" blue="0.41568630933761597" alpha="1" colorSpace="deviceRGB"/>
+                                        <color key="tintColor" red="0.26666668059999998" green="0.26666668059999998" blue="0.26666668059999998" alpha="1" colorSpace="deviceRGB"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ItP-yv-13s">
+                                        <rect key="frame" x="207" y="314" width="30" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.84313732389999996" green="0.84313732389999996" blue="0.56862747670000002" alpha="1" colorSpace="deviceRGB"/>
+                                        <color key="tintColor" red="0.26666668059999998" green="0.26666668059999998" blue="0.26666668059999998" alpha="1" colorSpace="deviceRGB"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5dR-rU-Wgs">
-                                <rect key="frame" x="-25" y="-77" width="75" height="206"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <connections>
-                                    <outlet property="delegate" destination="OA0-mD-etp" id="9Pt-w5-2Kj"/>
-                                </connections>
-                            </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="boots" translatesAutoresizingMaskIntoConstraints="NO" id="Fwh-js-qHF">
-                                <rect key="frame" x="94" y="166" width="133" height="112"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="1" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7G4-QP-gp1">
-                                <rect key="frame" x="47" y="308" width="43" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="red_boots_2.jpg">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cnl-7p-75C">
-                                <rect key="frame" x="106" y="299" width="42" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="black_boots.jpg">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x8P-P0-wkS">
-                                <rect key="frame" x="167" y="300" width="46" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="green_boots.jpg">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose color of boots" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kyX-Ta-CjH">
-                                <rect key="frame" x="75" y="111" width="171" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Marten's Boots" id="6mf-xg-Q5v"/>
+                    <navigationItem key="navigationItem" title="Boots Details" id="6mf-xg-Q5v"/>
                     <connections>
-                        <outlet property="blackBoot" destination="Cnl-7p-75C" id="ctv-ra-rYN"/>
-                        <outlet property="greenBoot" destination="x8P-P0-wkS" id="Me3-sY-aDg"/>
-                        <outlet property="redBoot" destination="7G4-QP-gp1" id="eyJ-jD-cBq"/>
+                        <outlet property="background" destination="mbI-Ie-3Vk" id="Vtr-Pk-LPQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="viv-Df-VVN" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -622,11 +645,9 @@ Shall we guide you to them?</string>
         </scene>
     </scenes>
     <resources>
-        <image name="black_boots.jpg" width="500" height="375"/>
         <image name="booth.png" width="640" height="746"/>
         <image name="boots" width="107" height="103"/>
-        <image name="green_boots.jpg" width="640" height="440"/>
-        <image name="red_boots_2.jpg" width="964" height="520"/>
+        <image name="product-detail-box.png" width="640" height="777"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
