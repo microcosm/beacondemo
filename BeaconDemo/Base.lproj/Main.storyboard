@@ -245,6 +245,12 @@ Do you agree?</string>
                     <navigationItem key="navigationItem" title="Boots Details" id="6mf-xg-Q5v"/>
                     <connections>
                         <outlet property="background" destination="mbI-Ie-3Vk" id="Vtr-Pk-LPQ"/>
+                        <outlet property="color1" destination="PFq-NH-7yF" id="zJD-mk-pMt"/>
+                        <outlet property="color2" destination="61p-kd-4AY" id="616-up-Rz0"/>
+                        <outlet property="color3" destination="trW-3r-Ooc" id="crw-j5-5OK"/>
+                        <outlet property="color4" destination="5qH-ya-9eG" id="KZ9-fv-POD"/>
+                        <outlet property="color5" destination="ncP-Ji-wgZ" id="XaJ-aJ-Vxk"/>
+                        <outlet property="color6" destination="ItP-yv-13s" id="Wr6-SQ-HD6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="viv-Df-VVN" userLabel="First Responder" sceneMemberID="firstResponder"/>

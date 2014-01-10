@@ -21,6 +21,14 @@
 
 @property (weak, nonatomic) IBOutlet UIView *background;
 
+@property (weak, nonatomic) IBOutlet UIButton *color1;
+@property (weak, nonatomic) IBOutlet UIButton *color2;
+@property (weak, nonatomic) IBOutlet UIButton *color3;
+@property (weak, nonatomic) IBOutlet UIButton *color4;
+@property (weak, nonatomic) IBOutlet UIButton *color5;
+@property (weak, nonatomic) IBOutlet UIButton *color6;
+
+@property (strong, nonatomic) NSString* color;
 
 @end
 
@@ -52,21 +60,36 @@
 }
 
 - (void) configureButtons{
-    self.redBoot.tag = 1;
-    self.blackBoot.tag = 2;
-    self.greenBoot.tag = 3;
+    self.color1.tag = 1;
+    self.color2.tag = 2;
+    self.color3.tag = 3;
+    self.color4.tag = 4;
+    self.color5.tag = 5;
+    self.color6.tag = 6;
     
-    [self.redBoot addTarget:self
-                     action:@selector(buttonDidChange:)
-           forControlEvents:UIControlEventTouchUpInside];
+    [self.color1 addTarget:self
+                    action:@selector(buttonDidChange:)
+          forControlEvents:UIControlEventTouchUpInside];
     
-    [self.blackBoot addTarget:self
-                       action:@selector(buttonDidChange:)
-             forControlEvents:UIControlEventTouchUpInside];
+    [self.color2 addTarget:self
+                    action:@selector(buttonDidChange:)
+          forControlEvents:UIControlEventTouchUpInside];
     
-    [self.greenBoot addTarget:self
-                       action:@selector(buttonDidChange:)
-             forControlEvents:UIControlEventTouchUpInside];
+    [self.color3 addTarget:self
+                    action:@selector(buttonDidChange:)
+          forControlEvents:UIControlEventTouchUpInside];
+    
+    [self.color4 addTarget:self
+                    action:@selector(buttonDidChange:)
+          forControlEvents:UIControlEventTouchUpInside];
+    
+    [self.color5 addTarget:self
+                    action:@selector(buttonDidChange:)
+          forControlEvents:UIControlEventTouchUpInside];
+    
+    [self.color6 addTarget:self
+                    action:@selector(buttonDidChange:)
+          forControlEvents:UIControlEventTouchUpInside];
     
     _buttonPressed = NO;
 }
@@ -198,32 +221,41 @@
     [self sendData];
 }
 
-
 - (IBAction)buttonDidChange:(id)sender {
     
     
-    if (self.buttonPressed == NO) {
-        NSString *color;
         
         if ([sender tag] == 1){
-            color = @"Red";
+            self.color = @"dark gray";
         }
         
         if ([sender tag] == 2){
-            color = @"Black";
+            self.color = @"maroon";
         }
         
         if ([sender tag] == 3){
-            color = @"Green";
+            self.color = @"white";
         }
         
-        self.textView.text = [NSString stringWithFormat:@"COLORED BOOTS: %@ ", color];
+        if ([sender tag] == 4){
+            self.color = @"cyan";
+        }
+        
+        if ([sender tag] == 5){
+            self.color = @"green";
+        }
+        
+        if ([sender tag] == 6){
+            self.color = @"yellow";
+        }
+        
+        self.textView.text = [NSString stringWithFormat:@"%@", self.color];
         
         [self.peripheralManager startAdvertising:@{ CBAdvertisementDataServiceUUIDsKey : @[[CBUUID UUIDWithString:TRANSFER_SERVICE_UUID]]}];
         [self.peripheralManager startAdvertising:@{ CBAdvertisementDataServiceUUIDsKey : @[[CBUUID UUIDWithString:TRANSFER_SERVICE_UUID]]}];
-    } else {
-        [self.peripheralManager stopAdvertising];
-    }
+        [self.peripheralManager startAdvertising:@{ CBAdvertisementDataServiceUUIDsKey : @[[CBUUID UUIDWithString:TRANSFER_SERVICE_UUID]]}];
+        [self.peripheralManager startAdvertising:@{ CBAdvertisementDataServiceUUIDsKey : @[[CBUUID UUIDWithString:TRANSFER_SERVICE_UUID]]}];
+        [self.peripheralManager startAdvertising:@{ CBAdvertisementDataServiceUUIDsKey : @[[CBUUID UUIDWithString:TRANSFER_SERVICE_UUID]]}];
 
 }
 
