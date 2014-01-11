@@ -33,15 +33,15 @@
 //        self.adjacencyList = [DictionaryFactory dictionaryAdjacency];
 //    }
     
-    NSString *primaryIdentifier = [self beaconIdentifier:self.nearestBeacon];
+   /* NSString *primaryIdentifier = [self beaconIdentifier:self.nearestBeacon];
     NSString *beacon2Identifier = [self beaconIdentifier:[self.beacons objectAtIndex:1]];
-    NSString *beacon3Identifier = [self beaconIdentifier:[self.beacons objectAtIndex:2]];
+    NSString *beacon3Identifier = [self beaconIdentifier:[self.beacons objectAtIndex:2]];*/
 //    NSArray *adjaceny = [self.adjacencyList objectForKey:primaryIdentifier];
 //    NSLog(@"%@",adjaceny);
     //self.hasNearestBeaconChanged = ![nearestBeacon isEqual: self.nearestBeacon];
-    NSLog(@"Primary: %@",primaryIdentifier);
+    /*NSLog(@"Primary: %@",primaryIdentifier);
     NSLog(@"2nd: %@",beacon2Identifier);
-    NSLog(@"3rd: %@",beacon3Identifier);
+    NSLog(@"3rd: %@",beacon3Identifier);*/
     
     if (![nearestBeacon isEqual: self.nearestBeacon])
     {

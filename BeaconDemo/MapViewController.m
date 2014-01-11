@@ -87,9 +87,6 @@ static const CGFloat FADE_TIME = 0.3;
                inRegion:(CLBeaconRegion *)region
 {
     self.beaconManager.nearestBeacon = [beacons objectAtIndex:0];
-    
-    [self checkIfNearestBeaconIsAlert:self.beaconManager.nearestBeacon];
-    
     self.beaconManager.beacons = beacons;
     
     if(self.beaconManager.hasNearestBeaconChanged){
@@ -97,20 +94,13 @@ static const CGFloat FADE_TIME = 0.3;
     }
 }
 
-- (void)checkIfNearestBeaconIsAlert:(CLBeacon *)beacon {
-    if ([[self.beaconManager beaconIdentifier:beacon] isEqualToString:@"B9407F30-F5F8-466E-AFF9-25556B57FE6D:61612:59156"]) {
-
-           // [self performSegueWithIdentifier:@"toProductDetails" sender:self];
- 
-    }
-}
-
 - (void)userDidEnterZone
 {
-    CGFloat xSize = self.mapSizeScaled.width/2.0;
+    self.userPosition = [self.beaconManager pointerPosition];
+    /*CGFloat xSize = self.mapSizeScaled.width/2.0;
     CGFloat ySize = self.mapSizeScaled.height/3.0;
     CGPoint oldPosition = self.userPosition;
-    self.userPosition = [self.beaconManager pointerPosition];
+    
     CGFloat xMove = self.userPosition.x - oldPosition.x;
     CGFloat yMove = self.userPosition.y - oldPosition.y;
     CGFloat newX = self.userPosition.x;
@@ -137,10 +127,9 @@ static const CGFloat FADE_TIME = 0.3;
         {
             newY = oldPosition.y - ySize;
         }
-    }
-
-    self.userPosition = CGPointMake(newX + MAP_OFFSET_X, newY);
+    }*/
     
+    //self.userPosition = CGPointMake(newX + MAP_OFFSET_X, newY);
     if(self.userIsDetected)
     {
         [self transformUserToMatchPositionInMoveTime:MOVE_TIME];
