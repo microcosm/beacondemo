@@ -333,12 +333,6 @@
 				CC604B621868A6D50011A48D /* AppDelegate.h */,
 				CC604B631868A6D50011A48D /* AppDelegate.m */,
 				CC604B651868A6D50011A48D /* Main.storyboard */,
-				CC70B668188098A500DBD225 /* boots_rotated_cyan.png */,
-				CC70B669188098A500DBD225 /* boots_rotated_gray.png */,
-				CC70B66A188098A500DBD225 /* boots_rotated_green.png */,
-				CC70B66B188098A500DBD225 /* boots_rotated_red.png */,
-				CC70B66C188098A500DBD225 /* boots_rotated_white.png */,
-				CC70B66D188098A500DBD225 /* boots_rotated_yellow.png */,
 				845A700A187F8BD700EFD2C0 /* ConfirmPurchaseViewController.h */,
 				845A700B187F8BD700EFD2C0 /* ConfirmPurchaseViewController.m */,
 				845A7007187F890900EFD2C0 /* WaitAMomentViewController.h */,
@@ -367,6 +361,12 @@
 		CC604B5A1868A6D50011A48D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CC70B668188098A500DBD225 /* boots_rotated_cyan.png */,
+				CC70B669188098A500DBD225 /* boots_rotated_gray.png */,
+				CC70B66A188098A500DBD225 /* boots_rotated_green.png */,
+				CC70B66B188098A500DBD225 /* boots_rotated_red.png */,
+				CC70B66C188098A500DBD225 /* boots_rotated_white.png */,
+				CC70B66D188098A500DBD225 /* boots_rotated_yellow.png */,
 				CC70B666188093D900DBD225 /* color_border2.png */,
 				CC70B664188093BA00DBD225 /* color_border.png */,
 				841CC61318808B5300973A38 /* boots-glow.png */,
