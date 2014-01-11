@@ -60,16 +60,16 @@ static const int OFFSET_X = 65;
         _identifiersToScreenPoints = @{
                                        //Top left
                                        @"B9407F30-F5F8-466E-AFF9-25556B57FE6D:53626:34111":
-                                           [ NSValue valueWithCGPoint: CGPointMake(OFFSET_X + 50, 50)],
+                                           [ NSValue valueWithCGPoint: CGPointMake(OFFSET_X + 30, 80)],
                                        //Top right
-                                       @"B9407F30-F5F8-466E-AFF9-25556B57FE6D:53626:34111":
-                                           [ NSValue valueWithCGPoint: CGPointMake(OFFSET_X + 150, 50)],
+                                       @"B9407F30-F5F8-466E-AFF9-25556B57FE6D:61612:59156":
+                                           [ NSValue valueWithCGPoint: CGPointMake(OFFSET_X + 110, 90)],
                                        //Bottom left
-                                       @"B9407F30-F5F8-466E-AFF9-25556B57FE6D:53626:34111":
-                                           [ NSValue valueWithCGPoint: CGPointMake(OFFSET_X + 50, 350)],
+                                       @"B9407F30-F5F8-466E-AFF9-25556B57FE6D:55284:5223":
+                                           [ NSValue valueWithCGPoint: CGPointMake(OFFSET_X + 30, 260)],
                                        //Bottom right
-                                       @"B9407F30-F5F8-466E-AFF9-25556B57FE6D:53626:34111":
-                                           [ NSValue valueWithCGPoint: CGPointMake(OFFSET_X + 150, 350)]
+                                       @"B9407F30-F5F8-466E-AFF9-25556B57FE6D:25061:32695":
+                                           [ NSValue valueWithCGPoint: CGPointMake(OFFSET_X + 110, 260)]
                                        };
     }
     return _identifiersToScreenPoints;

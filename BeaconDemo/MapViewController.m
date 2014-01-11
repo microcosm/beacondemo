@@ -93,7 +93,42 @@ static const CGFloat FADE_TIME = 0.3;
 
 - (void)userDidEnterZone
 {
+    CGPoint oldPosition = self.userPosition;
     self.userPosition = [self.beaconManager pointerPosition];
+    
+    CGFloat maxMoveX = 50;
+    CGFloat maxMoveY = 100;
+    
+    CGFloat actualMoveX = self.userPosition.x - oldPosition.x;
+    CGFloat actualMoveY = self.userPosition.y - oldPosition.y;
+    CGFloat constrainedX = self.userPosition.x;
+    CGFloat constrainedY = self.userPosition.y;
+     
+    if(fabs(actualMoveX) > maxMoveX)
+    {
+        if(actualMoveX >= 0)
+        {
+            constrainedX = oldPosition.x + maxMoveX;
+        }
+        else
+        {
+            constrainedX = oldPosition.x - maxMoveX;
+        }
+    }
+    
+    if(fabs(actualMoveY) > maxMoveY)
+    {
+        if(actualMoveY >= 0)
+        {
+            constrainedY = oldPosition.y + maxMoveY;
+        }
+        else
+        {
+            constrainedY = oldPosition.y - maxMoveY;
+        }
+    }
+    
+    self.userPosition = CGPointMake(constrainedX, constrainedY);
     
     if(self.userIsDetected)
     {
