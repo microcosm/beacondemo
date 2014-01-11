@@ -39,7 +39,6 @@
 		842CB9A6187FA0EF009C9C82 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = 842CB98D187FA0EF009C9C82 /* user.png */; };
 		842CB9A7187FA0EF009C9C82 /* wait-a-moment.png in Resources */ = {isa = PBXBuildFile; fileRef = 842CB98E187FA0EF009C9C82 /* wait-a-moment.png */; };
 		8446F7271871F8ED0058BB85 /* BeaconLayoutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8446F7261871F8ED0058BB85 /* BeaconLayoutManager.m */; };
-		8446F72A18721CBB0058BB85 /* DictionaryFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8446F72918721CBB0058BB85 /* DictionaryFactory.m */; };
 		845A6FFE187F779C00EFD2C0 /* product-detail-box.png in Resources */ = {isa = PBXBuildFile; fileRef = 845A6FFD187F779C00EFD2C0 /* product-detail-box.png */; };
 		845A7000187F7F4400EFD2C0 /* button-call-assistant.png in Resources */ = {isa = PBXBuildFile; fileRef = 845A6FFF187F7F4400EFD2C0 /* button-call-assistant.png */; };
 		845A7002187F819B00EFD2C0 /* wait-a-moment.png in Resources */ = {isa = PBXBuildFile; fileRef = 845A7001187F819B00EFD2C0 /* wait-a-moment.png */; };
@@ -140,8 +139,6 @@
 		842CB98E187FA0EF009C9C82 /* wait-a-moment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wait-a-moment.png"; sourceTree = "<group>"; };
 		8446F7251871F8ED0058BB85 /* BeaconLayoutManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeaconLayoutManager.h; sourceTree = "<group>"; };
 		8446F7261871F8ED0058BB85 /* BeaconLayoutManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeaconLayoutManager.m; sourceTree = "<group>"; };
-		8446F72818721CBB0058BB85 /* DictionaryFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DictionaryFactory.h; sourceTree = "<group>"; };
-		8446F72918721CBB0058BB85 /* DictionaryFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DictionaryFactory.m; sourceTree = "<group>"; };
 		845A6FFD187F779C00EFD2C0 /* product-detail-box.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "product-detail-box.png"; path = "Supporting Files/product-detail-box.png"; sourceTree = SOURCE_ROOT; };
 		845A6FFF187F7F4400EFD2C0 /* button-call-assistant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-call-assistant.png"; path = "Supporting Files/button-call-assistant.png"; sourceTree = SOURCE_ROOT; };
 		845A7001187F819B00EFD2C0 /* wait-a-moment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "wait-a-moment.png"; path = "Supporting Files/wait-a-moment.png"; sourceTree = SOURCE_ROOT; };
@@ -289,8 +286,6 @@
 			children = (
 				8446F7251871F8ED0058BB85 /* BeaconLayoutManager.h */,
 				8446F7261871F8ED0058BB85 /* BeaconLayoutManager.m */,
-				8446F72818721CBB0058BB85 /* DictionaryFactory.h */,
-				8446F72918721CBB0058BB85 /* DictionaryFactory.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -597,7 +592,6 @@
 				CC604B641868A6D50011A48D /* AppDelegate.m in Sources */,
 				CC489558187C8FD2005E2B72 /* FirstTimeRunViewController.m in Sources */,
 				CCFB3BEB1876437200E07824 /* SalesAssociateHelpViewController.m in Sources */,
-				8446F72A18721CBB0058BB85 /* DictionaryFactory.m in Sources */,
 				CC8B5E26187F68180063757E /* LastViewController.m in Sources */,
 				CC604B601868A6D50011A48D /* main.m in Sources */,
 				845A7009187F890900EFD2C0 /* WaitAMomentViewController.m in Sources */,

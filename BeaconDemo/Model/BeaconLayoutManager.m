@@ -30,8 +30,24 @@
 {
     if (![nearestBeacon isEqual: self.nearestBeacon])
     {
-        self.hasNearestBeaconChanged = TRUE;
-        _nearestBeacon = nearestBeacon;
+        BOOL found = NO;
+        CLBeacon *beacon;
+        
+        for(int i = 0; i < self.beacons.count; i++)
+        {
+            beacon = [self.beacons objectAtIndex:i];
+            
+            if([self.identifiersToScreenPoints objectForKey:[self beaconIdentifier:beacon]])
+            {
+                found = YES;
+                break;
+            }
+        }
+        
+        if(found){
+            self.hasNearestBeaconChanged = TRUE;
+            _nearestBeacon = beacon;
+        }
     }
 }
 
