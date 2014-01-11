@@ -13,6 +13,7 @@
 
 static const int BEACON_RES_X = 3;
 static const int BEACON_RES_Y = 4;
+static const int MAP_OFFSET_X = 65;
 static const CGFloat MOVE_TIME = 0.3;
 static const CGFloat FADE_TIME = 0.3;
 
@@ -26,7 +27,7 @@ static const CGFloat FADE_TIME = 0.3;
     @property (strong, nonatomic) UIImageView *user;
     @property (nonatomic) CGPoint userPosition;
     @property (nonatomic) BOOL userIsDetected;
-
+    @property (nonatomic) CGSize mapSizeScaled;
 
     //Temporary for testing without beacons
     @property (strong, nonatomic) NSTimer *timer;
@@ -37,10 +38,9 @@ static const CGFloat FADE_TIME = 0.3;
 
 - (BeaconLayoutManager *)beaconManager
 {
-    CGSize mapSizeScaled = CGSizeMake(self.map.bounds.size.width - 160, self.map.bounds.size.height);
     if (!_beaconManager) {
         _beaconManager = [[BeaconLayoutManager alloc] initWithBeaconResolution: CGSizeMake(BEACON_RES_X, BEACON_RES_Y)
-                                                                    screenSize: mapSizeScaled
+                                                                    screenSize: self.mapSizeScaled
                                                                    pointerSize: self.user.bounds.size];
     }
     return _beaconManager;
@@ -55,11 +55,11 @@ static const CGFloat FADE_TIME = 0.3;
     //\[self setModalPresentationStyle:UIModalPresentationCurrentContext];
     
     //Temporary for testing without beacons
-    self.timer = [NSTimer scheduledTimerWithTimeInterval:0.5
+    /*self.timer = [NSTimer scheduledTimerWithTimeInterval:0.5
                                                   target:self
                                                 selector:@selector(userDidEnterZone)
                                                 userInfo:nil
-                                                 repeats:YES];
+                                                 repeats:YES];*/
 }
 
 - (void)setupViews
@@ -68,6 +68,7 @@ static const CGFloat FADE_TIME = 0.3;
     [self.user setAlpha:0];
     [self.map addSubview:self.user];
     [self.map addSubview:self.boots];
+    self.mapSizeScaled = CGSizeMake(self.map.bounds.size.width - 160, self.map.bounds.size.height);
 }
 
 - (void)setupBeaconTracking
@@ -106,9 +107,8 @@ static const CGFloat FADE_TIME = 0.3;
 
 - (void)userDidEnterZone
 {
-    CGSize mapSizeScaled = CGSizeMake(self.map.bounds.size.width - 40, self.map.bounds.size.height);
-    CGFloat xSize = mapSizeScaled.width/2.0;
-    CGFloat ySize = mapSizeScaled.height/3.0;
+    CGFloat xSize = self.mapSizeScaled.width/2.0;
+    CGFloat ySize = self.mapSizeScaled.height/3.0;
     CGPoint oldPosition = self.userPosition;
     self.userPosition = [self.beaconManager pointerPosition];
     CGFloat xMove = self.userPosition.x - oldPosition.x;
@@ -139,7 +139,7 @@ static const CGFloat FADE_TIME = 0.3;
         }
     }
 
-    self.userPosition = CGPointMake(newX + 65, newY);
+    self.userPosition = CGPointMake(newX + MAP_OFFSET_X, newY);
     
     if(self.userIsDetected)
     {
