@@ -13,7 +13,7 @@
 
 static const int BEACON_RES_X = 3;
 static const int BEACON_RES_Y = 4;
-static const CGFloat MOVE_TIME = 0.3;
+static const CGFloat MOVE_TIME = 1.2;
 static const CGFloat FADE_TIME = 0.3;
 
 @interface MapViewController () <CLLocationManagerDelegate>
