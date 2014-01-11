@@ -55,11 +55,11 @@ static const CGFloat FADE_TIME = 0.3;
     //\[self setModalPresentationStyle:UIModalPresentationCurrentContext];
     
     //Temporary for testing without beacons
-    self.timer = [NSTimer scheduledTimerWithTimeInterval:0.5
+    /*self.timer = [NSTimer scheduledTimerWithTimeInterval:0.5
                                                   target:self
                                                 selector:@selector(userDidEnterZone)
                                                 userInfo:nil
-                                                 repeats:YES];
+                                                 repeats:YES];*/
 }
 
 - (void)setupViews

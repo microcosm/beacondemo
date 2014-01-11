@@ -146,18 +146,18 @@
 - (NSString *)identifierOfNearestBeacon
 {
     //Temporary for testing without beacons
-    self.dictionaryIndex++;
+/*    self.dictionaryIndex++;
     if(self.dictionaryIndex >= self.identifiersToScreenPoints.count)
     {
         self.dictionaryIndex = 0;
     }
-    return [[self.identifiersToScreenPoints allKeys] objectAtIndex: self.dictionaryIndex];
+    return [[self.identifiersToScreenPoints allKeys] objectAtIndex: self.dictionaryIndex];*/
     
     //Real implementation
-//    return [NSString stringWithFormat: @"%@:%@:%@",
-//     self.nearestBeacon.proximityUUID.UUIDString,
-//     self.nearestBeacon.major,
-//     self.nearestBeacon.minor];
+    return [NSString stringWithFormat: @"%@:%@:%@",
+     self.nearestBeacon.proximityUUID.UUIDString,
+     self.nearestBeacon.major,
+     self.nearestBeacon.minor];
 }
 
 @end
