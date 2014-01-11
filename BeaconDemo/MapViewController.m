@@ -13,7 +13,7 @@
 
 static const int BEACON_RES_X = 3;
 static const int BEACON_RES_Y = 4;
-static const CGFloat MOVE_TIME = 1.2;
+static const CGFloat MOVE_TIME = 1.3;
 static const CGFloat FADE_TIME = 0.3;
 
 @interface MapViewController () <CLLocationManagerDelegate>
@@ -96,6 +96,21 @@ static const CGFloat FADE_TIME = 0.3;
     CGPoint oldPosition = self.userPosition;
     self.userPosition = [self.beaconManager pointerPosition];
     
+    if(self.userIsDetected)
+    {
+        [self constrainMovement:oldPosition];
+        [self transformUserToMatchPositionInMoveTime:MOVE_TIME];
+    }
+    else
+    {
+        self.userIsDetected = YES;
+        [self transformUserToMatchPositionInMoveTime:0];
+        [self fadeUserToAlpha:1.0 inFadeTime:FADE_TIME];
+    }
+}
+
+- (void)constrainMovement:(CGPoint)oldPosition
+{
     CGFloat maxMoveX = 50;
     CGFloat maxMoveY = 100;
     
@@ -103,7 +118,7 @@ static const CGFloat FADE_TIME = 0.3;
     CGFloat actualMoveY = self.userPosition.y - oldPosition.y;
     CGFloat constrainedX = self.userPosition.x;
     CGFloat constrainedY = self.userPosition.y;
-     
+    
     if(fabs(actualMoveX) > maxMoveX)
     {
         if(actualMoveX >= 0)
@@ -129,17 +144,6 @@ static const CGFloat FADE_TIME = 0.3;
     }
     
     self.userPosition = CGPointMake(constrainedX, constrainedY);
-    
-    if(self.userIsDetected)
-    {
-        [self transformUserToMatchPositionInMoveTime:MOVE_TIME];
-    }
-    else
-    {
-        self.userIsDetected = YES;
-        [self transformUserToMatchPositionInMoveTime:0];
-        [self fadeUserToAlpha:1.0 inFadeTime:FADE_TIME];
-    }
 }
 
 - (void)transformUserToMatchPositionInMoveTime:(CGFloat)moveTime
