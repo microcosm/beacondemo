@@ -40,15 +40,15 @@
                     [[beaconPositionsToScreenPositionsX objectForKey:@1] intValue],
                     [[beaconPositionsToScreenPositionsY objectForKey:@1] intValue])],*/
              
-             @"B9407F30-F5F8-466E-AFF9-25556B57FE6D:36507:50355":
+             /*@"B9407F30-F5F8-466E-AFF9-25556B57FE6D:36507:50355":
                     [ NSValue valueWithCGPoint: CGPointMake(
                     [[beaconPositionsToScreenPositionsX objectForKey:@1] intValue],
-                    [[beaconPositionsToScreenPositionsY objectForKey:@2] intValue])],
+                    [[beaconPositionsToScreenPositionsY objectForKey:@2] intValue])],*/
              
-             @"B9407F30-F5F8-466E-AFF9-25556B57FE6D:59628:33950":
+             /*@"B9407F30-F5F8-466E-AFF9-25556B57FE6D:59628:33950":
                     [ NSValue valueWithCGPoint: CGPointMake(
                     [[beaconPositionsToScreenPositionsX objectForKey:@1] intValue],
-                    [[beaconPositionsToScreenPositionsY objectForKey:@3] intValue])],
+                    [[beaconPositionsToScreenPositionsY objectForKey:@3] intValue])],*/
              
              /*@"B9407F30-F5F8-466E-AFF9-25556B57FE6D:59820:47378":
                     [ NSValue valueWithCGPoint: CGPointMake(
@@ -60,15 +60,15 @@
                     [[beaconPositionsToScreenPositionsX objectForKey:@2] intValue],
                     [[beaconPositionsToScreenPositionsY objectForKey:@1] intValue])],
              
-             @"B9407F30-F5F8-466E-AFF9-25556B57FE6D:2178:60491":
+             /*@"B9407F30-F5F8-466E-AFF9-25556B57FE6D:2178:60491":
                     [ NSValue valueWithCGPoint: CGPointMake(
                     [[beaconPositionsToScreenPositionsX objectForKey:@2] intValue],
-                    [[beaconPositionsToScreenPositionsY objectForKey:@2] intValue])],
+                    [[beaconPositionsToScreenPositionsY objectForKey:@2] intValue])],*/
              
-             @"B9407F30-F5F8-466E-AFF9-25556B57FE6D:8157:58201":
+             /*@"B9407F30-F5F8-466E-AFF9-25556B57FE6D:8157:58201":
                     [ NSValue valueWithCGPoint: CGPointMake(
                     [[beaconPositionsToScreenPositionsX objectForKey:@2] intValue],
-                    [[beaconPositionsToScreenPositionsY objectForKey:@3] intValue])],
+                    [[beaconPositionsToScreenPositionsY objectForKey:@3] intValue])],*/
              
              @"B9407F30-F5F8-466E-AFF9-25556B57FE6D:43188:62110":
                     [ NSValue valueWithCGPoint: CGPointMake(
@@ -103,12 +103,12 @@
     NSDictionary *pointIdentifiers = [[NSDictionary alloc] init];
     pointIdentifiers = @{
                          //@"1,1":@"B9407F30-F5F8-466E-AFF9-25556B57FE6D:53626:34111",
-                         @"1,2":@"B9407F30-F5F8-466E-AFF9-25556B57FE6D:36507:50355",
-                         @"1,3":@"B9407F30-F5F8-466E-AFF9-25556B57FE6D:59628:33950",
+                         //@"1,2":@"B9407F30-F5F8-466E-AFF9-25556B57FE6D:36507:50355",
+                         //@"1,3":@"B9407F30-F5F8-466E-AFF9-25556B57FE6D:59628:33950",
                          //@"1,4":@"B9407F30-F5F8-466E-AFF9-25556B57FE6D:59820:47378",
                          @"2,1":@"B9407F30-F5F8-466E-AFF9-25556B57FE6D:32002:57685",
-                         @"2,2":@"B9407F30-F5F8-466E-AFF9-25556B57FE6D:2178:60491",
-                         @"2,3":@"B9407F30-F5F8-466E-AFF9-25556B57FE6D:8157:58201",
+                         //@"2,2":@"B9407F30-F5F8-466E-AFF9-25556B57FE6D:2178:60491",
+                         //@"2,3":@"B9407F30-F5F8-466E-AFF9-25556B57FE6D:8157:58201",
                          @"2,4":@"B9407F30-F5F8-466E-AFF9-25556B57FE6D:43188:62110",
                          @"3,1":@"B9407F30-F5F8-466E-AFF9-25556B57FE6D:61612:59156",
                          @"3,2":@"B9407F30-F5F8-466E-AFF9-25556B57FE6D:55284:5223",

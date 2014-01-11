@@ -29,15 +29,15 @@
 
 - (void)setNearestBeacon:(CLBeacon *)nearestBeacon
 {
-    if (!self.adjacencyList) {
-        self.adjacencyList = [DictionaryFactory dictionaryAdjacency];
-    }
+//    if (!self.adjacencyList) {
+//        self.adjacencyList = [DictionaryFactory dictionaryAdjacency];
+//    }
     
     NSString *primaryIdentifier = [self beaconIdentifier:self.nearestBeacon];
     NSString *beacon2Identifier = [self beaconIdentifier:[self.beacons objectAtIndex:1]];
     NSString *beacon3Identifier = [self beaconIdentifier:[self.beacons objectAtIndex:2]];
-    NSArray *adjaceny = [self.adjacencyList objectForKey:primaryIdentifier];
-    NSLog(@"%@",adjaceny);
+//    NSArray *adjaceny = [self.adjacencyList objectForKey:primaryIdentifier];
+//    NSLog(@"%@",adjaceny);
     //self.hasNearestBeaconChanged = ![nearestBeacon isEqual: self.nearestBeacon];
     NSLog(@"Primary: %@",primaryIdentifier);
     NSLog(@"2nd: %@",beacon2Identifier);
@@ -45,21 +45,21 @@
     
     if (![nearestBeacon isEqual: self.nearestBeacon])
     {
-        if(!([adjaceny containsObject: beacon2Identifier.description] && [adjaceny containsObject:beacon3Identifier.description]))
-        {
-            self.hasNearestBeaconChanged = TRUE;
-            _nearestBeacon = nearestBeacon;
-            NSLog(@"Adjacent points changed, creating move.");
-        }
-        else{
-            NSLog(@"Determined false move, ignoring.");
-        }
-        
-    }
-    else{
-        NSLog(@"Did not move.");
-//        self.hasNearestBeaconChanged = TRUE;
-//        _nearestBeacon = nearestBeacon;
+//        if(!([adjaceny containsObject: beacon2Identifier.description] && [adjaceny containsObject:beacon3Identifier.description]))
+//        {
+//            self.hasNearestBeaconChanged = TRUE;
+//            _nearestBeacon = nearestBeacon;
+//            NSLog(@"Adjacent points changed, creating move.");
+//        }
+//        else{
+//            NSLog(@"Determined false move, ignoring.");
+//        }
+//        
+//    }
+//    else{
+//        NSLog(@"Did not move.");
+        self.hasNearestBeaconChanged = TRUE;
+        _nearestBeacon = nearestBeacon;
     }
 }
 
