@@ -13,7 +13,6 @@
 
 static const int BEACON_RES_X = 3;
 static const int BEACON_RES_Y = 4;
-static const int MAP_OFFSET_X = 65;
 static const CGFloat MOVE_TIME = 0.3;
 static const CGFloat FADE_TIME = 0.3;
 
@@ -51,8 +50,6 @@ static const CGFloat FADE_TIME = 0.3;
     [super viewDidLoad];
     [self setupViews];
     [self setupBeaconTracking];
-    
-    //\[self setModalPresentationStyle:UIModalPresentationCurrentContext];
     
     //Temporary for testing without beacons
     /*self.timer = [NSTimer scheduledTimerWithTimeInterval:0.5
@@ -97,39 +94,7 @@ static const CGFloat FADE_TIME = 0.3;
 - (void)userDidEnterZone
 {
     self.userPosition = [self.beaconManager pointerPosition];
-    /*CGFloat xSize = self.mapSizeScaled.width/2.0;
-    CGFloat ySize = self.mapSizeScaled.height/3.0;
-    CGPoint oldPosition = self.userPosition;
     
-    CGFloat xMove = self.userPosition.x - oldPosition.x;
-    CGFloat yMove = self.userPosition.y - oldPosition.y;
-    CGFloat newX = self.userPosition.x;
-    CGFloat newY = self.userPosition.y;
-    
-    if(fabs(xMove) > xSize)
-    {
-        if(xMove >= 0)
-        {
-            newX = oldPosition.x + xSize;
-        }
-        else
-        {
-            newX = oldPosition.x - xSize;
-        }
-    }
-    if(fabs(yMove) > ySize)
-    {
-        if(yMove >= 0)
-        {
-            newY = oldPosition.y + ySize;
-        }
-        else
-        {
-            newY = oldPosition.y - ySize;
-        }
-    }*/
-    
-    //self.userPosition = CGPointMake(newX + MAP_OFFSET_X, newY);
     if(self.userIsDetected)
     {
         [self transformUserToMatchPositionInMoveTime:MOVE_TIME];
